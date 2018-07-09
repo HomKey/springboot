@@ -38,7 +38,13 @@ public class HelloController {
                 ;
     }
 
-
+    @RequestMapping("/hello/jenkins")
+    public String jenkins(){
+        return "name:" + name + "\n" +
+                "password:" + password + "\n" +
+                "student: " + student.getName() + "/" + student.getAge()
+                ;
+    }
 
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public List<User> getUserList(){
