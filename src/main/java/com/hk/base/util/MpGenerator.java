@@ -1,12 +1,16 @@
 package com.hk.base.util;
 
 import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import com.baomidou.mybatisplus.generator.config.GlobalConfig;
-import com.baomidou.mybatisplus.generator.config.PackageConfig;
-import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.InjectionConfig;
+import com.baomidou.mybatisplus.generator.config.*;
+import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -17,6 +21,8 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
  * @date 2017/12/18
  */
 public class MpGenerator {
+
+    private static final String FILE_PATH = "e:\\codeGen\\1";
 
     public void generateCode() {
         String packageName = "com.hk.demo";
@@ -36,17 +42,40 @@ public class MpGenerator {
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig
                 .setCapitalMode(true)
-                .setEntityLombokModel(false)
+                .setEntityLombokModel(true)
                 .setDbColumnUnderline(true)
                 .setNaming(NamingStrategy.underline_to_camel)
+                .setLogicDeleteFieldName("delete_flag")
                 .setInclude(tableNames);//修改替换成你需要的表名，多个表名传数组
+
         config.setActiveRecord(false)
                 .setAuthor("homkey")
-                .setOutputDir("e:\\codeGen\\1")
+                .setOutputDir(FILE_PATH)
                 .setFileOverride(true);
         if (!serviceNameStartWithI) {
             config.setServiceName("%sService");
         }
+        /**
+         * 自定义注入配置
+         */
+        InjectionConfig cfg = new InjectionConfig() {
+            @Override
+            public void initMap() {
+                Map<String, Object> map = new HashMap<String, Object>();
+                map.put("abc", this.getConfig().getGlobalConfig().getAuthor() + "-mp");
+                this.setMap(map);
+            }
+        };
+        // 自定义 xxListIndex.html 生成
+        List<FileOutConfig> focList = new ArrayList<FileOutConfig>();
+        focList.add(new FileOutConfig("/generator/list.html.vm") {
+            @Override
+            public String outputFile(TableInfo tableInfo) {
+                // 自定义输入文件名称
+                return FILE_PATH + "//" + tableInfo.getEntityName() + "ListIndex.html";
+            }
+        });
+        cfg.setFileOutConfigList(focList);
         new AutoGenerator().setGlobalConfig(config)
                 .setDataSource(dataSourceConfig)
                 .setStrategy(strategyConfig)
@@ -55,7 +84,9 @@ public class MpGenerator {
                                 .setParent(packageName)
                                 .setController("controller")
                                 .setEntity("entity")
-                ).execute();
+                )
+                .setCfg(cfg) // 自定义
+                .execute();
     }
 
     public static void main(String[] args) {

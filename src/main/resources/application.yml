@@ -55,7 +55,7 @@ spring:
     # 这个开发配置为false，避免改了模板还要重启服务器
     cache: false
     # 这个是配置模板路径的，默认就是templates，可不用配置
-    # prefix: classpath:/templates/
+    prefix: classpath:/templates/
     # 这个可以不配置，检查模板位置
     check-template-location: true
     # 下面3个不做解释了，可以不配置
