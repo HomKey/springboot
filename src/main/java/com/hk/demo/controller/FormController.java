@@ -26,4 +26,8 @@ public class FormController extends BaseController{
     public String checkPersonInfo(@Valid LombokUserDTO lombokUserDTO, BindingResult bindingResult) {
         return "redirect:/index";
     }
+
+    public static void main(String[] args) {
+        System.out.println(5%2);
+    }
 }

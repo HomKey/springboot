@@ -23,34 +23,35 @@
  */
 
 package com.hk.conf;
-
-import org.springframework.context.annotation.Configuration;
-import org.springframework.format.FormatterRegistry;
-import org.springframework.format.datetime.DateFormatter;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
-@Configuration
-public class WebMvcConfig implements WebMvcConfigurer {
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-    }
-    @Override
-    public void addFormatters(FormatterRegistry registry) {
-        registry.addFormatter(new DateFormatter("yyyy-MM-dd HH:mm:ss"));
-    }
+//
+//import org.springframework.context.annotation.Configuration;
+//import org.springframework.format.FormatterRegistry;
+//import org.springframework.format.datetime.DateFormatter;
+//import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+//import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+//
+//@Configuration
+//public class WebMvcConfig implements WebMvcConfigurer {
+//
 //    @Override
-    //    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-//        Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
-//        builder.serializationInclusion(JsonInclude.Include.NON_NULL);
-//        ObjectMapper objectMapper = builder.build();
-//        SimpleModule simpleModule = new SimpleModule();
-//        simpleModule.addSerializer(Long.class, ToStringSerializer.instance);
-//        objectMapper.registerModule(simpleModule);
-//        objectMapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);// 忽略 transient 修饰的属性
-//        converters.add(new MappingJackson2HttpMessageConverter(objectMapper));
-////        super.configureMessageConverters(converters);
+//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
 //    }
-}
+//    @Override
+//    public void addFormatters(FormatterRegistry registry) {
+//        registry.addFormatter(new DateFormatter("yyyy-MM-dd HH:mm:ss"));
+//    }
+////    @Override
+//    //    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+////        Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
+////        builder.serializationInclusion(JsonInclude.Include.NON_NULL);
+////        ObjectMapper objectMapper = builder.build();
+////        SimpleModule simpleModule = new SimpleModule();
+////        simpleModule.addSerializer(Long.class, ToStringSerializer.instance);
+////        objectMapper.registerModule(simpleModule);
+////        objectMapper.configure(MapperFeature.PROPAGATE_TRANSIENT_MARKER, true);// 忽略 transient 修饰的属性
+////        converters.add(new MappingJackson2HttpMessageConverter(objectMapper));
+//////        super.configureMessageConverters(converters);
+////    }
+//}
+public class WebMvcConfig{}

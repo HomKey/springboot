@@ -16,11 +16,11 @@ public class SysController extends BaseController{
     /**
      * 默认请求处理方法，调用请求路径对应的jsp
      */
-    @RequestMapping
-    public String defaultController(HttpServletRequest request) {
-        logger.info("html");
-        String path = request.getRequestURI().replaceFirst("^" + request.getContextPath() + "/", "")
-                .replaceFirst("\\.[^.]*$", "");
-        return path;
-    }
+//    @RequestMapping
+//    public String defaultController(HttpServletRequest request) {
+//        logger.info("html");
+//        String path = request.getRequestURI().replaceFirst("^" + request.getContextPath() + "/", "")
+//                .replaceFirst("\\.[^.]*$", "");
+//        return path;
+//    }
 }

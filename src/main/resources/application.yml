@@ -1,7 +1,7 @@
 ﻿server:
-  port: 8080
+  port: 8088
   servlet:
-    context-path: /springboot
+    context-path: /
 #Value注解
 name: homkey
 password: 123456

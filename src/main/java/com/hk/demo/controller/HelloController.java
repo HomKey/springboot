@@ -30,6 +30,10 @@ public class HelloController {
     @Autowired
     private IUserService userService;
 
+    @RequestMapping("/junit")
+    public String junitTest(){
+        return "hello junit";
+    }
     @RequestMapping("/hello")
     public String hello(){
         return "name:" + name + "\n" +
