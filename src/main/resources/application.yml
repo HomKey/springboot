@@ -1,14 +1,17 @@
-﻿server:
-  port: 8088
-  servlet:
-    context-path: /
-#Value注解
+﻿#Value注解
 name: homkey
 password: 123456
 syscontent: "name:${name},password:${password}"
 student:
   name: studentName
   age: 18
+#Swagger2
+swagger:
+  enabled: true
+server:
+  port: 8088
+  servlet:
+    context-path: /
 #spring
 spring:
   devtools:
@@ -40,14 +43,22 @@ spring:
     host: 127.0.0.1
     port: 6379
     password: 123456
+    timeout: 3600
+    database: 0
     jedis:
       pool:
         max-active: 8
         max-wait: -1
         max-idle: 8
         min-idle: 0
-    timeout: 3600
-    database: 0
+    #lettuce客户端
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-wait: -1ms
+        max-active: 8
+      shutdown-timeout: 100ms
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
