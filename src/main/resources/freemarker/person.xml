@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gbk"?>
+<root id="" comment="">
+    <person>
+        <name>${t.name}</name>
+        <age>${t.age}</age>
+        <birthday>${t.birthday}</birthday>
+        <sex>${t.sex}</sex>
+    </person>
+</root>
