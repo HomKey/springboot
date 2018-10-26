@@ -75,6 +75,10 @@ spring:
     # content-type: text/html
     # 模板的模式
     mode: LEGACYHTML5
+  freemarker:
+    cache: false
+    check-template-location: true
+    template-loader-path: classpath:/ftl/
 #mybatis
 mybatis-plus:
   mapper-locations: classpath*:resources/mapper/**Mapper.xml

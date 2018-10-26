@@ -212,4 +212,10 @@ public class FileUtils {
             }
         }
     }
+
+
+    public static String getFileName(String filePath){
+        String[] temp = filePath.trim().split("\\\\");
+        return temp[temp.length-1];
+    }
 }

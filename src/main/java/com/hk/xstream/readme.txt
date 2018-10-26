@@ -1,0 +1,20 @@
+简介
+Xstream是一种OXMapping 技术，是用来处理XML文件序列化的框架,在将JavaBean序列化，或将XML文件反序列化的时候，不需要其它辅助类和映射文件，
+使得XML序列化不再繁索。Xstream也可以将JavaBean序列化成Json或反序列化，使用非常方便。
+主要使用
+@XStreamAlias(“alis”)java对象在xml中以标签的形式显示时，如果名字与类名或者属性名不一致，可以使用该标签并在括号内注明别名。
+@XStreamOmitField在输出XML的时候忽略该属性
+@XStreamImplicit如果该属性是一个列表或者数组，在XML中不显示list或者Array字样
+@XStreamAsAttribute该属性不单独显示成XML节点，而是作为属性显示出来
+@XStreamContainedType
+@XStreamConverter设置转换器
+@XStreamConverters converter主要用于将某些字段进行复杂的转换，转换过程写在一个类中。然后将其注册到XStream。
+
+重命名注解：@XStreamAlias()
+省略集合根节点：@XStreamImplicit
+把字段节点设置成属性：@XStreamAsAttribute
+这些命名都需要和解析的xml的属性名一一对应，一旦不对应就会报com.thoughtworks.xstream.mapper.CannotResolveClassException异常，找不到对应的类属性
+集合属性的需要使用：@XStreamImplicit,不然会报com.thoughtworks.xstream.converters.reflection.AbstractReflectionConverter$DuplicateFieldException转换器映射异常
+
+来源
+https://www.jianshu.com/p/9e31eeccc485

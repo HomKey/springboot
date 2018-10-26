@@ -24,11 +24,18 @@ public class FreemarkerUtil {
     @Autowired
     private Configuration configuration;
 
-    public static void createFreemarker(Configuration configuration, String fileName, Map<String, Object> model) throws IOException, TemplateException {
+    public void createFreemarker(String fileName, Map<String, Object> model) throws IOException, TemplateException {
         Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
         Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
-        FileUtils.creatFile("C:\\Users\\tandewei\\Desktop\\backup\\freemarker\\" + fileName + "_" + second + ".xml", content);
+        FileUtils.creatFile("D:\\freemarker\\" + fileName + "_" + second + ".xml", content);
+        System.out.println(content);
+    }
+    public void createFreemarkerWithResourcesPath(String fileName, Map<String, Object> model) throws IOException, TemplateException {
+        Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
+        String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
+        Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
+        FileUtils.creatFile(fileName + "_" + second + ".xml", content);
         System.out.println(content);
     }
 }
