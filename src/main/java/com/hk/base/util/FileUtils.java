@@ -1,9 +1,12 @@
 package com.hk.base.util;
 
+import io.netty.util.CharsetUtil;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by LuHj on 2018/10/9.
@@ -17,7 +20,7 @@ public class FileUtils {
         String resultJson = "";
         try {
             fis = new FileInputStream(filePath);
-            isr = new InputStreamReader(fis, "UTF-8");
+            isr = new InputStreamReader(fis, CharsetUtil.UTF_8);
             br = new BufferedReader(isr);
             StringBuilder sb = new StringBuilder();
             String nextLine = "";
@@ -90,7 +93,7 @@ public class FileUtils {
             if (file[i].isDirectory()) {
                 // 把第一层的目录，全部放入链表
                 list.add(file[i]);
-            }else{
+            } else {
                 filePaths.add(file[i].getAbsolutePath());
             }
         }
@@ -130,29 +133,22 @@ public class FileUtils {
     }
 
     public static boolean writeFile(File file, String newStr) throws IOException {
-        // 先读取原有文件内容，然后进行写入操作
         boolean flag = false;
         String filein = newStr + "\r\n";
         String temp = "";
-
         FileInputStream fis = null;
         InputStreamReader isr = null;
         BufferedReader br = null;
-
         FileOutputStream fos = null;
         PrintWriter pw = null;
         try {
-            // 文件路径
-            // 将文件读入输入流
             fis = new FileInputStream(file);
             isr = new InputStreamReader(fis);
             br = new BufferedReader(isr);
             StringBuffer buf = new StringBuffer();
-
             // 保存该文件原有的内容
             for (int j = 1; (temp = br.readLine()) != null; j++) {
                 buf = buf.append(temp);
-                // System.getProperty("line.separator")
                 // 行与行之间的分隔符 相当于“\n”
                 buf = buf.append(System.getProperty("line.separator"));
             }
@@ -164,7 +160,6 @@ public class FileUtils {
             pw.flush();
             flag = true;
         } catch (IOException e1) {
-            // TODO 自动生成 catch 块
             throw e1;
         } finally {
             if (pw != null) {
@@ -186,19 +181,14 @@ public class FileUtils {
         return flag;
     }
 
-    public static  void write(File file, String context){
-//        File file = new File("/root/sms.log");
-        FileOutputStream out= null;
+    public static void write(File file, String context, boolean isAppend){
+        FileOutputStream out = null;
         try {
-            if(!file.exists()) {
+            if (!file.exists()) {
                 file.createNewFile();
-            }else{
-                FileWriter fw = new FileWriter(file);
-                fw.write("");
-                fw.close();
             }
-            out = new FileOutputStream(file,true);
-            out.write(context.toString().getBytes("utf-8"));
+            out = new FileOutputStream(file, isAppend);
+            out.write(context.getBytes(CharsetUtil.UTF_8));
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -213,9 +203,37 @@ public class FileUtils {
         }
     }
 
+    public static void write(File file, String context) {
+        write(file, context, true);
+    }
+    public static void write(String filePath, String context){
+        write(new File(filePath), context);
+    }
 
-    public static String getFileName(String filePath){
+
+    public static String getFileName(String filePath) {
         String[] temp = filePath.trim().split("\\\\");
-        return temp[temp.length-1];
+        return temp[temp.length - 1];
+    }
+
+    public static List<String> getFolderName(String path) {
+        List<String> list = new ArrayList<String>();
+        File dir = new File(path);
+        File[] file = dir.listFiles();
+
+        for (int i = 0; i < file.length; i++) {
+            if (file[i].isDirectory()) {
+                list.add(file[i].getName());
+            }
+        }
+        return list;
+    }
+
+    public static void replaceFile(String path, Map<String, String> map) {
+        String context = readFileToString(path);
+        for (Map.Entry<String, String> s : map.entrySet()) {
+            context = context.replaceAll(s.getKey(),s.getValue());
+        }
+        write(path, context);
     }
 }
