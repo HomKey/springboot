@@ -53,5 +53,15 @@ public class UserController {
             @RequestParam(name = "size", required = false, defaultValue = "5") int size ){
         return sysUserService.selectPage(new Page<SysUser>(current,size));
     }
+
+    @RequestMapping(value = "/emoji", method = RequestMethod.POST)
+    public User addEmojiToMysql(
+            @RequestParam(name = "name") String name
+    ){
+        User user = new User();
+        user.setName(name);
+        userService.save(user);
+        return user;
+    }
 }
 

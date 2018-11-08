@@ -20,11 +20,12 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     #?useSSL=false
-    url: jdbc:mysql://193.112.139.155:3306/springboot-mvn?characterEncoding=utf8&useSSL=false
-    username: talent
-    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/springboot-mvn?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=true
+    username: root
+    password: root
     #以下都是druid连接池配置信息
     type: com.alibaba.druid.pool.DruidDataSource
+    connectionInitSqls: "set names utf8mb4;"
     filters: stat,wall,log4j2
     maxActive: 20
     initialSize: 1

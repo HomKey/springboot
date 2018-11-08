@@ -16,6 +16,8 @@ import org.springframework.core.env.Environment;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
+import java.util.Collections;
+import java.util.StringTokenizer;
 
 /**
  * Created by LuHj on 2018/6/27.
@@ -120,6 +122,10 @@ public class DruidDataSourceConfig implements EnvironmentAware {
             datasource.setTestOnReturn(testOnReturn);
             datasource.setPoolPreparedStatements(poolPreparedStatements);
             datasource.setMaxPoolPreparedStatementPerConnectionSize(maxPoolPreparedStatementPerConnectionSize);
+            // 支持emoji配置
+            String connectionInitSqls = "SET NAMES utf8mb4";
+            StringTokenizer tokenizer = new StringTokenizer(connectionInitSqls, ";");
+            datasource.setConnectionInitSqls(Collections.list(tokenizer));
             try {
                 datasource.setFilters(filters);
             } catch (SQLException e) {
