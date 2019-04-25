@@ -1,0 +1,58 @@
+{
+  "$id": "1",
+  "MonitorDataList": [
+    {
+      "$id": "2",
+      "SensorId": "6c838dda-941a-4545-89e6-d05c4b973cea",
+      "SensorName": "NewFan_StartUp_Status",
+      "SensorDescription": "开机状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T10:53:52.56",
+      "DeviceName": "新风机2",
+      "DeviceId": "e8240eb4-5cdc-4b1c-b0d7-c76177927f52"
+    },
+    {
+      "$id": "3",
+      "SensorId": "3c49f568-7642-473c-a344-4b24eea8fea4",
+      "SensorName": "NewFan_Setting_Auto_ControlTemperature",
+      "SensorDescription": "设置自动控制温度",
+      "Value": 6400.000,
+      "SampleTime": "2019-04-16T10:53:52.56",
+      "DeviceName": "新风机2",
+      "DeviceId": "e8240eb4-5cdc-4b1c-b0d7-c76177927f52"
+    },
+    {
+      "$id": "4",
+      "SensorId": "9062422a-2de8-4ab4-bad9-bac1a4ece6c6",
+      "SensorName": "NewFan_Count",
+      "SensorDescription": "当前风量",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T10:53:52.56",
+      "DeviceName": "新风机2",
+      "DeviceId": "e8240eb4-5cdc-4b1c-b0d7-c76177927f52"
+    },
+    {
+      "$id": "5",
+      "SensorId": "3beee3a7-05c4-499d-96ed-5c584322df2c",
+      "SensorName": "NewFan_CurrentTemperature",
+      "SensorDescription": "当前温度",
+      "Value": 102.500,
+      "SampleTime": "2019-04-16T10:53:52.56",
+      "DeviceName": "新风机2",
+      "DeviceId": "e8240eb4-5cdc-4b1c-b0d7-c76177927f52"
+    },
+    {
+      "$id": "6",
+      "SensorId": "06c5adc2-8ee5-4b4e-bf0a-4061e96bd3b2",
+      "SensorName": "NewFan_Threshold_Status",
+      "SensorDescription": "阀状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T10:53:52.56",
+      "DeviceName": "新风机2",
+      "DeviceId": "e8240eb4-5cdc-4b1c-b0d7-c76177927f52"
+    }
+  ],
+  "IsSuccess": true,
+  "ErrorCode": 200,
+  "Message": "OK"
+}

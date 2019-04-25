@@ -1,0 +1,40 @@
+<linked-list>
+<#list xfjList as object>
+    <ModbusSetOneRequest>
+        <name>NewFan.${object.index}.Status.Close</name>
+        <commandType>6</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <regNum>40000</regNum>
+        <busId>${object.busId}</busId>
+        <setValue>1</setValue>
+    </ModbusSetOneRequest>
+    <ModbusSetOneRequest>
+        <name>NewFan.${object.index}.Status.Auto</name>
+        <commandType>6</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <regNum>40000</regNum>
+        <busId>${object.busId}</busId>
+        <setValue>17</setValue>
+    </ModbusSetOneRequest>
+    <ModbusSetOneRequest>
+        <name>NewFan.${object.index}.Status.Manual</name>
+        <commandType>6</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <regNum>40000</regNum>
+        <busId>${object.busId}</busId>
+        <setValue>34</setValue>
+    </ModbusSetOneRequest>
+    <ModbusSetOneRequest>
+        <name>NewFan.${object.index}.Status.Heating</name>
+        <commandType>6</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <regNum>40000</regNum>
+        <busId>${object.busId}</busId>
+        <setValue>51</setValue>
+    </ModbusSetOneRequest>
+</#list>
+</linked-list>

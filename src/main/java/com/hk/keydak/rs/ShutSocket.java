@@ -11,9 +11,10 @@ import java.util.Random;
  * Created by LuHj on 2018/9/12.
  */
 public class ShutSocket {
-    public static void main(String[] args) throws UnknownHostException, SocketException {
-        // ups
-        DatagramSocket upsSocket = new DatagramSocket(8310);
+
+    private void task(int port) throws SocketException {
+// ups
+        DatagramSocket upsSocket = new DatagramSocket(port);
         // 第一条指令
         byte[] commandData = new byte[]{0x06, 0x04, (byte) 0x88, 0x30, 0x68, 0x29, 0x00, 0x00, (byte) 0x84, 0x35, 0x00, (byte) 0xC0};
 
@@ -44,6 +45,7 @@ public class ShutSocket {
                             }else if (data[0] == 0x06 && !isFinish){
                                 // 继续发送直到完毕
                                 System.out.println("ups commandEndPacket");
+                                System.out.println("port: " + port);
                                 DatagramPacket commandEndPacket = new DatagramPacket(commandEndData,commandEndData.length, inetAddress, targetPort);
                                 upsSocket.send(commandEndPacket);
                                 isFinish = true;
@@ -75,5 +77,17 @@ public class ShutSocket {
                 }
             }
         }).start();
+    }
+
+
+    public static void main(String[] args) throws UnknownHostException, SocketException {
+        ShutSocket shutSocket1 = new ShutSocket();
+        ShutSocket shutSocket2 = new ShutSocket();
+        ShutSocket shutSocket3 = new ShutSocket();
+        ShutSocket shutSocket4 = new ShutSocket();
+        shutSocket1.task(8310);
+        shutSocket2.task(8311);
+        shutSocket3.task(8312);
+        shutSocket4.task(8313);
     }
 }

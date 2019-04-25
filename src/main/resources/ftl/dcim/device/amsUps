@@ -1,0 +1,1298 @@
+{
+  "$id": "1",
+  "MonitorDataList": [
+    {
+      "$id": "2",
+      "SensorId": "4afecb7d-a407-427b-aeab-0112fe8c8bcb",
+      "SensorName": "UPS_Output_A_Current",
+      "SensorDescription": "输出电流A相",
+      "Value": 8.500,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "3",
+      "SensorId": "ca78b448-d3cd-40da-b791-02d9f7e3ab57",
+      "SensorName": "UPS_Alarm_Bypass_Current",
+      "SensorDescription": "旁路电流告警",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "4",
+      "SensorId": "a4fdd3dd-cd65-4f40-9597-03e07d333ee9",
+      "SensorName": "UPS_Alarm_Inverter_OverCurrent",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "5",
+      "SensorId": "14b0785b-8457-4a0d-a4c1-0734f88cc21b",
+      "SensorName": "UPS_State_Model_10",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "6",
+      "SensorId": "059a8cbd-f692-45f3-8307-0d2e553b6af4",
+      "SensorName": "UPS_State_BatteryGroup_2_PowerSupply",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "7",
+      "SensorId": "5b31b161-4492-47f1-840f-0fcdb0d596b6",
+      "SensorName": "UPS_Output_B_LoadRate",
+      "SensorDescription": "输出负载比B相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "8",
+      "SensorId": "b2c5b87d-421e-4d81-8905-1064a592fba5",
+      "SensorName": "UPS_Alarm_Environment_Temperature",
+      "SensorDescription": "环境温度告警",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "9",
+      "SensorId": "d329e955-4d50-46f1-b4a6-1811fd7536f2",
+      "SensorName": "UPS_Negative_Battery_Voltage",
+      "SensorDescription": "",
+      "Value": 0.300,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "10",
+      "SensorId": "fa751975-d383-455e-a2ea-1aedd698ced7",
+      "SensorName": "UPS_Battery_ReserveTime",
+      "SensorDescription": "电池后备时间",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "11",
+      "SensorId": "746b4e5e-b3b3-4c20-ba58-1c5218a381a9",
+      "SensorName": "UPS_Fault_BatteryGroup_Contactor_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "12",
+      "SensorId": "f2e89318-4df5-4c19-b4aa-1d71d247d5ae",
+      "SensorName": "UPS_Fault_BatteryGroup_Changer_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "13",
+      "SensorId": "61f0a099-8efa-46a4-8945-1e48c0903006",
+      "SensorName": "UPS_Mode_PowerSupply",
+      "SensorDescription": "当前供电方式",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "14",
+      "SensorId": "b6fc98ab-9cba-4000-a5a9-203da7c483f6",
+      "SensorName": "UPS_Fault_Auxiliary_PowerOne_LoseElec",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "15",
+      "SensorId": "1d4db151-9c39-41fe-988f-208ac9ceeb56",
+      "SensorName": "UPS_Output_A_Voltage",
+      "SensorDescription": "输出电压A相",
+      "Value": 220.200,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "16",
+      "SensorId": "114e3a8f-2ddc-432b-a350-26c339cb81a1",
+      "SensorName": "UPS_Alarm_Bypass_Overlimit",
+      "SensorDescription": "旁路超限",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "17",
+      "SensorId": "f4d62c27-5017-4980-bec9-272ab575eb24",
+      "SensorName": "UPS_Fault_PowerModel_5",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "18",
+      "SensorId": "2e3731e7-f3ae-4b63-86e9-29053d131e81",
+      "SensorName": "UPS_Fault_PowerModel_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "19",
+      "SensorId": "2ffae004-32eb-40ab-bb8c-2a46de17ba39",
+      "SensorName": "UPS_State_Model_9",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "20",
+      "SensorId": "219e30ea-e053-4700-a6df-2b5c387b0015",
+      "SensorName": "UPS_Fault_ModelMergeMachine_Communication",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "21",
+      "SensorId": "3959285b-0c6b-46bb-9b3a-2c732d900a43",
+      "SensorName": "UPS_Fault_BatteryGroup_Changer_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "22",
+      "SensorId": "553c29d0-4da4-49b0-82ac-2fe22135da67",
+      "SensorName": "UPS_Fault_MainCircuit_Frequency",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "23",
+      "SensorId": "cf843745-9a0d-42f1-a5e5-32b57a9182d9",
+      "SensorName": "UPS_Fault_Bypass_Thyristor",
+      "SensorDescription": "旁路晶闸管故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "24",
+      "SensorId": "19a65fa1-f8fd-482b-8784-35e04ef27600",
+      "SensorName": "UPS_Output_B_PowerFactor",
+      "SensorDescription": "输出功率因数B相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "25",
+      "SensorId": "50e33116-76cc-4e78-b2b4-3b25de39a061",
+      "SensorName": "UPS_State_Model_7",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "26",
+      "SensorId": "8388b6d1-4ddf-4425-a2e8-3f42375df78c",
+      "SensorName": "UPS_Fault_PowerModel_9",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "27",
+      "SensorId": "78bf8e72-24c2-4783-b49d-445a849bc446",
+      "SensorName": "UPS_Fault_PowerModel_7",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "28",
+      "SensorId": "c5c10c35-528b-4ad7-9178-4806d6811681",
+      "SensorName": "UPS_Fault_PowerModel_3",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "29",
+      "SensorId": "4ad3242d-837f-491e-8e45-48594da0b026",
+      "SensorName": "UPS_Fault_Redundancy_Fan",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "30",
+      "SensorId": "24f906cb-1a6e-44b0-a4d9-4d4e5aedd1a4",
+      "SensorName": "UPS_Output_C_PowerFactor",
+      "SensorDescription": "输出功率因数C相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "31",
+      "SensorId": "06d37803-d28e-4d33-bb6c-52187b49a6dd",
+      "SensorName": "UPS_State_Model_4",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "32",
+      "SensorId": "dce4d84c-a6b4-49d4-88b0-52fd9aebd380",
+      "SensorName": "UPS_Input_C_Current",
+      "SensorDescription": "输入电流C相",
+      "Value": 226.500,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "33",
+      "SensorId": "3569b0e5-e232-46be-8f4e-54cf3cc35345",
+      "SensorName": "UPS_Output_C_Current",
+      "SensorDescription": "输出电流C相",
+      "Value": 5.500,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "34",
+      "SensorId": "78046f49-becb-424f-a859-54eac093600a",
+      "SensorName": "UPS_Alarm_Rectifier_OverCurrent",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "35",
+      "SensorId": "10033142-bd7f-4197-a39e-55702689d288",
+      "SensorName": "UPS_Fault_BatteryGroup_Contactor_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "36",
+      "SensorId": "f3fc74db-eb95-4ef1-8b51-56438ea5225a",
+      "SensorName": "UPS_Input_B_Current",
+      "SensorDescription": "输入电流B相",
+      "Value": 227.500,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "37",
+      "SensorId": "478143cb-acaa-4765-a170-566992398d52",
+      "SensorName": "UPS_Alarm_Alternating_OutPutOverVoltage",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "38",
+      "SensorId": "e419fdd6-1131-428b-9388-5676153f794e",
+      "SensorName": "UPS_State_BatteryGroup_LifeTime_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "39",
+      "SensorId": "6316ae6d-aeb5-41ee-836f-57934e8a269c",
+      "SensorName": "UPS_Output_C_PeakRate",
+      "SensorDescription": "输出峰值比C相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "40",
+      "SensorId": "d073c126-9f37-423e-a8a4-5857313391d7",
+      "SensorName": "UPS_Fault_Bypass_AbnormalShutdown",
+      "SensorDescription": "旁路异常关机",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "41",
+      "SensorId": "b02e6612-d6e2-488d-a70c-58b77a2b7fb7",
+      "SensorName": "UPS_Fault_ModelMergeMachineLine",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "42",
+      "SensorId": "897bbdbc-db76-4ef2-9e8a-5937dad9f05d",
+      "SensorName": "UPS_Fault_Contactor_PowerPanel_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "43",
+      "SensorId": "e4fb79e2-a08e-4dfc-be00-59e967aa6411",
+      "SensorName": "UPS_Alarm_InverterElecInductance_OverTemperature",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "44",
+      "SensorId": "04b601d4-f00d-49b0-b7fb-5bf69066b42e",
+      "SensorName": "UPS_Alarm_Inverter_OverTemperature",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "45",
+      "SensorId": "849b3f6a-9bcd-4148-a467-5c23ab0709fc",
+      "SensorName": "UPS_Fault_PowerModel_10",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "46",
+      "SensorId": "61c62bf3-313e-4eb9-bb88-5da7a0783908",
+      "SensorName": "UPS_State_Bypass_AirSwitch",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "47",
+      "SensorId": "f7944319-2c60-4242-ac0f-5f6ca41b66a4",
+      "SensorName": "UPS_Output_C_LoadRate",
+      "SensorDescription": "输出负载比C相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "48",
+      "SensorId": "d1382c46-bba4-442e-b4b4-6000342dd8c4",
+      "SensorName": "UPS_State_Model_11",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "49",
+      "SensorId": "60de3508-62c4-493a-a471-670508684f7b",
+      "SensorName": "UPS_Fault_PowerModel_6",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "50",
+      "SensorId": "75674e77-6e7f-4847-b1f2-6870faba20a8",
+      "SensorName": "UPS_State_Model_8",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "51",
+      "SensorId": "fb700561-025c-490c-91f9-69df117af1e3",
+      "SensorName": "UPS_Fault_MainCircuit_PhaseReversed",
+      "SensorDescription": "主路相序反",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "52",
+      "SensorId": "5e32ae5f-bab8-4af9-a4d0-6a2299f9726a",
+      "SensorName": "UPS_Output_B_Current",
+      "SensorDescription": "输出电流B相",
+      "Value": 4.500,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "53",
+      "SensorId": "fbe35551-cf68-417b-837c-6b01e6171fb4",
+      "SensorName": "UPS_Fault_Auxiliary_PowerTwo_LoseElec",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "54",
+      "SensorId": "0131ee28-3c26-49e4-99f2-71dac93d85f4",
+      "SensorName": "UPS_Fault_Contactor_PowerPanel_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "55",
+      "SensorId": "a5d9a85b-66a6-4af5-88f7-72bd86328c4c",
+      "SensorName": "UPS_Fault_LoadPunchToBypass",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "56",
+      "SensorId": "c65c7157-1a38-466a-b5c8-748b73f1b60b",
+      "SensorName": "UPS_State_Transducer",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "57",
+      "SensorId": "426c99ff-2b71-4d2e-9d4c-76ceac22eefa",
+      "SensorName": "UPS_Environment_Temperature",
+      "SensorDescription": "",
+      "Value": 25.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "58",
+      "SensorId": "11cb1e17-3a3e-439d-9758-776805e91fb0",
+      "SensorName": "UPS_Output_A_ApparentPower",
+      "SensorDescription": "输出视在功率A相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "59",
+      "SensorId": "9befac7b-e3a1-4832-8913-7a4f08d87fa7",
+      "SensorName": "UPS_Alarm_Rectifier_OverTemperature",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "60",
+      "SensorId": "20cb2b97-9a25-4da0-bf64-7be1717b830c",
+      "SensorName": "UPS_State_AirSwitch",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "61",
+      "SensorId": "ca6d5c55-a67a-4f55-aae1-7faaf536ceaf",
+      "SensorName": "UPS_Fault_ModelMergeMachine",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "62",
+      "SensorId": "dba37319-e751-4e3d-9a58-803059ad1b36",
+      "SensorName": "UPS_State_BatteryGroup_1_PowerSupply",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "63",
+      "SensorId": "7e1c5e69-d895-4466-a412-8102f5887cd2",
+      "SensorName": "UPS_Fault_Rectifier",
+      "SensorDescription": "整流器故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "64",
+      "SensorId": "15e01efd-774c-4e55-a1b4-82ff35dbebd1",
+      "SensorName": "UPS_State_Model_6",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "65",
+      "SensorId": "422f421a-b628-4c16-8c45-83cd39ea6883",
+      "SensorName": "UPS_State_Model_5",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "66",
+      "SensorId": "478ff5a6-32cc-44f9-a140-844dd06d9646",
+      "SensorName": "UPS_State_BatteryGroup_1_Test",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "67",
+      "SensorId": "5a1cfb51-b464-44c1-b456-84b4ed097722",
+      "SensorName": "UPS_Output_B_PeakRate",
+      "SensorDescription": "输出峰值比B相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "68",
+      "SensorId": "3d9ac93f-2b57-43be-abb5-8726667ef85c",
+      "SensorName": "UPS_Fault_BatteryGroup_ConnectionGround_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "69",
+      "SensorId": "a37c8c1c-793f-456a-9f51-89bdbd020567",
+      "SensorName": "UPS_State_Model_3",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "70",
+      "SensorId": "e11c857b-1abd-4f7c-95e2-8ae6e095d0f1",
+      "SensorName": "UPS_State_Maintain_Bypass_AirSwitch",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "71",
+      "SensorId": "db7b173d-8309-4b70-b513-8c5efcdc62fb",
+      "SensorName": "UPS_Alarm_BalanceCircuit_OverCurrent",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "72",
+      "SensorId": "874e6f8a-7efd-470c-967d-8c8c6aa2f930",
+      "SensorName": "UPS_Positive_Battery_Current",
+      "SensorDescription": "",
+      "Value": 273.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "73",
+      "SensorId": "e7e4ba4e-ec2f-403c-9aed-8e0e763f8ea0",
+      "SensorName": "UPS_Negative_Battery_Current",
+      "SensorDescription": "",
+      "Value": 271.800,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "74",
+      "SensorId": "47960683-8a73-4e3d-b820-9082bff05bba",
+      "SensorName": "UPS_State_BatteryGroup_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "75",
+      "SensorId": "b379d1db-f805-44bb-9d24-93278656ffa0",
+      "SensorName": "UPS_State_ECO",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "76",
+      "SensorId": "012624bf-164a-4ea4-89b2-934542ab6bfe",
+      "SensorName": "UPS_Output_C_Voltage",
+      "SensorDescription": "输出电压C相",
+      "Value": 220.600,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "77",
+      "SensorId": "d6127804-4365-41cb-a052-93904c7b890a",
+      "SensorName": "UPS_Battery_Agingcoefficient",
+      "SensorDescription": "电池老化系数",
+      "Value": 0.300,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "78",
+      "SensorId": "56da3aec-5a24-4557-b62a-9822052ea277",
+      "SensorName": "UPS_Output_B_ActivePower",
+      "SensorDescription": "输出有功功率B相",
+      "Value": 0.900,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "79",
+      "SensorId": "f6ae21da-473d-4029-bb82-9822b3fb90df",
+      "SensorName": "UPS_Fault_BalanceCircuit",
+      "SensorDescription": "平衡电路故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "80",
+      "SensorId": "0eeee1b5-8518-43d6-819a-9a50d656ffe4",
+      "SensorName": "UPS_Fault_Inverter",
+      "SensorDescription": "逆变器故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "81",
+      "SensorId": "f4cc9590-fcab-4490-868b-9b9b394e47b1",
+      "SensorName": "UPS_Fault_BatteryGroup_OverTemperature_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "82",
+      "SensorId": "8873578f-fda3-4080-866b-9d9a99f5757b",
+      "SensorName": "UPS_Alarm_UserOperationError",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "83",
+      "SensorId": "42dd77b6-5afd-4832-ada0-9e682c019d8e",
+      "SensorName": "UPS_Fault_BatteryGroup_Convertor_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "84",
+      "SensorId": "610928ee-423c-4412-b708-9e8c940fb272",
+      "SensorName": "UPS_State_Model_1",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "85",
+      "SensorId": "1de24e2f-2c77-4c4a-bf54-9e919662d270",
+      "SensorName": "UPS_Fault_PowerModel_8",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "86",
+      "SensorId": "23fba17d-b91c-450b-b5d0-a0799fc4ac9f",
+      "SensorName": "UPS_Output_A_ActivePower",
+      "SensorDescription": "输出有功功率A相",
+      "Value": 1.700,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "87",
+      "SensorId": "c601eea1-4b9a-4fe5-8046-a1b38dd5dbd5",
+      "SensorName": "UPS_Alarm_MainCircuit_FuseWireBreak",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "88",
+      "SensorId": "9e5fe50f-c1f0-4b86-8fcc-a3876d917c45",
+      "SensorName": "UPS_State_Inverter_Sync",
+      "SensorDescription": "逆变器同步状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "89",
+      "SensorId": "4ea89fe7-8ddc-4488-b2b6-a56eeba9c3d5",
+      "SensorName": "UPS_Alarm_BalanceElecInductance_OverTemperature",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "90",
+      "SensorId": "d902173a-b1b2-46c9-ade1-a6e74e7a9e40",
+      "SensorName": "UPS_State_Model_2",
+      "SensorDescription": "",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "91",
+      "SensorId": "75038d02-fe71-42f0-ab58-aba784c47150",
+      "SensorName": "UPS_Fault_BatteryGroup_OverTemperature_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "92",
+      "SensorId": "b2976d4b-4121-49a1-bcfa-b228e24393da",
+      "SensorName": "UPS_State_System_SupplyPower",
+      "SensorDescription": "",
+      "Value": 2.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "93",
+      "SensorId": "6761aec4-60d2-4392-bb76-b23ad1087700",
+      "SensorName": "UPS_State_Model_12",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "94",
+      "SensorId": "0746d78e-059c-4eac-be31-b32fa9c2768d",
+      "SensorName": "UPS_Fault_BatteryGroup_Convertor_OverTemperature_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "95",
+      "SensorId": "12350995-ab6c-438c-9f28-b525da7dca21",
+      "SensorName": "UPS_Alarm_MergeMachineSystem_OverLoad",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "96",
+      "SensorId": "49b461a3-f93c-4aa1-b1ad-b590e5a6e301",
+      "SensorName": "UPS_Battery_Temperature",
+      "SensorDescription": "电池温度",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "97",
+      "SensorId": "2ed1ba26-aed8-47f8-a162-b6d192ceaa15",
+      "SensorName": "UPS_Fault_SoftStart",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "98",
+      "SensorId": "d690b703-f363-47c6-8ae2-b93332efbc7d",
+      "SensorName": "UPS_Fault_Bypass_PhaseReversed",
+      "SensorDescription": "旁路相序反",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "99",
+      "SensorId": "a612b065-c226-41d0-8f29-baed3dfeb44d",
+      "SensorName": "UPS_Input_A_Current",
+      "SensorDescription": "输入电流A相",
+      "Value": 226.200,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "100",
+      "SensorId": "7038fc97-e307-400f-b0ed-bed1137f5bf6",
+      "SensorName": "UPS_Output_B_Voltage",
+      "SensorDescription": "输出电压B相",
+      "Value": 220.800,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "101",
+      "SensorId": "488bf7a0-a432-4924-b70f-c0aa69651adb",
+      "SensorName": "UPS_State_AccessBCB",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "102",
+      "SensorId": "ebc479f2-fc44-4d89-9441-c2154cdc0b4a",
+      "SensorName": "UPS_State_StartUp",
+      "SensorDescription": "开机状态",
+      "Value": 1.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "103",
+      "SensorId": "fff00281-9a24-40f1-a521-c39e223890aa",
+      "SensorName": "UPS_Fault_BatteryGroup_ConnectionGround_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "104",
+      "SensorId": "1c87df8e-dd2b-4799-877e-c93e87365d4e",
+      "SensorName": "UPS_Output_A_PowerFactor",
+      "SensorDescription": "输出功率因数A相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "105",
+      "SensorId": "02cd369e-3a8a-4277-974e-c99d7767df37",
+      "SensorName": "UPS_Alarm_InputElecInductance_OverTemperature",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "106",
+      "SensorId": "ff8b56d5-2a46-4ad2-a7b1-ca3442c8c466",
+      "SensorName": "UPS_State_OutPut_AirSwitch",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "107",
+      "SensorId": "d2e4d93f-7d2d-493f-910d-cabea76524f6",
+      "SensorName": "UPS_Alarm_OutPut_FuseWireBreak",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "108",
+      "SensorId": "dac43719-3071-405c-b8aa-ccc6fe49da93",
+      "SensorName": "UPS_Alarm_StandAlone_OverLoad_OverTime",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "109",
+      "SensorId": "19540248-b016-4c2c-a940-cda77f33f482",
+      "SensorName": "UPS_Output_A_PeakRate",
+      "SensorDescription": "输出峰值比A相",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "110",
+      "SensorId": "373d3a52-c895-4eb5-911e-cde464cf7ccd",
+      "SensorName": "UPS_State_BatteryGroup_LifeTime_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "111",
+      "SensorId": "4fb97e3b-e60f-40b6-bb89-cfa6331710a8",
+      "SensorName": "UPS_State_BatteryGroup_2_Test",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "112",
+      "SensorId": "a324dac9-8de1-48a4-85fb-d0b1a4a32aaa",
+      "SensorName": "UPS_Fault_PowerModel_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "113",
+      "SensorId": "a843b98a-bd22-4197-9c20-d21a8296cad5",
+      "SensorName": "UPS_OutPut_Frequency",
+      "SensorDescription": "输出频率",
+      "Value": 49.990,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "114",
+      "SensorId": "d6f3d140-9895-44d9-8af1-d41505346a22",
+      "SensorName": "UPS_Fault_BusBar_Shutdown",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "115",
+      "SensorId": "6530843e-5109-4273-943a-d67edfd8ed63",
+      "SensorName": "UPS_State_Generator_Access",
+      "SensorDescription": "发电机接入状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "116",
+      "SensorId": "a49202c6-cf2b-4b77-94af-d98837373744",
+      "SensorName": "UPS_Positive_Battery_Voltage",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "117",
+      "SensorId": "d269cabe-e9f3-4718-b8a8-db30a3f10db6",
+      "SensorName": "UPS_BatteryGroup_1_Voltage",
+      "SensorDescription": "",
+      "Value": 545.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "118",
+      "SensorId": "097e80fc-27ba-4f1d-8626-e3878373a142",
+      "SensorName": "UPS_Alarm_StandAlone_OutPutOverLoad",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "119",
+      "SensorId": "3aec2094-be48-40d3-b306-e3d38a421384",
+      "SensorName": "UPS_State_Rectifier_PowerSupply",
+      "SensorDescription": "整流器供电状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "120",
+      "SensorId": "a2eeee94-1924-4c43-9265-e53e16790418",
+      "SensorName": "UPS_Fault_BatteryGroup_Convertor_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "121",
+      "SensorId": "f696fc40-b108-4df7-9035-e60bc5459fc6",
+      "SensorName": "UPS_Fault_Inverter_Thyristor",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "122",
+      "SensorId": "dbf93f41-e732-4994-842a-e9b5b59a0dc0",
+      "SensorName": "UPS_Fault_Fan",
+      "SensorDescription": "风扇故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "123",
+      "SensorId": "933ae709-3c2b-4fba-8d99-ee5f891f11b8",
+      "SensorName": "UPS_Fault_BatteryGroup_Convertor_OverCurrent_1",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "124",
+      "SensorId": "bb143389-1a97-4933-a6f7-eeef415ac928",
+      "SensorName": "UPS_Fault_MainCircuit_Voltage",
+      "SensorDescription": "主路电压异常",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "125",
+      "SensorId": "f45863fd-7379-40dd-9054-f4ed8060a3b0",
+      "SensorName": "UPS_Fault_Bypass_SwitchLimit",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "126",
+      "SensorId": "b9919254-1d19-49e1-b9de-f7b51a5ad598",
+      "SensorName": "UPS_Fault_BatteryGroup_OverCurrent_2",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "127",
+      "SensorId": "a8bd1a23-b96e-4350-856e-fad26ff40824",
+      "SensorName": "UPS_Fault_PowerModel_4",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "128",
+      "SensorId": "551e1e3f-eb03-46f1-871c-fc4d3671fdff",
+      "SensorName": "UPS_Fault_LBS",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "129",
+      "SensorId": "ffd82d63-c12f-4d24-86a5-ff460bd379a8",
+      "SensorName": "UPS_Fault_MergeMachine_AvgCurrent",
+      "SensorDescription": "",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    },
+    {
+      "$id": "130",
+      "SensorId": "0d02f839-7ef0-4922-9e0b-ff7c7956cb68",
+      "SensorName": "UPS_Fault_EmergencyShutdown",
+      "SensorDescription": "紧急关机",
+      "Value": 0.000,
+      "SampleTime": "2019-04-17T17:08:01.427",
+      "DeviceName": "艾默生UPS",
+      "DeviceId": "72b17b1e-e29f-4808-a503-aebd2ab289dd"
+    }
+  ],
+  "IsSuccess": true,
+  "ErrorCode": 200,
+  "Message": "OK"
+}

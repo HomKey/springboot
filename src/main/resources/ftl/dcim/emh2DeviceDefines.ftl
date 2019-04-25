@@ -1,0 +1,25 @@
+<linked-list>
+<#list emhList as object>
+    <DeviceDefine>
+        <deviceId>${object.deviceId}</deviceId>
+        <iSensorDefines>
+            <SensorDefine>
+                <name>EMH.Alarm.InputNormalOpen</name>
+                <registerIndex>210</registerIndex>
+                <scale>0</scale>
+                <isMean>false</isMean>
+                <commandName>emhPro_D1_DI_Index_${object.index}</commandName>
+                <divider>1</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>EMH.Alarm.InputNormalClose</name>
+                <registerIndex>211</registerIndex>
+                <scale>0</scale>
+                <isMean>false</isMean>
+                <commandName>emhPro_D1_DI_Index_${object.index}</commandName>
+                <divider>1</divider>
+            </SensorDefine>
+        </iSensorDefines>
+    </DeviceDefine>
+</#list>
+</linked-list>

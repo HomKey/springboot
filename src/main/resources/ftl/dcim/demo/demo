@@ -1,0 +1,3 @@
+{
+    model: [{ actionName: 'aotu', Name: '自动模式' }, { actionName: 'low', Name: '低风模式' }, { actionName: 'middle', Name: '中风模式' }, { actionName: 'high', Name: '高风模式' }]
+}

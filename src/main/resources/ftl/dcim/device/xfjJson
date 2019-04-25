@@ -1,0 +1,118 @@
+{
+  "$id": "1",
+  "MonitorDataList": [
+    {
+      "$id": "2",
+      "SensorId": "f23f8026-0488-43fa-9617-bc5726cb72e6",
+      "SensorName": "NewFan_InnerDoor_Humidity",
+      "SensorDescription": "室内湿度",
+      "Value": 6.500,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "3",
+      "SensorId": "de58836d-d447-417a-a5c4-4cd5cff1f62d",
+      "SensorName": "NewFan_SettingTemperature",
+      "SensorDescription": "设定温度",
+      "Value": 4.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "4",
+      "SensorId": "b25ef019-9ee2-4e2a-8c8e-f36b2d416fd4",
+      "SensorName": "NewFan_Pattern",
+      "SensorDescription": "模式",
+      "Value": 1.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "5",
+      "SensorId": "76fb332c-494e-4589-bf1c-4947102b2e29",
+      "SensorName": "NewFan_HighFan_Status",
+      "SensorDescription": "高风状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "6",
+      "SensorId": "dab0de72-8cfc-4f37-a5c8-a6920bcc4bb1",
+      "SensorName": "NewFan_HighTemperature_BreakDown",
+      "SensorDescription": "高温故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "7",
+      "SensorId": "2ee28442-6e74-4d9b-93ee-01706469e932",
+      "SensorName": "NewFan_HighHumidity_BreakDown",
+      "SensorDescription": "高湿故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "8",
+      "SensorId": "010e1e59-142e-4938-962d-dc38d6fd6596",
+      "SensorName": "NewFan_Controller_Address",
+      "SensorDescription": "控制器地址",
+      "Value": 0.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "9",
+      "SensorId": "9eba0a05-b20b-49b2-92b8-8b1f2d9bdd96",
+      "SensorName": "NewFan_InnerDoor_Temperature",
+      "SensorDescription": "室内温度",
+      "Value": 2.300,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "10",
+      "SensorId": "61b4c4bd-f4db-43ee-af07-2378ccd06f5b",
+      "SensorName": "NewFan_StartUp_Status",
+      "SensorDescription": "开机状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "11",
+      "SensorId": "f0e97411-53c3-40de-8bd3-23f961013a5c",
+      "SensorName": "NewFan_LowFan_Status",
+      "SensorDescription": "低风状态",
+      "Value": 1.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    },
+    {
+      "$id": "12",
+      "SensorId": "4e518f2a-3159-408c-aad6-5afa2fbb91b1",
+      "SensorName": "NewFan_FilterNet_BreakDown",
+      "SensorDescription": "过滤网故障",
+      "Value": 0.000,
+      "SampleTime": "2019-04-15T15:02:53.67",
+      "DeviceName": "排风机1",
+      "DeviceId": "f173b701-e70f-4c6b-9c19-02c2e194e23c"
+    }
+  ],
+  "IsSuccess": true,
+  "ErrorCode": 200,
+  "Message": "OK"
+}

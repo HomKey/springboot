@@ -1,0 +1,45 @@
+<linked-list>
+<#list xfjList as object>
+    <deviceActionDefine>
+        <deviceId>${object.deviceId}</deviceId>
+        <actionDefines>
+            <actionDefine>
+                <actionName>close</actionName>
+                <actionNodes>
+                    <actionNode>
+                        <actionId>NewFan.${object.index}.Status.Close</actionId>
+                        <delayAfter>1</delayAfter>
+                    </actionNode>
+                </actionNodes>
+            </actionDefine>
+            <actionDefine>
+                <actionName>auto</actionName>
+                <actionNodes>
+                    <actionNode>
+                        <actionId>NewFan.${object.index}.Status.Auto</actionId>
+                        <delayAfter>1</delayAfter>
+                    </actionNode>
+                </actionNodes>
+            </actionDefine>
+            <actionDefine>
+                <actionName>manual</actionName>
+                <actionNodes>
+                    <actionNode>
+                        <actionId>NewFan.${object.index}.Status.Manual</actionId>
+                        <delayAfter>1</delayAfter>
+                    </actionNode>
+                </actionNodes>
+            </actionDefine>
+            <actionDefine>
+                <actionName>heating</actionName>
+                <actionNodes>
+                    <actionNode>
+                        <actionId>NewFan.${object.index}.Status.Heating</actionId>
+                        <delayAfter>1</delayAfter>
+                    </actionNode>
+                </actionNodes>
+            </actionDefine>
+        </actionDefines>
+    </deviceActionDefine>
+</#list>
+</linked-list>

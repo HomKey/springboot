@@ -19,10 +19,10 @@ import java.util.Map;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class FreemarkerUtilTest {
+public class FreemarkerUtilsTest {
 
     @Autowired
-    private FreemarkerUtil freemarkerUtil;
+    private FreemarkerUtils freemarkerUtils;
 
     @Test
     public void test(){
@@ -40,7 +40,7 @@ public class FreemarkerUtilTest {
         String fileName = "personList";
 
         try {
-            freemarkerUtil.createFreemarkerWithResourcesPath(fileName, model);
+            freemarkerUtils.createFreemarkerWithResourcesPath(fileName, model);
         } catch (IOException | TemplateException e) {
             e.printStackTrace();
         }

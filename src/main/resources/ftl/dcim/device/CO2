@@ -1,0 +1,198 @@
+{
+  "$id": "1",
+  "MonitorDataList": [
+    {
+      "$id": "2",
+      "SensorId": "82a226ee-70a8-4570-8449-0779532c7e96",
+      "SensorName": "Co2_Humidity_BackAlertValue",
+      "SensorDescription": "湿度报警回差值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "3",
+      "SensorId": "4d91ecc9-5c98-44a2-8819-08506478aaa2",
+      "SensorName": "Co2_Temperature_BackAlertValue",
+      "SensorDescription": "温度报警回差值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "4",
+      "SensorId": "8b9653f0-eee1-41c8-b18c-0925f4e7add1",
+      "SensorName": "Co2_Temperature_Verify_Value",
+      "SensorDescription": "-温度校准值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "5",
+      "SensorId": "32fbd273-8883-4824-8ef6-0d104e4623e0",
+      "SensorName": "Co2_Temperature",
+      "SensorDescription": "温度",
+      "Value": 25.900,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "6",
+      "SensorId": "d9359805-b8cc-463c-824b-26e7bc2dd18d",
+      "SensorName": "Co2_Temperature_Relay_Enable",
+      "SensorDescription": "温度继电器使能 1为使能",
+      "Value": 1.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "7",
+      "SensorId": "9825fb22-2042-4afb-a594-294218184336",
+      "SensorName": "Co2_AlertValue_Co2_LowLimit",
+      "SensorDescription": "Co2下限报警值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "8",
+      "SensorId": "4fb055d8-c083-4a76-ba24-30109ee8463a",
+      "SensorName": "Co2_Relay_Status",
+      "SensorDescription": "继电器状态  1为吸合 0为断开",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "9",
+      "SensorId": "03d2b831-2741-4be9-90fc-30e3a13e0e8f",
+      "SensorName": "Co2_Humidity_Verify_Value",
+      "SensorDescription": "湿度校准值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "10",
+      "SensorId": "dc635dd3-8f5c-4db2-9787-3334ed791940",
+      "SensorName": "Co2_Co2_Verify_Value",
+      "SensorDescription": "Co2校准值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "11",
+      "SensorId": "f775789c-ef52-4514-b39e-33f09bb5eaa1",
+      "SensorName": "Co2_AlertValue_Humidity_UpperLimit",
+      "SensorDescription": "湿度上限报警值",
+      "Value": 100.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "12",
+      "SensorId": "6e01c7ec-be36-48ae-ad39-34a86abff067",
+      "SensorName": "Co2_AlertValue_Temperature_UpperLimit",
+      "SensorDescription": "温度上限报警值",
+      "Value": 100.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "13",
+      "SensorId": "c74bed8e-00b4-4db5-ad39-437b0b6c8094",
+      "SensorName": "Co2_Co2_Relay_Enable",
+      "SensorDescription": "Co2继电器使能 1为使能",
+      "Value": 1.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "14",
+      "SensorId": "406e2eb3-39e5-45b3-83c2-669967852fea",
+      "SensorName": "Co2_AlertValue_Humidity_LowLimit",
+      "SensorDescription": "湿度下限报警值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "15",
+      "SensorId": "342d2fc1-112a-416a-8fa7-6a4a8e389bb6",
+      "SensorName": "Co2_Concentration",
+      "SensorDescription": "浓度(单位ppm)",
+      "Value": 259.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "16",
+      "SensorId": "b45b0630-8045-4f26-9a14-833f6cf79be2",
+      "SensorName": "Co2_AlertValue_Co2_UpperLimit",
+      "SensorDescription": "Co2上限报警值",
+      "Value": 600.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "17",
+      "SensorId": "21b6ffdb-d89f-4b78-b174-9755290ae264",
+      "SensorName": "Co2_Co2_BackAlertValue",
+      "SensorDescription": "Co2湿度报警回差值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "18",
+      "SensorId": "da6a018b-3cc7-42d0-8f82-9a2cc24fcdd8",
+      "SensorName": "Co2_AlertValue_Temperature_LowLimit",
+      "SensorDescription": "温度下限报警值",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "19",
+      "SensorId": "a60741f5-f152-444c-8033-f6ced5d5e0af",
+      "SensorName": "Co2_Humidity_Relay_Enable",
+      "SensorDescription": "湿度继电器使能 1为使能",
+      "Value": 1.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    },
+    {
+      "$id": "20",
+      "SensorId": "d2ba226c-fc51-4a2b-bf49-f6dd24f2e368",
+      "SensorName": "Co2_Humidity",
+      "SensorDescription": "湿度",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:13:39.457",
+      "DeviceName": "二氧化碳探测器",
+      "DeviceId": "6c38c7eb-68a0-45f4-9a20-b77a567b60d7"
+    }
+  ],
+  "IsSuccess": true,
+  "ErrorCode": 200,
+  "Message": "OK"
+}

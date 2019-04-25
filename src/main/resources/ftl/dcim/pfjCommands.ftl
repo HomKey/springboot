@@ -1,0 +1,22 @@
+<linked-list>
+<#list pfjList as object>
+    <ModbusRequest>
+        <name>paiFan_${object.index}_A_${object.busId}_ai</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>5</length>
+        <registerNumber>0</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>paiFan_${object.index}_A_${object.busId}_di</name>
+        <commandType>1</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>16</length>
+        <registerNumber>0</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

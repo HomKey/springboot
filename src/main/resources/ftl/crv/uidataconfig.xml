@@ -1,0 +1,16 @@
+<map>
+  <entry>
+    <string>ac_info</string>
+    <UIInfo>
+      <name>ac_info</name>
+      <propertyDefines class="linked-list">
+        <ArrayPropertyDefine>
+          <name>ac_info</name>
+          <propertyDefines>
+            {modelText}
+          </propertyDefines>
+        </ArrayPropertyDefine>
+      </propertyDefines>
+    </UIInfo>
+  </entry>
+</map>

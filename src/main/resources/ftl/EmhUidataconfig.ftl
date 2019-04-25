@@ -1,0 +1,43 @@
+<map>
+    <entry>
+        <string>env_info</string>
+        <UIInfo>
+            <name>env_info</name>
+            <propertyDefines class="linked-list">
+                <ArrayPropertyDefine>
+                    <name>emhs</name>
+                    <propertyDefines>
+                        <#list emhList as emh>
+                        <ComposePropertyDefine>
+                            <name>${emh.name}</name>
+                            <propertyDefines>
+                                <SimplePropertyDefine>
+                                    <name>accessState</name>
+                                    <sensorEntry>
+                                        <deviceId>${emh.deviceid}</deviceId>
+                                        <sensorId>EMH.1.TH.Access.State</sensorId>
+                                    </sensorEntry>
+                                </SimplePropertyDefine>
+                                <SimplePropertyDefine>
+                                    <name>currentTemperature</name>
+                                    <sensorEntry>
+                                        <deviceId>${emh.deviceid}</deviceId>
+                                        <sensorId>EMH.1.Tempture</sensorId>
+                                    </sensorEntry>
+                                </SimplePropertyDefine>
+                                <SimplePropertyDefine>
+                                    <name>currentHumidity</name>
+                                    <sensorEntry>
+                                        <deviceId>${emh.deviceid}</deviceId>
+                                        <sensorId>EMH.1.Humidity</sensorId>
+                                    </sensorEntry>
+                                </SimplePropertyDefine>
+                            </propertyDefines>
+                        </ComposePropertyDefine>
+                        </#list>
+                    </propertyDefines>
+                </ArrayPropertyDefine>
+            </propertyDefines>
+        </UIInfo>
+    </entry>
+</map>

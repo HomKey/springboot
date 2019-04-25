@@ -1,0 +1,208 @@
+{
+  "$id": "1",
+  "MonitorDataList": [
+    {
+      "$id": "2",
+      "SensorId": "c2f7881a-27d6-401d-a7b8-05e2044585b9",
+      "SensorName": "CRAC_Alarm_ReturnAir_Temperature",
+      "SensorDescription": "回风温度告警",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "3",
+      "SensorId": "827236c0-5629-49d2-b392-0e0857f4b652",
+      "SensorName": "CRAC_RunState",
+      "SensorDescription": "运行状态",
+      "Value": 1.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "4",
+      "SensorId": "34d5b512-92c1-4760-b55b-3332850457a0",
+      "SensorName": "CRAC_Indoor_Temperature",
+      "SensorDescription": "室内温度",
+      "Value": 22.600,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "5",
+      "SensorId": "22f7405c-47f0-47c0-a72d-3cd8d7f51381",
+      "SensorName": "CRAC_Outdoor_Temperature",
+      "SensorDescription": "室外温度",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "6",
+      "SensorId": "5753500d-0eec-4b3e-bc2c-3e13a9de7ff9",
+      "SensorName": "CRAC_Module_1_Heater_1_RunState",
+      "SensorDescription": "模块.1.加热器.1.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "7",
+      "SensorId": "62bcdb23-5c99-4e09-818f-5f5a761420ac",
+      "SensorName": "CRAC_Module_1_Compressor_2_RunState",
+      "SensorDescription": "模块.1.压缩机.2.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "8",
+      "SensorId": "5d40907c-7bad-4aaf-9fd3-637647b8eb6e",
+      "SensorName": "CRAC_Module_1_Heater_2_RunState",
+      "SensorDescription": "模块.1.加热器.2.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "9",
+      "SensorId": "4c886735-986a-4ccb-b473-647f679d5842",
+      "SensorName": "CRAC_Module_2_Compressor_2_RunState",
+      "SensorDescription": "模块.2.压缩机.2.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "10",
+      "SensorId": "38a17eb0-7d1d-4c89-926c-74d324084326",
+      "SensorName": "CRAC_Threshold_ReturnAir_Temperature_High",
+      "SensorDescription": "设定回风温度上限阀值",
+      "Value": 30.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "11",
+      "SensorId": "efc4a285-5956-4532-a5ff-86b4fe7cc84d",
+      "SensorName": "CRAC_Module_1_Dehumidify_RunState",
+      "SensorDescription": "模块.1.除湿器.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "12",
+      "SensorId": "6c4d696d-48ca-40a0-b83e-8b808f0faf83",
+      "SensorName": "CRAC_Alarm_Flood",
+      "SensorDescription": "漏水告警",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "13",
+      "SensorId": "8b76ee4c-c2f0-49e0-a933-8c6e6bf70eeb",
+      "SensorName": "CRAC_Alarm_ReturnAir_Humidity",
+      "SensorDescription": "回风湿度告警",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "14",
+      "SensorId": "475c057a-3dae-48bd-9059-96e960f068fb",
+      "SensorName": "CRAC_Threshold_ReturnAir_Temperature_Low",
+      "SensorDescription": "设定回风温度下限阀值",
+      "Value": 10.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "15",
+      "SensorId": "5ec04909-1039-47be-8f62-98ebdfffcecf",
+      "SensorName": "CRAC_Module_1_Humidify_RunState",
+      "SensorDescription": "模块.1.加湿器.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "16",
+      "SensorId": "b677fe99-4323-400c-bb42-9909b644a1fe",
+      "SensorName": "CRAC_Indoor_Humidity",
+      "SensorDescription": "室内湿度",
+      "Value": 70.800,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "17",
+      "SensorId": "ae1ecdde-9420-422b-9cd8-a0989fcc0da5",
+      "SensorName": "CRAC_Module_1_Compressor_1_RunState",
+      "SensorDescription": "模块.1.压缩机.1.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "18",
+      "SensorId": "86e1ed5d-2cc0-49fb-a35a-e04ce0d8d369",
+      "SensorName": "CRAC_Module_1_Alarm_Filter_Fault",
+      "SensorDescription": "模块.1.过滤器故障告警",
+      "Value": 1.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "19",
+      "SensorId": "779decfb-75b0-46be-9d87-e09d1c264dfd",
+      "SensorName": "CRAC_Module_2_Compressor_1_RunState",
+      "SensorDescription": "模块.2.压缩机.1.运行状态",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "20",
+      "SensorId": "daa005c1-eae3-45b3-84c7-e0b9c2560dfe",
+      "SensorName": "CRAC_Module_1_SupplyAir_Temperature",
+      "SensorDescription": "模块.1.供气温度",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    },
+    {
+      "$id": "21",
+      "SensorId": "5b102344-01f5-4b7b-8458-f965db4d618c",
+      "SensorName": "CRAC_Alarm_Smoke",
+      "SensorDescription": "烟感告警",
+      "Value": 0.000,
+      "SampleTime": "2019-04-16T14:39:56.993",
+      "DeviceName": "施耐德精密空调1",
+      "DeviceId": "d360a3a5-b680-418e-88e1-b97b7bbf4547"
+    }
+  ],
+  "IsSuccess": true,
+  "ErrorCode": 200,
+  "Message": "OK"
+}

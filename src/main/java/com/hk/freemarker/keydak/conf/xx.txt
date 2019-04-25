@@ -1,0 +1,40 @@
+机柜1：
+--host 84.0.190.1 --init assetid=8a43149b-7f62-4a3d-9207-27e2b312145a assetname=asset1
+--host 84.0.190.1 --init pduid1=cbe3194d-657a-41f1-af3c-ab2a5ee40ca0 pduname1=pdu1-a pduid2=534243a1-d043-4de0-94bb-136d4a44c3d9 pduname2=pdu1-b
+--host 84.0.190.1 --init emhid=bae7c801-94ea-4578-b314-01d4cb6ae1ff emhname=emh1
+机柜2：
+--host 84.0.190.2 --init assetid=c883e2e7-4425-4a34-a1a4-46a9bd76ee05 assetname=asset2
+--host 84.0.190.2 --init pduid1=39e6526e-402b-43cc-8f17-eb287d0b34cf pduname1=pdu2-a pduid2=0c6ae706-3139-4c9c-830d-a6a9412d4739 pduname2=pdu2-b
+--host 84.0.190.2 --init emhid=8a2ae7ae-565b-4ab1-8ce4-8c768ff01a35 emhname=emh2
+机柜3：
+--host 84.0.190.3 --init assetid=7664c670-3366-46e2-89c3-d1ccd46222fd assetname=asset3
+--host 84.0.190.3 --init pduid1=63d2e680-51b7-444b-86e2-e34ff630a048 pduname1=pdu3-a pduid2=f77ad6f9-f76c-4186-aa54-7af715065497 pduname2=pdu3-b
+--host 84.0.190.3 --init emhid=4da917ab-daad-44c8-a0c3-a4536c18be46 emhname=emh3
+机柜4：
+--host 192.168.1.250 --init assetid=3f82a8d5-5e6d-417a-b45a-bb59ce748270 assetname=asset4
+--host 192.168.1.250 --init pduid1=ae24059e-e691-498e-bcce-f8798b457b40 pduname1=pdu4-a pduid2=a5d1fdbc-ad60-4e8c-8910-2342a6ae0f4b pduname2=pdu4-b
+--host 192.168.1.250 --init emhid=f9056aef-2725-4712-a0be-45d715486fb1 emhname=emh4
+机柜5：
+--host 192.168.1.250 --init assetid=1777fcc0-03e4-42de-b219-070b5a1e2f24 assetname=asset5
+--host 192.168.1.250 --init pduid1=cfdf638c-ca47-4287-b7b1-8572982d8bfc pduname1=pdu5-a pduid2=4e3d30ee-8975-44d2-8e04-0dc7e5ac5273 pduname2=pdu5-b
+--host 192.168.1.250 --init emhid=d01cb539-66aa-4e89-b583-785c22282f3e emhname=emh5
+机柜6：
+--host 192.168.1.250 --init assetid=e5404f63-fedb-4fca-8a52-00390903063b assetname=asset6
+--host 192.168.1.250 --init pduid1=59f6b589-9a4e-4caf-9c02-240c009e6aa6 pduname1=pdu6-a pduid2=ddf41f53-5785-4cf4-ae68-abc559c5a419 pduname2=pdu6-b
+--host 192.168.1.250 --init emhid=aa7cc1b5-9428-48c0-bd88-0e04021c9f6e emhname=emh6
+机柜7：
+--host 192.168.1.250 --init assetid=cac7742a-0a58-4f11-b167-7d48ada20d66 assetname=asset7
+--host 192.168.1.250 --init pduid1=f5cf6a71-39d7-4da6-b2bf-322270067479 pduname1=pdu7-a pduid2=e842d18b-182f-4644-b56c-2458517f04c7 pduname2=pdu7-b
+--host 192.168.1.250 --init emhid=56b610e2-28da-4dfc-bede-c80c3235f4b1 emhname=emh7
+机柜8：
+--host 192.168.1.250 --init assetid=51948613-9445-4c6b-b5fb-ad3e60165560 assetname=asset8
+--host 192.168.1.250 --init pduid1=de2aa7bc-b86c-4424-b10c-0ea49b56329a pduname1=pdu8-a pduid2=06ad723d-40ec-4e73-9d3f-b5aa20dfc526 pduname2=pdu8-b
+--host 192.168.1.250 --init emhid=a0c2d116-9c54-466a-82ff-6d7d200157ac emhname=emh8
+机柜9：
+--host 192.168.1.250 --init assetid=4d999386-8862-45fe-822b-0127bf316ff8 assetname=asset9
+--host 192.168.1.250 --init pduid1=7170e12c-f151-4263-9b1f-4c77f21a8f8c pduname1=pdu9-a pduid2=bd4c5dc5-be20-4093-b6d7-77ad26d2233a pduname2=pdu9-b
+--host 192.168.1.250 --init emhid=09450d69-76f7-4d1b-80d7-e9df1dd55e10 emhname=emh9
+机柜10：
+--host 192.168.1.250 --init assetid=d3763896-aec2-48c7-ad66-06de16938cf1 assetname=asset10
+--host 192.168.1.250 --init pduid1=f876ea18-76d7-48aa-995f-0584d4362309 pduname1=pdu10-a pduid2=9d8521fd-a8fe-47af-aded-7f6764c704e3 pduname2=pdu10-b
+--host 192.168.1.250 --init emhid=92742ab2-8d64-40da-aadd-c4246e96552e emhname=emh10

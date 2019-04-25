@@ -19,7 +19,7 @@ import java.util.Map;
  * Created by LuHj on 2018/10/18.
  */
 @Component
-public class FreemarkerUtil {
+public class FreemarkerUtils {
 
     @Autowired
     private Configuration configuration;
@@ -29,13 +29,18 @@ public class FreemarkerUtil {
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
         Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
         FileUtils.creatFile("D:\\freemarker\\" + fileName + "_" + second + ".xml", content);
-        System.out.println(content);
+//        System.out.println(content);
+    }
+    public String getFreemarkerContent(String fileName, Map<String, Object> model) throws IOException, TemplateException {
+        Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
+        String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
+        return content;
     }
     public void createFreemarkerWithResourcesPath(String fileName, Map<String, Object> model) throws IOException, TemplateException {
         Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
         Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
         FileUtils.creatFile(fileName + "_" + second + ".xml", content);
-        System.out.println(content);
+//        System.out.println(content);
     }
 }
