@@ -1,0 +1,27 @@
+<linked-list>
+<#list fanList as object>
+    <deviceActionDefine>
+        <deviceId>${object.deviceId}</deviceId>
+        <actionDefines>
+            <actionDefine>
+                <actionName>close</actionName>
+                <actionNodes>
+                    <actionNode>
+                        <actionId>M244.${object.index}.Status.Close.All</actionId>
+                        <delayAfter>1</delayAfter>
+                    </actionNode>
+                </actionNodes>
+            </actionDefine>
+            <actionDefine>
+                <actionName>open</actionName>
+                <actionNodes>
+                    <actionNode>
+                        <actionId>M244.${object.index}.Status.Open.All</actionId>
+                        <delayAfter>1</delayAfter>
+                    </actionNode>
+                </actionNodes>
+            </actionDefine>
+        </actionDefines>
+    </deviceActionDefine>
+</#list>
+</linked-list>

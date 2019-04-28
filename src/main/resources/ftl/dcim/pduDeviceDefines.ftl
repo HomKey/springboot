@@ -2,6 +2,9 @@
 <#list pduList as object>
     <DeviceDefine>
         <deviceId>${object.deviceId}</deviceId>
+        03 03 14 08 AA 00 00 00 00 00 00 00 00 13 86 00 00 00 00 00 00 00 00 59 6B
+        01 03 14 08 AD 00 00 00 00 00 00 00 00 13 87 00 00 00 00 0A 43 01 D5 4A F5
+
         <iSensorDefines>
             <SensorDefine>
                 <name>RACK.BackDoor.PDU.1.Voltage</name>

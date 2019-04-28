@@ -6,6 +6,7 @@ import com.hk.freemarker.FreemarkerUtils;
 import com.hk.freemarker.dcim.config.*;
 import com.hk.freemarker.dcim.entity.*;
 import com.hk.freemarker.dcim.entity.AmsUps;
+import com.hk.freemarker.entity.DeviceInfo;
 import com.hk.freemarker.entity.PduDefine;
 import com.hk.freemarker.keydak.conf.IrsConfig;
 import freemarker.template.Configuration;
@@ -284,7 +285,42 @@ public class CreateXml {
         freemarkerUtils.createFreemarker("dcim" + File.separator + "assetCommands", model);
         freemarkerUtils.createFreemarker("dcim" + File.separator + "assetDeviceDefines", model);
     }
-    
+
+    @Test
+    public void test(){
+        List<Pdu> config = Pdu.getConfig();
+        String template ="INSERT INTO [DeviceSensors] (\n" +
+                "                [SensorId],\n" +
+                "\t[DeviceId],\n" +
+                "\t[SensorName],\n" +
+                "\t[SensorAlias]\n" +
+                ") SELECT\n" +
+                "        NEWID(),\n" +
+                "                '%s',\n" +
+                "                t.SensorName,\n" +
+                "                NULL\n" +
+                "        FROM\n" +
+                "        DeviceSensors t\n" +
+                "        WHERE\n" +
+                "        t.DeviceId = 'F41A630F-0C29-4ECB-B338-FA9A6AE1EA5A'\n" +
+                "        AND t.SensorName NOT IN (\n" +
+                "                SELECT\n" +
+                "                d.SensorName\n" +
+                "                FROM\n" +
+                "                DeviceSensors d\n" +
+                "                WHERE\n" +
+                "                d.deviceId = '%s'\n" +
+                "        );";
+        for (Pdu pdu :
+                config) {
+            if(pdu.getDeviceId().equals("F41A630F-0C29-4ECB-B338-FA9A6AE1EA5A") || pdu.getDeviceId().equals("00FAC07A-14E7-4616-AAE6-E854F9A1547E")){
+
+            }else{
+                System.out.println(String.format(template, pdu.getDeviceId(), pdu.getDeviceId()));
+            }
+        }
+    }
+
     @Test
     public void testUps() throws IOException, TemplateException {
         Map<String, Object> model = new HashMap<String, Object>();
@@ -319,6 +355,24 @@ public class CreateXml {
         freemarkerUtils.createFreemarker(getFilePath("xfjActionConfig"), model);
     }
 
+    @Test
+    public void testM244TcpFan() throws IOException, TemplateException {
+        Map<String, Object> model = new HashMap<String, Object>();
+        DeviceInfo deviceInfo = DeviceInfo.builder()
+                .deviceId("01C67153-7C7D-4CFF-8F4D-32290DAB70C5")
+                .host("192.168.82.92")
+                .index("1")
+                .port("502")
+                .name("M244").build();
+        ArrayList<DeviceInfo> deviceInfos = new ArrayList<>();
+        deviceInfos.add(deviceInfo);
+        model.put("fanList", deviceInfos);
+        freemarkerUtils.createFreemarker(getFilePath("M244Commands"), model);
+        freemarkerUtils.createFreemarker(getFilePath("M244DeviceDefines"), model);
+        freemarkerUtils.createFreemarker(getFilePath("M244ActionCommands"), model);
+        freemarkerUtils.createFreemarker(getFilePath("M244ActionConfig"), model);
+
+    }
     @Test
     public void testFile(){
         FileUtils.readFileWithLine("E:\\wsp\\wsp_intellij\\springboot\\src\\main\\resources\\ftl\\dcim\\sndSnmpDeviceDefines.ftl", new IHandleLineString() {

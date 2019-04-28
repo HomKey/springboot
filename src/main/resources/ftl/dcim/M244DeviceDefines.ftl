@@ -1,0 +1,53 @@
+<linked-list>
+<#list fanList as object>
+    <DeviceDefine>
+        <deviceId>${object.deviceId}</deviceId>
+        <iSensorDefines>
+            <CommonDefine>
+                <name>NewFan.Status.DI1</name>
+                <commandName>cmd_newFan_d${object.index}_tcp</commandName>
+                <index>9</index>
+                <length>2</length>
+                <precision>2</precision>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <calcList>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>NewFan.Status.DI2</name>
+                <commandName>cmd_newFan_d${object.index}_tcp</commandName>
+                <index>11</index>
+                <length>2</length>
+                <precision>2</precision>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <calcList>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>NewFan.Status.DI3</name>
+                <commandName>cmd_newFan_d${object.index}_tcp</commandName>
+                <index>13</index>
+                <length>2</length>
+                <precision>2</precision>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <calcList>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>NewFan.Status.DI4</name>
+                <commandName>cmd_newFan_d${object.index}_tcp</commandName>
+                <index>15</index>
+                <length>2</length>
+                <precision>2</precision>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <calcList>
+                </calcList>
+            </CommonDefine>
+        </iSensorDefines>
+    </DeviceDefine>
+</#list>
+</linked-list>
