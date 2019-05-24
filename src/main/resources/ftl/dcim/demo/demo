@@ -1,3 +1,238 @@
+
+```4.修改告警规则模板
+## rl** `resources/alertTemplate/{id}`
+
+
+**request** `PUT`
+
+```json
 {
-    model: [{ actionName: 'aotu', Name: '自动模式' }, { actionName: 'low', Name: '低风模式' }, { actionName: 'middle', Name: '中风模式' }, { actionName: 'high', Name: '高风模式' }]
+  "name": "模板名称",
+  "description": "模板描述"
+```
+}
+
+**response**
+```json
+{
+  "obj": {},
+  "code": "0",
+  "msg": "修改成功"
+}
+
+```
+## 除告警规则模板
+
+**url** `resources/alertTemplate`
+
+**request** `DELETE`
+
+```json
+{
+  "ids":[1,2,3]
+```
+}
+
+**response**
+```json
+{
+  "obj": {},
+  "code": "0",
+  "msg": "删除成功"
+}
+```
+## 隆告警规则模板
+
+**url** `resources/alertTemplate/copy`
+
+**request** `POST`
+
+```json
+{
+  "templateId":1
+```
+}
+
+**response**
+```json
+{
+  "obj": {},
+  "code": "0",
+  "msg": "克隆成功"
+}
+```
+## 取模板的告警规则列表
+
+**url** `resources/lertRule/list`
+
+**request** `GET:`
+
+```json
+{
+  "templateId": 1, // 模板id
+  "sensorName": "温度", // 传感器名称，查询条件，非必填
+  "alertName": "超温告警", // 告警名称，查询条件，非必填
+  "alertType": 1, // 告警类型，查询条件，非必填
+  "alertLevel": 1, // 告警等级，查询条件，非必填
+  "enable": 0 // 启用状态，启用1，停用0，查询条件，非必填
+```
+}
+
+**response**
+```json
+{
+  "obj": {
+"list":[{
+"Id":1,
+	"sensorName":"温度传感器", // 传感器名称
+	"alertName":"超温告警", // 告警名称
+	"alertType":1, // 告警类型标识
+	"alertLevel":1, // 告警等级标识
+	"ruleCode":1, // 规则判断符 标识
+	"threshold":30, // 阈值 
+	"repeat":1, // 判断次数 
+	"minInterval":60, // 时间间隔 分钟 
+	"enable":1 // 启用状态，启用1，停用0 
+}],
+    "totalItems": 1,
+    "pageCount": 1
+  },
+  "code": "0",
+  "msg": "查询成功"
+}
+
+```
+## 增模板的告警规则
+
+**url** `resources/alertRule`
+
+**request** `POST`
+
+```json
+{
+"templateId":1, // 模板Id 
+"sensorId":1, // 传感器Id
+"alertName":"超温告警", // 告警名称
+"alertType":1, // 告警类型标识
+"alertLevel":1, // 告警等级标识
+"ruleCode":1, // 规则判断符标识
+"threshold":30, // 阈值
+"repeat":1, // 判断次数
+"minInterval":60, // 时间间隔 分钟
+"enable":1 // 启用状态，启用1，停用0
+```
+}
+
+**response**
+```json
+{
+  "obj": {},
+  "code": "0",
+  "msg": "新增成功"
+}
+
+```
+## 改模板的告警规则
+
+**url** `resources/alertRule/{id}`
+
+**request** `PUT`
+
+```json
+{
+"id":1, // 模板的告警规则id
+	"alertName":"超温告警", // 告警名称
+	"alertType":1, // 告警类型标识
+	"alertLevel":1, // 告警等级标识
+	"ruleCode":1, // 规则判断符标识
+	"threshold":30, // 阈值
+	"repeat":1, // 判断次数
+	"minInterval":60, // 时间间隔 分钟
+	"enable":1 // 启用状态，启用1，停用0
+```
+}
+
+**response**
+```json
+{
+  "obj": {},
+  "code": "0",
+  "msg": "修改成功"
+}
+
+```
+## 删除模板的告警规则
+
+**url** `resources/alertRule`
+
+**request** `DELETE`
+
+```json
+{
+  "ids":[1,2,3]
+}
+```
+
+**response**
+```json
+{
+  "obj": {},
+  "code": "0",
+  "msg": "删除成功"
+}
+```
+## 获取设备型号列表
+
+**url** `resources/device/model/list`
+
+**request** `GET`
+
+```json
+{}
+```
+
+**response**
+```json
+{
+  "obj": {
+"list":[{
+"id":1,
+	"modelName":"克莱沃PDU-Model-S", // 设备型号名称
+}]
+},
+  "code": "0",
+  "msg": "查询成功"
+}
+```
+## 获取设备的传感器列表
+
+**url** `resources/device/sensors/list`
+
+**request** `GET`
+
+```json
+{
+  "deviceModelId":1, // 设备型号id 查询条件 必填
+  "sensorName":"温度" // 传感器名称 查询条件 非必填
+}
+```
+
+**response**
+```json
+{
+  "obj": {
+"list":[{
+"Id":1,
+	"sensorName":"电池状态传感器", // 传感器名称
+"status":[{ // 状态类传感器特有属性 模拟量传感器为[]
+"key":1,
+"name":"市电供电",
+},{
+"key":2,
+"name":"电池供电",
+}]
+}]
+},
+  "code": "0",
+  "msg": "查询成功"
 }

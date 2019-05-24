@@ -124,4 +124,27 @@ public class JavaTest {
             i++;
         }
     }
+
+    @Test
+    public void testInteger(){
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 3;
+        Integer d = 3;
+        Integer e = 321;
+        Integer f = 321;
+        Integer h = 100;
+        Integer i = 121;
+        Long g = 3L;
+
+        System.out.println(c == d);
+        System.out.println(e == f);
+        System.out.println(c == (a+b));
+        System.out.println(c.equals(a+b));
+        System.out.println(g == (a+b));
+        System.out.println(g.equals(a+b));
+        System.out.println(e == (h + h + i));
+        System.out.println(e.equals(h + h + i));
+
+    }
 }
