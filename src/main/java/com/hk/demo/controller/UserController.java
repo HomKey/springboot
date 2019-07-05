@@ -63,5 +63,14 @@ public class UserController {
         userService.save(user);
         return user;
     }
+
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public String getTest(String test){
+                return test;
+    }
+    @RequestMapping(value = "/test2", method = RequestMethod.GET)
+    public int getTest(int test){
+        return test;
+    }
 }
 

@@ -216,11 +216,11 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.snmp4j/snmp4j -->
-		<dependency>
-			<groupId>org.snmp4j</groupId>
-			<artifactId>snmp4j</artifactId>
-			<version>2.5.4</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.snmp4j</groupId>-->
+			<!--<artifactId>snmp4j</artifactId>-->
+			<!--<version>2.5.4</version>-->
+		<!--</dependency>-->
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -261,7 +261,22 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.snmp4j/snmp4j -->
+		<dependency>
+			<groupId>org.snmp4j</groupId>
+			<artifactId>snmp4j</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.snmp4j/snmp4j-agent -->
+		<dependency>
+			<groupId>org.snmp4j</groupId>
+			<artifactId>snmp4j-agent</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+
 	</dependencies>
+
+
 
 	<build>
 		<finalName>springboot-mvn</finalName>

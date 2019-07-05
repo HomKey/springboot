@@ -1,12 +1,13 @@
 package com.hk.base.util;
 
+import com.hk.freemarker.dcim.entity.Pdu;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import static org.junit.Assert.*;
 
@@ -44,7 +45,7 @@ public class FileUtilsTest {
             });
             String fileName = "E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\通道" + i + "设备deviceId表.txt";
             try {
-                FileUtils.creatFile(fileName,context.toString());
+                FileUtils.creatFile(fileName, context.toString());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -121,4 +122,190 @@ public class FileUtilsTest {
 
     }
 
+    @Test
+    public void testLg() {
+        String index = "14";
+        String basePath = "E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\20190612_因为日志数据量需要升级软件\\黄茅坪实施项目对接\\temp";
+        boolean isChangeIP = false;
+        String templateTaskPath = "E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\20190612_因为日志数据量需要升级软件\\黄茅坪实施项目对接\\44个通道配置文件\\黄茅坪402机房通道01\\collector\\config\\tasks.xml";
+        String templateTaskContext = FileUtils.readFileToString(templateTaskPath);
+        List<String> list = FileUtils.scanFiles(basePath);
+//        System.out.println();
+        list.stream().forEach(temp -> {
+            final String emhHost = "192.168.13.22";
+            final String pdcHost = "192.168.13.24";
+            final String uBitHost = "192.168.13.25";
+            final String cracHost = "192.168.13.26";
+            System.out.println(temp);
+            // isState
+            if (temp.indexOf("DeviceDefines.xml") > 0) {
+                StringBuffer context = new StringBuffer();
+                FileUtils.readFileWithLine(temp, new IHandleLineString() {
+                    @Override
+                    public void handle(String filePath, String str) {
+                        context.append(str);
+                        context.append(System.getProperty("line.separator"));
+                        if (str.toLowerCase().indexOf("<name>") > 0 && str.toLowerCase().indexOf("state") > 0) {
+                            context.append("<isState>true</isState>");
+                            context.append(System.getProperty("line.separator"));
+                        }
+                    }
+                });
+                FileUtils.write(new File(temp), context.toString(), false);
+            }
+            if (temp.indexOf("tasks.xml") > 0) {
+                FileUtils.write(temp, templateTaskContext, false);
+            }
+
+            if (isChangeIP) {
+                // 改环境主机ip
+                if (temp.indexOf("CAEMH#01#") > 0 && temp.indexOf("commands.xml") > 0) {
+                    StringBuffer context = new StringBuffer();
+                    FileUtils.readFileWithLine(temp, new IHandleLineString() {
+                        @Override
+                        public void handle(String filePath, String str) {
+                            if (str.indexOf("</destinationHost>") > 0) {
+                                str = "<destinationHost>" + emhHost + "</destinationHost>";
+                            }
+                            context.append(str);
+                            context.append(System.getProperty("line.separator"));
+                        }
+                    });
+                    FileUtils.write(new File(temp), context.toString(), false);
+                }
+
+                if (temp.indexOf("PDC") > 0 && temp.indexOf("commands.xml") > 0) {
+                    StringBuffer context = new StringBuffer();
+                    FileUtils.readFileWithLine(temp, new IHandleLineString() {
+                        @Override
+                        public void handle(String filePath, String str) {
+                            if (str.indexOf("</destinationHost>") > 0) {
+                                str = "<destinationHost>" + pdcHost + "</destinationHost>";
+                            }
+                            context.append(str);
+                            context.append(System.getProperty("line.separator"));
+                        }
+                    });
+                    FileUtils.write(new File(temp), context.toString(), false);
+                }
+
+                if (temp.indexOf("CRAC") > 0 && temp.indexOf("commands.xml") > 0) {
+                    StringBuffer context = new StringBuffer();
+                    FileUtils.readFileWithLine(temp, new IHandleLineString() {
+                        @Override
+                        public void handle(String filePath, String str) {
+                            if (str.indexOf("</destinationHost>") > 0) {
+                                str = "<destinationHost>" + cracHost + "</destinationHost>";
+                            }
+                            context.append(str);
+                            context.append(System.getProperty("line.separator"));
+                        }
+                    });
+                    FileUtils.write(new File(temp), context.toString(), false);
+                }
+
+                if (temp.indexOf("Ubit") > 0 && temp.indexOf("uBitCommands.xml") > 0) {
+                    StringBuffer context = new StringBuffer();
+                    FileUtils.readFileWithLine(temp, new IHandleLineString() {
+                        @Override
+                        public void handle(String filePath, String str) {
+                            if (str.indexOf("</destinationHost>") > 0) {
+                                str = "<destinationHost>" + uBitHost + "</destinationHost>";
+                            }
+                            context.append(str);
+                            context.append(System.getProperty("line.separator"));
+                        }
+                    });
+                    FileUtils.write(new File(temp), context.toString(), false);
+                }
+            }
+        });
+        if (isChangeIP) {
+            Map<String, String> replaceMap = new HashMap<>();
+            replaceMap.put("192.168.82", "192.168.13");
+            FileUtils.replaceFile(basePath + "\\monitor\\config\\device_descript.xml", replaceMap);
+        }
+    }
+
+    @Test
+    public void testGetDeviceId() {
+        List<String> list = FileUtils.scanFolders("E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\软件\\CD2000黄茅坪IDC-3楼冷通道");
+//        list.stream().forEach(temp -> {});
+        String template = "%s : %s";
+//        .filter(temp -> temp.contains("402"))
+        list.stream().forEach(temp -> {
+            System.out.println(temp.substring(temp.lastIndexOf("\\") + 1, temp.length()));
+            List<String> deviceFolders = FileUtils.scanFolders(temp + "\\collector\\config");
+            for (String folder : deviceFolders) {
+                String[] result = folder.split("#");
+                System.out.println(String.format(template, result[0].substring(result[0].lastIndexOf("\\") + 1, result[0].length()), result[2]));
+            }
+            System.out.println();
+        });
+    }
+    @Test
+    public void testWW(){
+        Pdu pdu1 = Pdu.builder().index("1").build();
+        Pdu pdu2 = Pdu.builder().index("1").build();
+        System.out.println("==:" + (pdu1 == pdu2 ));
+        System.out.println("hashCode:" + (pdu1.hashCode() == pdu2.hashCode()));
+        System.out.println("equals:" + (pdu1.equals(pdu2)));
+    }
+
+    @Test
+    public void test3() throws Exception{
+        final Lock lock=new ReentrantLock();
+        lock.lock();
+        Thread.sleep(1000);
+        Thread t1=new Thread(new Runnable(){
+            @Override
+            public void run() {
+                lock.lock();
+                System.out.println(Thread.currentThread().getName()+" interrupted.");
+            }
+        });
+        t1.start();
+        Thread.sleep(1000);
+        t1.interrupt();
+        Thread.sleep(10000);
+    }
+    @Test
+    public void test4() throws Exception{
+        final Lock lock=new ReentrantLock();
+        lock.lock();
+        Thread.sleep(1000);
+        Thread t1=new Thread(new Runnable(){
+            @Override
+            public void run() {
+                try {
+                    lock.lockInterruptibly();
+                } catch (InterruptedException e) {
+                    System.out.println(Thread.currentThread().getName()+" interrupted.");
+                }
+            }
+        });
+        t1.start();
+        Thread.sleep(1000);
+        t1.interrupt();
+        Thread.sleep(10000);
+    }
+
+    @Test
+    public void test5() throws Exception{
+        final Lock lock=new ReentrantLock();
+        Thread t1=new Thread(new Runnable(){
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                    lock.lockInterruptibly();
+                } catch (InterruptedException e) {
+                    System.out.println(Thread.currentThread().getName()+" interrupted.");
+                }
+            }
+        });
+        t1.start();
+        t1.interrupt();
+        Thread.sleep(10000);
+    }
 }

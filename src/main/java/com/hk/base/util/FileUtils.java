@@ -26,6 +26,7 @@ public class FileUtils {
             String nextLine = "";
             while ((nextLine = br.readLine()) != null) {
                 sb.append(nextLine);
+                sb.append(System.getProperty("line.separator"));
             }
             resultJson = sb.toString();
         } catch (Exception e) {
@@ -113,9 +114,23 @@ public class FileUtils {
                     if (file[i].isDirectory()) {
                         // 如果遍历到的是目录，则将继续被加入链表
                         list.add(file[i]);
+                    } else {
+                        filePaths.add(file[i].getAbsolutePath());
                     }
-                    filePaths.add(file[i].getAbsolutePath());
                 }
+            }
+        }
+        return filePaths;
+    }
+
+    public static List<String> scanFolders(String path) {
+        List<String> filePaths = new ArrayList<String>();
+        File dir = new File(path);
+        File[] file = dir.listFiles();
+        for (File aFile : file) {
+            if (aFile.isDirectory()) {
+                // 把第一层的目录，全部放入链表
+                filePaths.add(aFile.getAbsolutePath());
             }
         }
         return filePaths;
@@ -181,7 +196,7 @@ public class FileUtils {
         return flag;
     }
 
-    public static void write(File file, String context, boolean isAppend){
+    public static void write(File file, String context, boolean isAppend) {
         FileOutputStream out = null;
         try {
             if (!file.exists()) {
@@ -206,10 +221,13 @@ public class FileUtils {
     public static void write(File file, String context) {
         write(file, context, true);
     }
-    public static void write(String filePath, String context){
+
+    public static void write(String filePath, String context) {
         write(new File(filePath), context);
     }
-
+    public static void write(String filePath, String context, boolean isAppend) {
+        write(new File(filePath), context, isAppend);
+    }
 
     public static String getFileName(String filePath) {
         String[] temp = filePath.trim().split("\\\\");
@@ -232,8 +250,8 @@ public class FileUtils {
     public static void replaceFile(String path, Map<String, String> map) {
         String context = readFileToString(path);
         for (Map.Entry<String, String> s : map.entrySet()) {
-            context = context.replaceAll(s.getKey(),s.getValue());
+            context = context.replaceAll(s.getKey(), s.getValue());
         }
-        write(path, context);
+        write(path, context, false);
     }
 }
