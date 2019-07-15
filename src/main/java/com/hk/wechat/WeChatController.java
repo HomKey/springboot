@@ -27,6 +27,8 @@ public class WeChatController {
         String nonce = request.getParameter("nonce");
         String echostr = request.getParameter("echostr");
 
+        // 测试分支合并
+
         try {
             response.getWriter().print(echostr == null ? token : echostr);
         } catch (IOException e) {
