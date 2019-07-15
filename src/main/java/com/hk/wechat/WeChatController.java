@@ -27,7 +27,7 @@ public class WeChatController {
         String nonce = request.getParameter("nonce");
         String echostr = request.getParameter("echostr");
 
-        // 测试分支合并
+        // 测试分支合并1111111
 
         try {
             response.getWriter().print(echostr == null ? token : echostr);
