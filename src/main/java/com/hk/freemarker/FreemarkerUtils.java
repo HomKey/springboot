@@ -1,7 +1,6 @@
 package com.hk.freemarker;
 
 import com.hk.base.util.FileUtils;
-import com.hk.freemarker.entity.DeviceDefine;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -12,7 +11,6 @@ import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -28,8 +26,7 @@ public class FreemarkerUtils {
         Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
         Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
-        FileUtils.creatFile("D:\\freemarker\\" + fileName + "_" + second + ".xml", content);
-//        System.out.println(content);
+        FileUtils.createFile("D:\\freemarker\\" + fileName + "_" + second + ".xml", content);
     }
     public String getFreemarkerContent(String fileName, Map<String, Object> model) throws IOException, TemplateException {
         Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
@@ -40,7 +37,7 @@ public class FreemarkerUtils {
         Template template = configuration.getTemplate(fileName + ".ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
         Long second = LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
-        FileUtils.creatFile(fileName + "_" + second + ".xml", content);
+        FileUtils.createFile(fileName + "_" + second + ".xml", content);
 //        System.out.println(content);
     }
 }

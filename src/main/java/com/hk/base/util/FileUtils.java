@@ -136,7 +136,7 @@ public class FileUtils {
         return filePaths;
     }
 
-    public static boolean creatFile(String name, String context) throws IOException {
+    public static boolean createFile(String name, String context) throws IOException {
         boolean flag = false;
         File filename = new File(name);
         if (!filename.exists()) {

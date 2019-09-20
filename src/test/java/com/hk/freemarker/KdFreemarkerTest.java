@@ -50,7 +50,7 @@ public class KdFreemarkerTest {
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("title", "列间空调#"+index + "#"+host+":"+port+"#" + busid +"#");
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
-        FileUtils.creatFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Output\\黄茅坪\\collector\\config\\", content);
+        FileUtils.createFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Output\\黄茅坪\\collector\\config\\", content);
     }
 
 
@@ -128,7 +128,7 @@ public class KdFreemarkerTest {
         Template template = configuration.getTemplate("alertDefines.ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
 
-        FileUtils.creatFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Collect\\Device\\UPS\\V1\\alertDefines.xml", content);
+        FileUtils.createFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Collect\\Device\\UPS\\V1\\alertDefines.xml", content);
         System.out.println(content);
 
     }
@@ -166,7 +166,7 @@ public class KdFreemarkerTest {
         Template template = configuration.getTemplate("SwitchSensorDefine.ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
 
-        FileUtils.creatFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Collect\\Device\\CRAC\\SCA_ES\\DeviceDefines-Switch.xml", content);
+        FileUtils.createFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Collect\\Device\\CRAC\\SCA_ES\\DeviceDefines-Switch.xml", content);
         System.out.println(content);
 
 
@@ -211,7 +211,7 @@ public class KdFreemarkerTest {
         Template template = configuration.getTemplate("AlertDefinesCore.ftl"); // freeMarker template
         String content = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
 
-        FileUtils.creatFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Collect\\Device\\CRAC\\SCA_ES\\alertDefines.xml", content);
+        FileUtils.createFile("C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Collect\\Device\\CRAC\\SCA_ES\\alertDefines.xml", content);
         System.out.println(content);
 
     }

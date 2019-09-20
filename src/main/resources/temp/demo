@@ -1,178 +1,220 @@
-<linked-list>
-  <DeviceDefine>
-    <deviceId>{{DEVICE_ID}}</deviceId>
-    <iSensorDefines>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.1.Temperature</name>
-        <registerIndex>8</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>100.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.1.Humidity</name>
-        <registerIndex>9</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>10.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.2.Temperature</name>
-        <registerIndex>10</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>100.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.2.Humidity</name>
-        <registerIndex>11</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>10.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.3.Temperature</name>
-        <registerIndex>12</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>100.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.3.Humidity</name>
-        <registerIndex>13</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>10.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.4.Temperature</name>
-        <registerIndex>14</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>100.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.4.Humidity</name>
-        <registerIndex>15</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>10.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.5.Temperature</name>
-        <registerIndex>16</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>100.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.5.Humidity</name>
-        <registerIndex>17</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>10.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.6.Temperature</name>
-        <registerIndex>18</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>100.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>false</isState>
-        <name>THADA.6.Humidity</name>
-        <registerIndex>19</registerIndex>
-        <scale>2</scale>
-        <isMean>true</isMean>
-        <commandName>th_q1_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>10.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.State.Magnetometer</name>
-        <registerIndex>14</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.Alert.T.1.Over</name>
-        <registerIndex>15</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.Alert.T.2.Over</name>
-        <registerIndex>16</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.Alert.T.3.Over</name>
-        <registerIndex>17</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.Alert.T.4.Over</name>
-        <registerIndex>18</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.Alert.T.5.Over</name>
-        <registerIndex>19</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-      <SensorDefine>
-        <isState>true</isState>
-        <name>THADA.Alert.T.6.Over</name>
-        <registerIndex>20</registerIndex>
-        <scale>0</scale>
-        <isMean>false</isMean>
-        <commandName>th_q2_{{DEVICE_ID}}_A{{BUSID}}</commandName>
-        <divider>1.0</divider>
-      </SensorDefine>
-    </iSensorDefines>
-  </DeviceDefine>
-</linked-list>
+data.put("EMH.1.Magnetometer.Access.State","第1路门磁接入状态");
+data.put("EMH.1.Smoke.Access.State","第1路烟感接入状态");
+data.put("EMH.1.TH.Access.State","第1路TH接入状态");
+data.put("EMH.1.Magnetometer.State","第1路门磁状态");
+data.put("EMH.1.Smoke.State","第1路烟感状态");
+data.put("EMH.1.Magnetometer.PowerSupply.State","第1路门磁供电状态");
+data.put("EMH.1.Magnetometer.Connect.State","第1路单元接通");
+data.put("EMH.2.Magnetometer.Access.State","第2路门磁接入状态");
+data.put("EMH.2.Smoke.Access.State","第2路烟感接入状态");
+data.put("EMH.2.TH.Access.State","第2路TH接入状态");
+data.put("EMH.2.Magnetometer.State","第2路门磁状态");
+data.put("EMH.2.Smoke.State","第2路烟感状态");
+data.put("EMH.2.Magnetometer.PowerSupply.State","第2路门磁供电状态");
+data.put("EMH.2.Magnetometer.Connect.State","第2路单元接通");
+data.put("EMH.3.Magnetometer.Access.State","第3路门磁接入状态");
+data.put("EMH.3.Smoke.Access.State","第3路烟感接入状态");
+data.put("EMH.3.TH.Access.State","第3路TH接入状态");
+data.put("EMH.3.Magnetometer.State","第3路门磁状态");
+data.put("EMH.3.Smoke.State","第3路烟感状态");
+data.put("EMH.3.Magnetometer.PowerSupply.State","第3路门磁供电状态");
+data.put("EMH.3.Magnetometer.Connect.State","第3路单元接通");
+data.put("EMH.4.Magnetometer.Access.State","第4路门磁接入状态");
+data.put("EMH.4.Smoke.Access.State","第4路烟感接入状态");
+data.put("EMH.4.TH.Access.State","第4路TH接入状态");
+data.put("EMH.4.Magnetometer.State","第4路门磁状态");
+data.put("EMH.4.Smoke.State","第4路烟感状态");
+data.put("EMH.4.Magnetometer.PowerSupply.State","第4路门磁供电状态");
+data.put("EMH.4.Magnetometer.Connect.State","第4路单元接通");
+data.put("EMH.5.Magnetometer.Access.State","第5路门磁接入状态");
+data.put("EMH.5.Smoke.Access.State","第5路烟感接入状态");
+data.put("EMH.5.TH.Access.State","第5路TH接入状态");
+data.put("EMH.5.Magnetometer.State","第5路门磁状态");
+data.put("EMH.5.Smoke.State","第5路烟感状态");
+data.put("EMH.5.Magnetometer.PowerSupply.State","第5路门磁供电状态");
+data.put("EMH.5.Magnetometer.Connect.State","第5路单元接通");
+data.put("EMH.6.Magnetometer.Access.State","第6路门磁接入状态");
+data.put("EMH.6.Smoke.Access.State","第6路烟感接入状态");
+data.put("EMH.6.TH.Access.State","第6路TH接入状态");
+data.put("EMH.6.Magnetometer.State","第6路门磁状态");
+data.put("EMH.6.Smoke.State","第6路烟感状态");
+data.put("EMH.6.Magnetometer.PowerSupply.State","第6路门磁供电状态");
+data.put("EMH.6.Magnetometer.Connect.State","第6路单元接通");
+data.put("EMH.7.Magnetometer.Access.State","第7路门磁接入状态");
+data.put("EMH.7.Smoke.Access.State","第7路烟感接入状态");
+data.put("EMH.7.TH.Access.State","第7路TH接入状态");
+data.put("EMH.7.Magnetometer.State","第7路门磁状态");
+data.put("EMH.7.Smoke.State","第7路烟感状态");
+data.put("EMH.7.Magnetometer.PowerSupply.State","第7路门磁供电状态");
+data.put("EMH.7.Magnetometer.Connect.State","第7路单元接通");
+data.put("EMH.8.Magnetometer.Access.State","第8路门磁接入状态");
+data.put("EMH.8.Smoke.Access.State","第8路烟感接入状态");
+data.put("EMH.8.TH.Access.State","第8路TH接入状态");
+data.put("EMH.8.Magnetometer.State","第8路门磁状态");
+data.put("EMH.8.Smoke.State","第8路烟感状态");
+data.put("EMH.8.Magnetometer.PowerSupply.State","第8路门磁供电状态");
+data.put("EMH.8.Magnetometer.Connect.State","第8路单元接通");
+data.put("EMH.9.Magnetometer.Access.State","第9路门磁接入状态");
+data.put("EMH.9.Smoke.Access.State","第9路烟感接入状态");
+data.put("EMH.9.TH.Access.State","第9路TH接入状态");
+data.put("EMH.9.Magnetometer.State","第9路门磁状态");
+data.put("EMH.9.Smoke.State","第9路烟感状态");
+data.put("EMH.9.Magnetometer.PowerSupply.State","第9路门磁供电状态");
+data.put("EMH.9.Magnetometer.Connect.State","第9路单元接通");
+data.put("EMH.10.Magnetometer.Access.State","第10路门磁接入状态");
+data.put("EMH.10.Smoke.Access.State","第10路烟感接入状态");
+data.put("EMH.10.TH.Access.State","第10路TH接入状态");
+data.put("EMH.10.Magnetometer.State","第10路门磁状态");
+data.put("EMH.10.Smoke.State","第10路烟感状态");
+data.put("EMH.10.Magnetometer.PowerSupply.State","第10路门磁供电状态");
+data.put("EMH.10.Magnetometer.Connect.State","第10路单元接通");
+data.put("EMH.11.Magnetometer.Access.State","第11路门磁接入状态");
+data.put("EMH.11.Smoke.Access.State","第11路烟感接入状态");
+data.put("EMH.11.TH.Access.State","第11路TH接入状态");
+data.put("EMH.11.Magnetometer.State","第11路门磁状态");
+data.put("EMH.11.Smoke.State","第11路烟感状态");
+data.put("EMH.11.Magnetometer.PowerSupply.State","第11路门磁供电状态");
+data.put("EMH.11.Magnetometer.Connect.State","第11路单元接通");
+data.put("EMH.12.Magnetometer.Access.State","第12路门磁接入状态");
+data.put("EMH.12.Smoke.Access.State","第12路烟感接入状态");
+data.put("EMH.12.TH.Access.State","第12路TH接入状态");
+data.put("EMH.12.Magnetometer.State","第12路门磁状态");
+data.put("EMH.12.Smoke.State","第12路烟感状态");
+data.put("EMH.12.Magnetometer.PowerSupply.State","第12路门磁供电状态");
+data.put("EMH.12.Magnetometer.Connect.State","第12路单元接通");
+data.put("EMH.13.Magnetometer.Access.State","第13路门磁接入状态");
+data.put("EMH.13.Smoke.Access.State","第13路烟感接入状态");
+data.put("EMH.13.TH.Access.State","第13路TH接入状态");
+data.put("EMH.13.Magnetometer.State","第13路门磁状态");
+data.put("EMH.13.Smoke.State","第13路烟感状态");
+data.put("EMH.13.Magnetometer.PowerSupply.State","第13路门磁供电状态");
+data.put("EMH.13.Magnetometer.Connect.State","第13路单元接通");
+data.put("EMH.14.Magnetometer.Access.State","第14路门磁接入状态");
+data.put("EMH.14.Smoke.Access.State","第14路烟感接入状态");
+data.put("EMH.14.TH.Access.State","第14路TH接入状态");
+data.put("EMH.14.Magnetometer.State","第14路门磁状态");
+data.put("EMH.14.Smoke.State","第14路烟感状态");
+data.put("EMH.14.Magnetometer.PowerSupply.State","第14路门磁供电状态");
+data.put("EMH.14.Magnetometer.Connect.State","第14路单元接通");
+data.put("EMH.15.Magnetometer.Access.State","第15路门磁接入状态");
+data.put("EMH.15.Smoke.Access.State","第15路烟感接入状态");
+data.put("EMH.15.TH.Access.State","第15路TH接入状态");
+data.put("EMH.15.Magnetometer.State","第15路门磁状态");
+data.put("EMH.15.Smoke.State","第15路烟感状态");
+data.put("EMH.15.Magnetometer.PowerSupply.State","第15路门磁供电状态");
+data.put("EMH.15.Magnetometer.Connect.State","第15路单元接通");
+data.put("EMH.1.Pressure.Access.State","气压传感器1接入状态");
+data.put("EMH.2.Pressure.Access.State","气压传感器2接入状态");
+data.put("EMH.3.Pressure.Access.State","气压传感器3接入状态");
+data.put("EMH.4.Pressure.Access.State","气压传感器4接入状态");
+data.put("EMH.Pressure.Access.State","气压模块接通");
+data.put("EMH.Unit.PowerSupply.State","单元链路供电状态");
+data.put("EMH.Critial.Stop","紧急按停信号");
+data.put("EMH.Fire.Open","消防信号输入常开");
+data.put("EMH.Fire.Close","消防信号输入常闭");
+data.put("EMH.Alert.All","总报警");
+data.put("EMH.Alert.Temperature.Over","温度越值报警");
+data.put("EMH.Alert.Temperature.Less","温度欠值报警");
+data.put("EMH.Alert.Humidity.Over","湿度越值报警");
+data.put("EMH.Alert.Humidity.Less","湿度欠值报警");
+data.put("EMH.Alert.Smoke","烟感报警");
+data.put("EMH.Alert.Water","水浸报警");
+data.put("EMH.Alert.Magnetometer","门磁报警");
+data.put("EMH.Alert.Critial.Stop","紧急按停信号");
+data.put("EMH.Alert.Fire.Open","消防信号输入常开信号");
+data.put("EMH.Alert.Fire.Close","消防信号输入常闭信号");
+data.put("EMH.Alert.Pressure","气压报警");
+data.put("EMH.1.Alert.Temperature.Over","第1路温度越值");
+data.put("EMH.2.Alert.Temperature.Over","第2路温度越值");
+data.put("EMH.3.Alert.Temperature.Over","第3路温度越值");
+data.put("EMH.4.Alert.Temperature.Over","第4路温度越值");
+data.put("EMH.5.Alert.Temperature.Over","第5路温度越值");
+data.put("EMH.6.Alert.Temperature.Over","第6路温度越值");
+data.put("EMH.7.Alert.Temperature.Over","第7路温度越值");
+data.put("EMH.8.Alert.Temperature.Over","第8路温度越值");
+data.put("EMH.9.Alert.Temperature.Over","第9路温度越值");
+data.put("EMH.10.Alert.Temperature.Over","第10路温度越值");
+data.put("EMH.11.Alert.Temperature.Over","第11路温度越值");
+data.put("EMH.12.Alert.Temperature.Over","第12路温度越值");
+data.put("EMH.13.Alert.Temperature.Over","第13路温度越值");
+data.put("EMH.14.Alert.Temperature.Over","第14路温度越值");
+data.put("EMH.15.Alert.Temperature.Over","第15路温度越值");
+data.put("EMH.1.Alert.Temperature.Less","第1路温度欠值");
+data.put("EMH.2.Alert.Temperature.Less","第2路温度欠值");
+data.put("EMH.3.Alert.Temperature.Less","第3路温度欠值");
+data.put("EMH.4.Alert.Temperature.Less","第4路温度欠值");
+data.put("EMH.5.Alert.Temperature.Less","第5路温度欠值");
+data.put("EMH.6.Alert.Temperature.Less","第6路温度欠值");
+data.put("EMH.7.Alert.Temperature.Less","第7路温度欠值");
+data.put("EMH.8.Alert.Temperature.Less","第8路温度欠值");
+data.put("EMH.9.Alert.Temperature.Less","第9路温度欠值");
+data.put("EMH.10.Alert.Temperature.Less","第10路温度欠值");
+data.put("EMH.11.Alert.Temperature.Less","第11路温度欠值");
+data.put("EMH.12.Alert.Temperature.Less","第12路温度欠值");
+data.put("EMH.13.Alert.Temperature.Less","第13路温度欠值");
+data.put("EMH.14.Alert.Temperature.Less","第14路温度欠值");
+data.put("EMH.15.Alert.Temperature.Less","第15路温度欠值");
+data.put("EMH.1.Alert.Humidity.Over","第1路湿度越值");
+data.put("EMH.2.Alert.Humidity.Over","第2路湿度越值");
+data.put("EMH.3.Alert.Humidity.Over","第3路湿度越值");
+data.put("EMH.4.Alert.Humidity.Over","第4路湿度越值");
+data.put("EMH.5.Alert.Humidity.Over","第5路湿度越值");
+data.put("EMH.6.Alert.Humidity.Over","第6路湿度越值");
+data.put("EMH.7.Alert.Humidity.Over","第7路湿度越值");
+data.put("EMH.8.Alert.Humidity.Over","第8路湿度越值");
+data.put("EMH.9.Alert.Humidity.Over","第9路湿度越值");
+data.put("EMH.10.Alert.Humidity.Over","第10路湿度越值");
+data.put("EMH.11.Alert.Humidity.Over","第11路湿度越值");
+data.put("EMH.12.Alert.Humidity.Over","第12路湿度越值");
+data.put("EMH.13.Alert.Humidity.Over","第13路湿度越值");
+data.put("EMH.14.Alert.Humidity.Over","第14路湿度越值");
+data.put("EMH.15.Alert.Humidity.Over","第15路湿度越值");
+data.put("EMH.1.Alert.Humidity.Less","第1路湿度欠值");
+data.put("EMH.2.Alert.Humidity.Less","第2路湿度欠值");
+data.put("EMH.3.Alert.Humidity.Less","第3路湿度欠值");
+data.put("EMH.4.Alert.Humidity.Less","第4路湿度欠值");
+data.put("EMH.5.Alert.Humidity.Less","第5路湿度欠值");
+data.put("EMH.6.Alert.Humidity.Less","第6路湿度欠值");
+data.put("EMH.7.Alert.Humidity.Less","第7路湿度欠值");
+data.put("EMH.8.Alert.Humidity.Less","第8路湿度欠值");
+data.put("EMH.9.Alert.Humidity.Less","第9路湿度欠值");
+data.put("EMH.10.Alert.Humidity.Less","第10路湿度欠值");
+data.put("EMH.11.Alert.Humidity.Less","第11路湿度欠值");
+data.put("EMH.12.Alert.Humidity.Less","第12路湿度欠值");
+data.put("EMH.13.Alert.Humidity.Less","第13路湿度欠值");
+data.put("EMH.14.Alert.Humidity.Less","第14路湿度欠值");
+data.put("EMH.15.Alert.Humidity.Less","第15路湿度欠值");
+data.put("EMH.1.Tempture","第1路单元的温度T");
+data.put("EMH.1.Humidity","第1路单元的湿度H");
+data.put("EMH.2.Tempture","第2路单元的温度T");
+data.put("EMH.2.Humidity","第2路单元的湿度H");
+data.put("EMH.3.Tempture","第3路单元的温度T");
+data.put("EMH.3.Humidity","第3路单元的湿度H");
+data.put("EMH.4.Tempture","第4路单元的温度T");
+data.put("EMH.4.Humidity","第4路单元的湿度H");
+data.put("EMH.5.Tempture","第5路单元的温度T");
+data.put("EMH.5.Humidity","第5路单元的湿度H");
+data.put("EMH.6.Tempture","第6路单元的温度T");
+data.put("EMH.6.Humidity","第6路单元的湿度H");
+data.put("EMH.7.Tempture","第7路单元的温度T");
+data.put("EMH.7.Humidity","第7路单元的湿度H");
+data.put("EMH.8.Tempture","第8路单元的温度T");
+data.put("EMH.8.Humidity","第8路单元的湿度H");
+data.put("EMH.9.Tempture","第9路单元的温度T");
+data.put("EMH.9.Humidity","第9路单元的湿度H");
+data.put("EMH.10.Tempture","第10路单元的温度T");
+data.put("EMH.10.Humidity","第10路单元的湿度H");
+data.put("EMH.11.Tempture","第11路单元的温度T");
+data.put("EMH.11.Humidity","第11路单元的湿度H");
+data.put("EMH.12.Tempture","第12路单元的温度T");
+data.put("EMH.12.Humidity","第12路单元的湿度H");
+data.put("EMH.13.Tempture","第13路单元的温度T");
+data.put("EMH.13.Humidity","第13路单元的湿度H");
+data.put("EMH.14.Tempture","第14路单元的温度T");
+data.put("EMH.14.Humidity","第14路单元的湿度H");
+data.put("EMH.15.Tempture","第15路单元的温度T");
+data.put("EMH.15.Humidity","第15路单元的湿度H");
+data.put("EMH.Pressure.1","气压差1");
+data.put("EMH.Pressure.2","气压差2");
+data.put("EMH.Pressure.3","气压差3");
+data.put("EMH.Pressure.4","气压差4");

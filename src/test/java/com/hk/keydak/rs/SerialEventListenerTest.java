@@ -44,4 +44,11 @@ public class SerialEventListenerTest {
         System.out.println(sum&0xFF);
     }
 
+    @Test
+    public void testSerial(){
+        SerialEventListener serialEventListener = new SerialEventListener("COM2", 9600);
+        serialEventListener.start();
+        while (true){}
+    }
+
 }

@@ -1,0 +1,112 @@
+{
+  "Reactive.Power": {
+    "sensorId": "Reactive.Power",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "Temperature": {
+    "sensorId": "Temperature",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "default.CF": {
+    "sensorId": "default.CF",
+    "value": 465.00,
+    "time": 1567649858691
+  },
+  "Active.Power": {
+    "sensorId": "Active.Power",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "Voltage.Effective": {
+    "sensorId": "Voltage.Effective",
+    "value": 222.50,
+    "time": 1567649858691
+  },
+  "out_factory_single": {
+    "sensorId": "out_factory_single",
+    "value": 63.00,
+    "time": 1567649858691
+  },
+  "HFCONST.Current.Flag": {
+    "sensorId": "HFCONST.Current.Flag",
+    "value": 202.00,
+    "time": 1567649858691
+  },
+  "Current.Effective": {
+    "sensorId": "Current.Effective",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "Connection_Status": {
+    "sensorId": "Connection_Status",
+    "value": 1,
+    "time": 1567649858692
+  },
+  "frequency": {
+    "sensorId": "frequency",
+    "value": 49.95,
+    "time": 1567649858691
+  },
+  "all_power_factor": {
+    "sensorId": "all_power_factor",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "Power.Factory": {
+    "sensorId": "Power.Factory",
+    "value": 0.0000,
+    "time": 1567649858691
+  },
+  "reactive_power": {
+    "sensorId": "reactive_power",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "Voltage": {
+    "sensorId": "Voltage",
+    "value": 222.50,
+    "time": 1567649858691
+  },
+  "Inspecting.Power": {
+    "sensorId": "Inspecting.Power",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "active_power": {
+    "sensorId": "active_power",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "humidity": {
+    "sensorId": "humidity",
+    "value": 0.0,
+    "time": 1567649858691
+  },
+  "Frenecy": {
+    "sensorId": "Frenecy",
+    "value": 4995.00,
+    "time": 1567649858691
+  },
+  "inspecting_power": {
+    "sensorId": "inspecting_power",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "base_power_factor": {
+    "sensorId": "base_power_factor",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "Current": {
+    "sensorId": "Current",
+    "value": 0.00,
+    "time": 1567649858691
+  },
+  "reactive.power.address.postion": {
+    "sensorId": "reactive.power.address.postion",
+    "value": 0.00,
+    "time": 1567649858691
+  }
+}

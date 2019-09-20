@@ -1,6 +1,6 @@
 package com.hk.base.util;
 
-import com.hk.freemarker.dcim.entity.Pdu;
+import com.hk.freemarker.dcim.entity.temp.Pdu;
 import org.junit.Test;
 
 import java.io.File;
@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by LuHj on 2018/10/15.
@@ -45,7 +43,7 @@ public class FileUtilsTest {
             });
             String fileName = "E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\通道" + i + "设备deviceId表.txt";
             try {
-                FileUtils.creatFile(fileName, context.toString());
+                FileUtils.createFile(fileName, context.toString());
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -229,18 +227,25 @@ public class FileUtilsTest {
 
     @Test
     public void testGetDeviceId() {
-        List<String> list = FileUtils.scanFolders("E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\软件\\CD2000黄茅坪IDC-3楼冷通道");
+        List<String> list = FileUtils.scanFolders("E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\20190612_因为日志数据量需要升级软件\\黄茅坪实施项目对接\\44个通道配置文件");
 //        list.stream().forEach(temp -> {});
         String template = "%s : %s";
 //        .filter(temp -> temp.contains("402"))
         list.stream().forEach(temp -> {
-            System.out.println(temp.substring(temp.lastIndexOf("\\") + 1, temp.length()));
+            StringBuffer stringBuffer = new StringBuffer();
+            String name = temp.substring(temp.lastIndexOf("\\") + 1, temp.length());
+            System.out.println(name);
             List<String> deviceFolders = FileUtils.scanFolders(temp + "\\collector\\config");
             for (String folder : deviceFolders) {
                 String[] result = folder.split("#");
+                stringBuffer.append(String.format(template, result[0].substring(result[0].lastIndexOf("\\") + 1, result[0].length()), result[2]) + "\n");
                 System.out.println(String.format(template, result[0].substring(result[0].lastIndexOf("\\") + 1, result[0].length()), result[2]));
             }
-            System.out.println();
+            try {
+                FileUtils.createFile("E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\20190612_因为日志数据量需要升级软件\\黄茅坪实施项目对接\\DeviceIds\\"+name + ".txt", stringBuffer.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
     }
     @Test
