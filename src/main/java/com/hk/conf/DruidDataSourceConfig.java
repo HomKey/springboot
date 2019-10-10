@@ -31,7 +31,7 @@ public class DruidDataSourceConfig implements EnvironmentAware {
 
     private static final Logger logger = LogManager.getLogger(DruidDataSourceConfig.class);
 
-    private static final String DB_PREFIX = "spring.datasource";
+    private static final String DB_PREFIX = "spring.datasource.mysql";
 
     private String loginUsername;
     private String loginPassword;

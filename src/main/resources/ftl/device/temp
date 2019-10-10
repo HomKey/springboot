@@ -1,2 +1,0 @@
-
-print @DeviceId"+"@DeviceName"+"@CategoryId"+"@SceneId;

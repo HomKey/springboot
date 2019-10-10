@@ -1,0 +1,226 @@
+<linked-list>
+<#list dmeList as object>
+    <DeviceDefine>
+        <deviceId>${object.deviceId}</deviceId>
+        <iSensorDefines>
+            <CommonDefine>
+                <name>CRAC.RunState</name>
+                <commandName>crac_dme_dz_d${object.index}_60_43</commandName>
+                <index>0</index>
+                <length>2</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Indoor.Temperature</name>
+                <commandName>crac_dme_dz_d${object.index}_60_42</commandName>
+                <index>0</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Indoor.Humidity</name>
+                <commandName>crac_dme_dz_d${object.index}_60_42</commandName>
+                <index>4</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Outdoor.Temperature</name>
+                <commandName>crac_dme_dz_d${object.index}_60_42</commandName>
+                <index>8</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Setting.Temperature</name>
+                <commandName>crac_dme_dz_d${object.index}_60_47</commandName>
+                <index>8</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Precision.Temperature</name>
+                <commandName>crac_dme_dz_d${object.index}_60_47</commandName>
+                <index>12</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Setting.Humidity</name>
+                <commandName>crac_dme_dz_d${object.index}_60_47</commandName>
+                <index>16</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Precision.Humidity</name>
+                <commandName>crac_dme_dz_d${object.index}_60_47</commandName>
+                <index>20</index>
+                <length>4</length>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint16Calc>
+                        <highHead>true</highHead>
+                    </uint16Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Module.1.InnerBlower.1.RunState</name>
+                <commandName>crac_dme_dz_d${object.index}_60_82</commandName>
+                <index>2</index>
+                <length>2</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Module.1.Humidify.RunState</name>
+                <commandName>crac_dme_dz_d${object.index}_60_82</commandName>
+                <index>2</index>
+                <length>2</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Module.1.Dehumidify.RunState</name>
+                <commandName>crac_dme_dz_d${object.index}_60_82</commandName>
+                <index>2</index>
+                <length>2</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Module.1.Alarm.Filter.Fault</name>
+                <commandName>crac_dme_dz_d${object.index}_60_82</commandName>
+                <index>8</index>
+                <length>2</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Module.1.Alarm.Communication</name>
+                <commandName>crac_dme_dz_d${object.index}_60_82</commandName>
+                <index>8</index>
+                <length>2</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+        </iSensorDefines>
+    </DeviceDefine>
+</#list>
+</linked-list>
