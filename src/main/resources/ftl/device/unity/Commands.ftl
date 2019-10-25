@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<linked-list>
+<#list unityList as object>
+    <ModbusRequest>
+        <name>crac_unity_q1_d${object.index}_AI_30103_17</name>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <commandType>3</commandType>
+        <registerNumber>30103</registerNumber>
+        <length>17</length>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>crac_unity_q2_d${object.index}_AI_30130_20</name>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <commandType>3</commandType>
+        <registerNumber>30130</registerNumber>
+        <length>20</length>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>crac_unity_q3_d${object.index}_AI_30269_16</name>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <commandType>3</commandType>
+        <registerNumber>30269</registerNumber>
+        <length>16</length>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>crac_unity_q4_d${object.index}_AI_30484_9</name>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <commandType>3</commandType>
+        <registerNumber>30484</registerNumber>
+        <length>9</length>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>crac_unity_q5_d${object.index}_AI_10009_220</name>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <commandType>3</commandType>
+        <registerNumber>10009</registerNumber>
+        <length>220</length>
+    </ModbusRequest>
+</#list>
+</linked-list>

@@ -1,0 +1,22 @@
+<linked-list>
+<#list elmList as object>
+    <ModbusRequest>
+        <name>cmd_pm5350bw_1_${object.index}_3_3000_111</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip1}</destinationHost>
+        <port>${object.port1}</port>
+        <busId>${object.busId1}</busId>
+        <length>111</length>
+        <registerNumber>3000</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>cmd_pm5350bw_2_${object.index}_3_3000_111</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip2}</destinationHost>
+        <port>${object.port2}</port>
+        <busId>${object.busId2}</busId>
+        <length>111</length>
+        <registerNumber>3000</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

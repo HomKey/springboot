@@ -257,9 +257,9 @@
             </ComputeSensorDefine>
 
             <ComputeSensorDefine>
-                <name>ELM.C.ReactivePower</name>
+                <name>ELM.A.ReactivePower</name>
                 <highPropertyDefines>
-                    <name>ELM.C.ReactivePower_h</name>
+                    <name>ELM.A.ReactivePower_h</name>
                     <registerIndex>3062</registerIndex>
                     <scale>2</scale>
                     <isMean>true</isMean>
@@ -267,7 +267,7 @@
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
-                    <name>ELM.C.ReactivePower_l</name>
+                    <name>ELM.A.ReactivePower_l</name>
                     <registerIndex>3063</registerIndex>
                     <scale>2</scale>
                     <isMean>true</isMean>

@@ -162,6 +162,26 @@ public class DcimUtilsTest {
     }
 
     @Test
+    public void testZlTh() {
+        String[][] data = new String[][]{
+                new String[]{"4c073df9-e7f5-45c4-b8a9-58fa45a200aa", "温湿度传感器1"},
+                new String[]{"aa9c72b3-116a-4d5b-a09f-7043d292ef25", "温湿度传感器2"},
+                new String[]{"b685cb4b-db01-4490-9686-fcc365cca504", "温湿度传感器3"},
+                new String[]{"cbec977b-fbb9-4788-a0b5-c5b7a5c6a480", "温湿度传感器4"},
+                new String[]{"2ab5433f-c5de-4194-95ed-b873328c5421", "温湿度传感器5"},
+                new String[]{"1203e964-075d-458a-a0bb-0e5fbb0f7fe8", "温湿度传感器6"},
+                new String[]{"73912b35-a9d7-432d-a02e-28509025ad40", "温湿度传感器7"},
+                new String[]{"d38e5011-932b-463d-ad9e-083bc3b2559e", "温湿度传感器8"},
+                new String[]{"1b745ea8-ba18-4cde-9185-504fc0333d2d", "温湿度传感器9"},
+                new String[]{"054698ad-1e07-4615-8b67-8d44ece875a5", "温湿度传感器10"},
+                new String[]{"5b54077a-2290-498e-bc18-4db58acce3ac", "温湿度传感器11"},
+                new String[]{"38fd8694-5494-49ef-9117-9f9cc83e7162", "温湿度传感器12"}
+        };
+        print(data, "th", 1, "192.168.0.140", "6003", 1);
+
+    }
+
+    @Test
     public void testInsertDeviceCategory() {
         String[][] data = new String[][]{
                 new String[]{"告警状态:0未知状态，2没有告警，4存在告警警报，8存在严重告警", "UPS.Alert.Status"},
@@ -328,7 +348,7 @@ public class DcimUtilsTest {
             "        .deviceDetail(DeviceDetail.builder()\n" +
             "                .deviceId(\"%s\")\n" +
             "                .bubbleUrl(\"\")\n" +
-            "                .deviceType(DeviceType.PDU3)\n" +
+            "                .deviceType(DeviceType.TH_ZL)\n" +
             "                .build())\n" +
             "        .build();\n" +
             "        list.add(%s);\n";
@@ -353,4 +373,117 @@ public class DcimUtilsTest {
         return index;
     }
 
+
+    @Test
+    public void testPrint() {
+        int index = 8;
+        for (int i = 1; i <= 15; i++) {
+            String temp = "<SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Magnetometer1.Access.State</name>\n" +
+                    "                <registerIndex>" + index + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Magnetometer2.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 1) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Water.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 2) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Smoke.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 3) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".TH1.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 4) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".TH2.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 5) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".TH3.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 6) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".TH4.Access.State</name>\n" +
+                    "                <registerIndex>" + (index + 7) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Magnetometer1.State</name>\n" +
+                    "                <registerIndex>" + (index + 8) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Magnetometer2.State</name>\n" +
+                    "                <registerIndex>" + (index + 9) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Water.State</name>\n" +
+                    "                <registerIndex>" + (index + 10) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Smoke.State</name>\n" +
+                    "                <registerIndex>" + (index + 11) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>\n" +
+                    "            <SensorDefine>\n" +
+                    "                <name>EMH." + i + ".Connect.State</name>\n" +
+                    "                <registerIndex>" + (index + 12) + "</registerIndex>\n" +
+                    "                <scale>0</scale>\n" +
+                    "                <isMean>false</isMean>\n" +
+                    "                <commandName>Modbus_CAEMH_DI_d${object.index}</commandName>\n" +
+                    "                <divider>1.0</divider>\n" +
+                    "            </SensorDefine>";
+            index += 13;
+            System.out.println(temp);
+        }
+    }
 }

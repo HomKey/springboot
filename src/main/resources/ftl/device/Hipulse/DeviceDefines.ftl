@@ -139,6 +139,21 @@
                 </calcList>
             </CommonDefine>
             <CommonDefine>
+                <name>UPS.Battery.Voltage</name>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog</commandName>
+                <index>74</index>
+                <length>8</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <ieee32FloatCalc>
+                        <highHead>false</highHead>
+                    </ieee32FloatCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>UPS.Output.Frequency</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog</commandName>
                 <index>82</index>
@@ -153,7 +168,6 @@
                     </ieee32FloatCalc>
                 </calcList>
             </CommonDefine>
-
             <CommonDefine>
                 <name>UPS.Input.A.Current</name>
                 <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
