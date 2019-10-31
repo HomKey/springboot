@@ -1,13 +1,14 @@
 <linked-list>
+<#list emhList as object>
     <DeviceDefine>
-        <deviceId>4C073DF9-E7F5-45C4-B8A9-58FA45A200AA</deviceId>
+        <deviceId>${object.deviceId1}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Temperature</name>
                 <registerIndex>8</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -15,20 +16,20 @@
                 <registerIndex>9</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
     <DeviceDefine>
-        <deviceId>AA9C72B3-116A-4D5B-A09F-7043D292EF25</deviceId>
+        <deviceId>${object.deviceId2}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>10</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -36,21 +37,21 @@
                 <registerIndex>11</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>B685CB4B-DB01-4490-9686-FCC365CCA504</deviceId>
+        <deviceId>${object.deviceId3}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>16</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -58,21 +59,21 @@
                 <registerIndex>17</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>CBEC977B-FBB9-4788-A0B5-C5B7A5C6A480</deviceId>
+        <deviceId>${object.deviceId4}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>18</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -80,21 +81,21 @@
                 <registerIndex>19</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>2AB5433F-C5DE-4194-95ED-B873328C5421</deviceId>
+        <deviceId>${object.deviceId5}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>24</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -102,21 +103,21 @@
                 <registerIndex>25</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>1203E964-075D-458A-A0BB-0E5FBB0F7FE8</deviceId>
+        <deviceId>${object.deviceId6}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>26</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -124,21 +125,21 @@
                 <registerIndex>27</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>73912B35-A9D7-432D-A02E-28509025AD40</deviceId>
+        <deviceId>${object.deviceId7}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>32</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -146,21 +147,21 @@
                 <registerIndex>33</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>D38E5011-932B-463D-AD9E-083BC3B2559E</deviceId>
+        <deviceId>${object.deviceId8}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>34</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -168,21 +169,21 @@
                 <registerIndex>35</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>1B745EA8-BA18-4CDE-9185-504FC0333D2D</deviceId>
+        <deviceId>${object.deviceId9}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>40</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -190,21 +191,21 @@
                 <registerIndex>41</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>054698AD-1E07-4615-8B67-8D44ECE875A5</deviceId>
+        <deviceId>${object.deviceId10}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>42</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -212,21 +213,21 @@
                 <registerIndex>43</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>5B54077A-2290-498E-BC18-4DB58ACCE3AC</deviceId>
+        <deviceId>${object.deviceId11}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>48</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -234,21 +235,21 @@
                 <registerIndex>49</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
 
     <DeviceDefine>
-        <deviceId>38FD8694-5494-49EF-9117-9F9CC83E7162</deviceId>
+        <deviceId>${object.deviceId12}</deviceId>
         <iSensorDefines>
             <SensorDefine>
                 <name>TH.Tempture</name>
                 <registerIndex>50</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
             <SensorDefine>
@@ -256,10 +257,11 @@
                 <registerIndex>51</registerIndex>
                 <scale>2</scale>
                 <isMean>true</isMean>
-                <commandName>Modbus_CAEMH_AI_8_124_d1</commandName>
+                <commandName>Modbus_CAEMH_AI_8_124_d${object.index}</commandName>
                 <divider>100.0</divider>
             </SensorDefine>
         </iSensorDefines>
     </DeviceDefine>
+</#list>
 </linked-list>
 

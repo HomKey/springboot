@@ -3,6 +3,7 @@ package com.hk.keydak.dcim;
 import com.hk.freemarker.FreemarkerUtils;
 import com.hk.freemarker.dcim.entity.base.PositionDevice;
 import com.hk.freemarker.dcim.entity.base.DeviceDetail;
+import com.hk.freemarker.dcim.entity.device.ChannelV2;
 import com.hk.freemarker.dcim.entity.device.DoubleDevice;
 import com.hk.freemarker.dcim.entity.device.GxaqtCabinet;
 import com.hk.freemarker.dcim.enums.DeviceModel;
@@ -12,6 +13,7 @@ import freemarker.template.Configuration;
 import freemarker.template.TemplateException;
 import io.swagger.models.auth.In;
 import lombok.*;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,9 +51,9 @@ public class DcimGenerate {
      */
     @Test
     public void createCollectorXml() throws IOException, TemplateException {
-        Map<String, Object> acModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.FanTsd);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.FanTsd.getPath(), FILE_NAME_COMMANDS), acModel);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.FanTsd.getPath(), FILE_NAME_DEVICE_DEFINES), acModel);
+        Map<String, Object> acModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.Hipulse);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Hipulse.getPath(), FILE_NAME_COMMANDS), acModel);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Hipulse.getPath(), FILE_NAME_DEVICE_DEFINES), acModel);
     }
 
     @Test
@@ -60,6 +62,70 @@ public class DcimGenerate {
         freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.ACRD300.getPath(), FILE_NAME_COMMANDS), emhModel);
         freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.ACRD300.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
 
+    }
+
+    @Test
+    public void testZszlCAEMHv2() throws IOException, TemplateException {
+        List<ChannelV2> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.EMHv2;
+        ChannelV2 device = ChannelV2.builder()
+                .index(1)
+                .deviceId1("4C073DF9-E7F5-45C4-B8A9-58FA45A200AA")
+                .deviceId2("AA9C72B3-116A-4D5B-A09F-7043D292EF25")
+                .deviceId3("B685CB4B-DB01-4490-9686-FCC365CCA504")
+                .deviceId4("CBEC977B-FBB9-4788-A0B5-C5B7A5C6A480")
+                .deviceId5("2AB5433F-C5DE-4194-95ED-B873328C5421")
+                .deviceId6("1203E964-075D-458A-A0BB-0E5FBB0F7FE8")
+                .deviceId7("73912B35-A9D7-432D-A02E-28509025AD40")
+                .deviceId8("D38E5011-932B-463D-AD9E-083BC3B2559E")
+                .deviceId9("1B745EA8-BA18-4CDE-9185-504FC0333D2D")
+                .deviceId10("054698AD-1E07-4615-8B67-8D44ECE875A5")
+                .deviceId11("5B54077A-2290-498E-BC18-4DB58ACCE3AC")
+                .deviceId12("38FD8694-5494-49EF-9117-9F9CC83E7162")
+                .port("6011")
+                .busId("1")
+                .ip("192.168.0.140")
+                .build();
+        list.add(device);
+        Map<String, Object> emhModel = new HashMap<>();
+        emhModel.put(deviceType.getKey(), list);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_COMMANDS + "-dcim"), emhModel);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_DEVICE_DEFINES + "-dcim"), emhModel);
+    }
+
+    @Test
+    public void testZszlCabinet() throws IOException, TemplateException {
+        List<DoubleDevice> list = new ArrayList<>();
+        String baseSql = "SELECT t.Id,t.Name FROM DeviceBase t WHERE t.CategoryId = '5E003ED5-C0AC-492C-93CC-00898BC244B1'";
+        List<Map<String, Object>> mapList = dcimJdbcTemplate.queryForList(baseSql);
+        for (int i = 0; i < mapList.size(); i++) {
+            String name = String.valueOf(mapList.get(i).get("Name"));
+            String deviceId = String.valueOf(mapList.get(i).get("Id"));
+            String port = "6016";
+            int busId = i * 2;
+            if (i > 13) {
+                port = "6017";
+                busId -= 14 * 2;
+            }
+            DoubleDevice cabinet = DoubleDevice.builder()
+                    .index(i + 1)
+                    .deviceId(deviceId)
+                    .ip1("192.168.0.140")
+                    .ip2("192.168.0.140")
+                    .port1(port)
+                    .port2(port)
+                    .busId1(String.valueOf(busId + 1))
+                    .busId2(String.valueOf(busId + 2))
+                    .build();
+            list.add(cabinet);
+        }
+        Map<String, Object> model = new HashMap<>();
+        model.put("pduList", list);
+        DeviceType deviceType = DeviceType.CabinetPduV2;
+        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_COMMANDS + "-PduV2"), model);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_DEVICE_DEFINES + "-PduV2"), model);
+
+        System.out.println(list.size());
     }
 
     @Test
@@ -122,7 +188,7 @@ public class DcimGenerate {
     }
 
     @Test
-    public void testCabinet() {
+    public void test1288Cabinet() {
         Map<String, Object> pduModel = new HashMap<>();
         // dcim的pdu是根据机柜获取数据的，所以deviceId就是机柜id
         // 1个机柜有2条pdu，所以ip，port，busId都有2个

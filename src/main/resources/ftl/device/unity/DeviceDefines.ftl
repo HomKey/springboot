@@ -491,14 +491,6 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>CRAC.Compressor.2.Issue</name>
-                <registerIndex>10044</registerIndex>
-                <scale>0</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q5_d${object.index}_AI_10009_220</commandName>
-                <divider>1</divider>
-            </SensorDefine>
-            <SensorDefine>
                 <name>CRAC.Alarm.Smoke</name>
                 <registerIndex>10047</registerIndex>
                 <scale>0</scale>
@@ -549,14 +541,6 @@
             <SensorDefine>
                 <name>CRAC.Alarm.Humidifier.Current.Over</name>
                 <registerIndex>10059</registerIndex>
-                <scale>0</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q5_d${object.index}_AI_10009_220</commandName>
-                <divider>1</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.Alarm.Ext.Temperature.Over</name>
-                <registerIndex>10060</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>crac_unity_q5_d${object.index}_AI_10009_220</commandName>

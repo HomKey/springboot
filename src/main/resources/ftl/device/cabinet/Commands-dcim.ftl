@@ -1,4 +1,5 @@
 <linked-list>
+    <!-- 1个机柜内 2个3代PDU，1个柜内温湿度-->
 <#list pduList as object>
     <!--AI量，请求超过30个长度就83错误码-->
     <ModbusRequest>

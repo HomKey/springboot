@@ -3,8 +3,7 @@
     <DeviceDefine>
         <deviceId>${object.deviceId}</deviceId>
         <iSensorDefines>
-            <CommonSensorDefine>
-                <isState>false</isState>
+            <CommonDefine>
                 <name>Room.Temperature</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>0</index>
@@ -12,15 +11,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Room.Humidity</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>4</index>
@@ -28,15 +26,15 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc/>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>AC.Input.A.Voltage</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>8</index>
@@ -44,15 +42,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>AC.Input.B.Voltage</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>12</index>
@@ -60,15 +57,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>AC.Input.C.Voltage</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>16</index>
@@ -76,15 +72,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Humidifier.Current</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>20</index>
@@ -92,15 +87,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Power.frequency</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>24</index>
@@ -108,15 +102,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Temperature.1</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>28</index>
@@ -124,15 +117,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Temperature.2</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>32</index>
@@ -140,15 +132,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Temperature.3</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>36</index>
@@ -156,15 +147,14 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Temperature.4</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
                 <index>40</index>
@@ -172,1389 +162,2196 @@
                 <divider>10</divider>
                 <isMean>false</isMean>
                 <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
-                <name>Analog.Quantity.1</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
-                <index>44</index>
-                <length>4</length>
-                <divider>10</divider>
-                <isMean>false</isMean>
-                <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
-                <name>Analog.Quantity.2</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
-                <index>48</index>
-                <length>4</length>
-                <divider>10</divider>
-                <isMean>false</isMean>
-                <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
-                <name>Analog.Quantity.3</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
-                <index>52</index>
-                <length>4</length>
-                <divider>10</divider>
-                <isMean>false</isMean>
-                <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
-                <name>Analog.Quantity.4</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24642_33</commandName>
-                <index>56</index>
-                <length>4</length>
-                <divider>10</divider>
-                <isMean>false</isMean>
-                <precision>2</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <uint32Calc>
+                        <highHead>true</highHead>
+                    </uint32Calc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>HighPressure.Switch1.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
                 <index>0</index>
-                <length>2</length>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>HighPressure.Switch2.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>2</index>
-                <length>2</length>
+                <index>1</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>LowPressure.Switch1.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>4</index>
-                <length>2</length>
+                <index>2</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>LowPressure.Switch2.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>6</index>
-                <length>2</length>
+                <index>3</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Exhausted.Air.Temperature1.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>8</index>
-                <length>2</length>
+                <index>4</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Exhausted.Air.Temperature2.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>10</index>
-                <length>2</length>
+                <index>5</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>FilterNet.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>12</index>
-                <length>2</length>
+                <index>6</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>WaterFloor.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>14</index>
-                <length>2</length>
+                <index>7</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>FanException.Switch.State</name>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>FanOverLoad1.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>16</index>
-                <length>2</length>
+                <index>8</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>FanOverLoad2.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>FanOverLoad3.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>AirFloorNotEnough.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>22</index>
-                <length>2</length>
+                <index>11</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Custom1.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>24</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Custom2.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>26</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Custom3.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>28</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Custom4.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>30</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CMAndWaterBit.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>32</index>
-                <length>2</length>
+                <index>16</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>RemoteShutDown</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>34</index>
-                <length>2</length>
+                <index>17</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Humidifier.Alert</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>36</index>
-                <length>2</length>
+                <index>18</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Smoke.Input</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>38</index>
-                <length>2</length>
+                <index>19</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Electric.Heating.Input.Alert</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>40</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>false</isState>
-                <name>InfraredRay.Humidifier.HighWaterBit</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
-                <index>42</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>AC.StartUp.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>0</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>AC.StartUp.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>0</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>AC.StartUp.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>0</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Fan.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>2</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Humidifier.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>4</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Compressor1.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>6</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Compressor2.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>8</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Heating1.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>10</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Heating2.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>12</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Public.Alarm.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>14</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>liquid1.ByPass.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>16</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>liquid2.ByPass.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>18</index>
-                <length>2</length>
-                <divider>1</divider>
-                <isMean>false</isMean>
-                <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
-                <name>Injected.Water.OutPut.Switch.State</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
                 <index>20</index>
                 <length>2</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>InfraredRay.Humidifier.HighWaterBit</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24643_33</commandName>
+                <index>21</index>
+                <length>2</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
+                <name>AC.StartUp.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>0</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Fan.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Humidifier.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Compressor1.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Compressor2.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Heating1.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Heating2.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Public.Alarm.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>liquid1.ByPass.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>liquid2.ByPass.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>Injected.Water.OutPut.Switch.State</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <isMean>false</isMean>
+                <precision>1</precision>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Dehumidification.OutPut.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>22</index>
-                <length>2</length>
+                <index>11</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>StandBy.OutPut.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>24</index>
-                <length>2</length>
+                <index>12</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Compressor1.Reversed.OutPut.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>26</index>
-                <length>2</length>
+                <index>13</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Compressor2.Reversed.OutPut.Switch.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>28</index>
-                <length>2</length>
+                <index>14</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>MakeCold.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>30</index>
-                <length>2</length>
+                <index>15</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>Heating.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>32</index>
-                <length>2</length>
+                <index>16</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>DeHumidity.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>34</index>
-                <length>2</length>
+                <index>17</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <CommonSensorDefine>
-                <isState>true</isState>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>DoHumidity.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24706_33</commandName>
-                <index>36</index>
-                <length>2</length>
+                <index>18</index>
+                <length>1</length>
                 <divider>1</divider>
                 <isMean>false</isMean>
                 <precision>1</precision>
-                <calcFuncs>
-                    <AsciiToHexCalc/>
-                    <Int32CalcFunc>
-                        <isHighByteAhead>true</isHighByteAhead>
-                    </Int32CalcFunc>
-                </calcFuncs>
-            </CommonSensorDefine>
-            <DzBitSensorDefine>
-                <isState>false</isState>
-                <name>CRAC.Compressor.Type</name>
-                <registerIndex>2</registerIndex>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+
+
+            <CommonDefine>
+                <name>CRAC.Running.State</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
-                <name>CRAC.Alert.HighVoltage</name>
-                <registerIndex>2</registerIndex>
+                <index>0</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <int32Calc>
+                        <highHead>true</highHead>
+                    </int32Calc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
+                <name>CRAC.Alert.HighVoltage1</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.HighVoltage2</name>
-                <registerIndex>2</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
-                <name>CRAC.Alert.LowVoltage</name>
-                <registerIndex>2</registerIndex>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
+                <name>CRAC.Alert.LowVoltage1</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.LowVoltage2</name>
-                <registerIndex>2</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.Temperature1</name>
-                <registerIndex>2</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.Temperature2</name>
-                <registerIndex>2</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Coiler1</name>
-                <registerIndex>2</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>1</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Coiler2</name>
-                <registerIndex>4</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
-                <name>CRAC.Alert.Exception.Fan</name>
-                <registerIndex>4</registerIndex>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Alert.OverLoad.Fan1</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Alert.OverLoad.Fan2</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Alert.OverLoad.Fan3</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.ShortPeriod1</name>
-                <registerIndex>4</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.ShortPeriod2</name>
-                <registerIndex>4</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.HighTemperature</name>
-                <registerIndex>4</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.LowTemperature</name>
-                <registerIndex>4</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>2</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.HighHumidity</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.LowHumidity</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.InfraredRay.Humidifier.Exception</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.KaLe.Humidifier.Exception</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.CM.Humidifier.LowWater.Exception</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.AirFlow.Lose</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.FilterNet.Block</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Remote.ShutDown</name>
-                <registerIndex>6</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Alert.Remote.ShutDown</name>
+                <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
+                <index>3</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.TH.Check.Exception</name>
-                <registerIndex>8</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.Smoke</name>
-                <registerIndex>8</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+
+            <CommonDefine>
                 <name>CRAC.Alert.Fire</name>
-                <registerIndex>8</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Fan.Runtime.TimeOut</name>
-                <registerIndex>8</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
-                <name>CRAC.Alert.Compressor.Runtime.TimeOut</name>
-                <registerIndex>8</registerIndex>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
+                <name>CRAC.Alert.Compressor1.Runtime.TimeOut</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Compressor2.Runtime.TimeOut</name>
-                <registerIndex>8</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>4</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.Heater1.Runtime.TimeOut</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Heater2.Runtime.TimeOut</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Humidifier.Need.Maintain</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Power.Lose</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Power.OverVoltage</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Power.LowVoltage</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Power.DeviateFrequency</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Power.MissAppearance</name>
-                <registerIndex>10</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>5</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.Power.ReversalAppearance</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.OverFlow.Water</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.NTC1.Exception</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.NTC2.Exception</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.NTC3.Exception</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.NTC4.Exception</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork.Faile</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork1.Faile</name>
-                <registerIndex>12</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>6</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork2.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork3.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork4.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork5.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork6.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork7.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork8.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork9.Faile</name>
-                <registerIndex>14</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>7</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork10.Faile</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork11.Faile</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork12.Faile</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork13.Faile</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork14.Faile</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.MakeNetWork15.Faile</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.HighVoltage.Lock1</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.HighVoltage.Lock2</name>
-                <registerIndex>16</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>8</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.LowVoltage.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.LowVoltage.Lock2</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.Temperature1.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.Temperature2.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Coiler1.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Coiler2.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.Temperature1.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.Temperature2.Lock</name>
-                <registerIndex>18</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>9</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+
+            <CommonDefine>
                 <name>CRAC.Alert.Address.Repeat</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Slave.Lose</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Master.Lose</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.OutAir.HighTemperature</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.A.Road.Water.Lose</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.B.Road.Water.Lose</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Wind.Pressure.Exception</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>6</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>6</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.InfraredRay.Humidifier.Water.High.Exception</name>
-                <registerIndex>20</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>7</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>10</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>7</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.LowTemperature1.Lock</name>
-                <registerIndex>22</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>0</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>11</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>0</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.Exhaust.LowTemperature2.Lock</name>
-                <registerIndex>22</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>1</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>11</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>1</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.LowPressure1.Lose.Efficacy</name>
-                <registerIndex>22</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>2</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>11</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>2</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.LowPressure2.Lose.Efficacy</name>
-                <registerIndex>22</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>3</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>11</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>3</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.FilterNet.Need.Maintain</name>
-                <registerIndex>22</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>4</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
-            <DzBitSensorDefine>
-                <isState>true</isState>
+                <index>11</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>4</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
+            <CommonDefine>
                 <name>CRAC.Alert.HeartingByElec</name>
-                <registerIndex>22</registerIndex>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <routeIndex>5</routeIndex>
-                <length>0</length>
-            </DzBitSensorDefine>
+                <index>11</index>
+                <length>1</length>
+                <divider>1</divider>
+                <precision>2</precision>
+                <isMean>false</isMean>
+                <calcList>
+                    <asciiToHexCalc></asciiToHexCalc>
+                    <getBitCalc>
+                        <bitIndex>5</bitIndex>
+                    </getBitCalc>
+                    <mapIntCalc except="0">
+                        <map val="1" target="1"></map>
+                        <map val="0" target="0"></map>
+                    </mapIntCalc>
+                </calcList>
+            </CommonDefine>
         </iSensorDefines>
     </DeviceDefine>
 </#list>

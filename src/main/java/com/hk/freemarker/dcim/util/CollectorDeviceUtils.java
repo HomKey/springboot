@@ -3,6 +3,7 @@ package com.hk.freemarker.dcim.util;
 import com.hk.freemarker.dcim.entity.base.CollectorDevice;
 import com.hk.freemarker.dcim.entity.base.PositionDevice;
 import com.hk.freemarker.dcim.entity.base.DeviceDetail;
+import com.hk.freemarker.dcim.entity.device.ChannelV2;
 import com.hk.freemarker.dcim.enums.DeviceModel;
 import com.hk.freemarker.dcim.enums.DeviceType;
 
@@ -34,7 +35,6 @@ public class CollectorDeviceUtils {
 
         // 肿瘤
         // 环境主机
-        initChannel();
         initHipulse(); // ups
         initZlPdc();
         // 空调
@@ -67,22 +67,6 @@ public class CollectorDeviceUtils {
         list.add(emh);
         data.put(deviceType, list);
     }
-    private static void initChannel(){
-        List<PositionDevice> list1 = new ArrayList<>();
-        DeviceType deviceType = DeviceType.EMHv2;
-        PositionDevice emh = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("a74ad405-2251-43e0-be39-d95b2502168b")
-                        .name("通道1").index(1).ip("192.168.0.140").port("6011").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("a74ad405-2251-43e0-be39-d95b2502168b")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        list1.add(emh);
-        data.put(deviceType, list1);
-    }
 
     private static void initDME() {
         List<PositionDevice> list1 = new ArrayList<>();
@@ -90,7 +74,7 @@ public class CollectorDeviceUtils {
         PositionDevice ac1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("0b4dba4e-75c8-42c1-a97c-c2211fa25857")
-                        .name("空调2").index(2).ip("192.168.0.140").port("6015").busId("1").build())
+                        .name("空调2").index(2).ip("192.168.0.140").port("6019").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("0b4dba4e-75c8-42c1-a97c-c2211fa25857")
                         .bubbleUrl("")
@@ -141,7 +125,7 @@ public class CollectorDeviceUtils {
         PositionDevice dly1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("3766aa69-d969-4500-a0df-a3ad797ab2a7")
-                        .name("电量仪1").index(1).ip("192.168.0.140").port("6006").busId("1").build())
+                        .name("电量仪1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("3766aa69-d969-4500-a0df-a3ad797ab2a7")
                         .bubbleUrl("")
@@ -151,7 +135,7 @@ public class CollectorDeviceUtils {
         PositionDevice dly2 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("57980c88-7781-4fb8-855e-d5a674de4ed0")
-                        .name("电量仪2").index(2).ip("192.168.0.140").port("6006").busId("2").build())
+                        .name("电量仪2").index(2).ip("192.168.0.140").port("6018").busId("2").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("57980c88-7781-4fb8-855e-d5a674de4ed0")
                         .bubbleUrl("")
@@ -161,7 +145,7 @@ public class CollectorDeviceUtils {
         PositionDevice dly3 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("8283736f-0a3f-4c1e-92e5-ee0883cfc174")
-                        .name("电量仪3").index(3).ip("192.168.0.140").port("6006").busId("3").build())
+                        .name("电量仪3").index(3).ip("192.168.0.140").port("6018").busId("3").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("8283736f-0a3f-4c1e-92e5-ee0883cfc174")
                         .bubbleUrl("")
@@ -754,7 +738,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("b9565f0b-189e-45d8-b13a-806f92c50f63")
-                        .name("水浸1").index(1).ip("192.168.0.140").port("6004").busId("1").build())
+                        .name("水浸1").index(1).ip("192.168.0.140").port("6021").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("b9565f0b-189e-45d8-b13a-806f92c50f63")
                         .bubbleUrl("")
@@ -764,7 +748,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood2 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("d15fc220-fc78-4f1c-80e3-d368e227845b")
-                        .name("水浸2").index(2).ip("192.168.0.140").port("6004").busId("2").build())
+                        .name("水浸2").index(2).ip("192.168.0.140").port("6021").busId("2").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("d15fc220-fc78-4f1c-80e3-d368e227845b")
                         .bubbleUrl("")
@@ -774,7 +758,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood3 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("7fcfa8b7-01db-4a98-97c3-64e38b520894")
-                        .name("水浸3").index(3).ip("192.168.0.140").port("6004").busId("3").build())
+                        .name("水浸3").index(3).ip("192.168.0.140").port("6021").busId("3").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("7fcfa8b7-01db-4a98-97c3-64e38b520894")
                         .bubbleUrl("")

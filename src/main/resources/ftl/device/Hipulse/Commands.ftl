@@ -4,7 +4,7 @@
         <name>ups_hipulse_d${object.index}_get_sys_analog</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
-        <addr>${object.busId}</addr>
+        <addr>1</addr>
         <ver>17</ver>
         <commandType>10817</commandType>
         <ctrlData></ctrlData>
@@ -13,7 +13,7 @@
         <name>ups_hipulse_d${object.index}_get_di</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
-        <addr>${object.busId}</addr>
+        <addr>1</addr>
         <ver>17</ver>
         <commandType>10819</commandType>
         <ctrlData></ctrlData>
@@ -22,34 +22,34 @@
         <name>ups_hipulse_d${object.index}_get_alarm</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
-        <addr>${object.busId}</addr>
+        <addr>1</addr>
         <ver>17</ver>
         <commandType>10820</commandType>
         <ctrlData></ctrlData>
     </DzRequest>
     <DzRequest>
-        <name>ups_hipulse_d${object.index}_get_analog1</name>
+        <name>ups_hipulse_d${object.index}_get_sys_analog1</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
-        <addr>${object.busId}</addr>
+        <addr>1</addr>
         <ver>17</ver>
         <commandType>10977</commandType>
         <ctrlData></ctrlData>
     </DzRequest>
     <DzRequest>
-        <name>ups_hipulse_d${object.index}_get_analog2</name>
+        <name>ups_hipulse_d${object.index}_get_sys_analog2</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
-        <addr>${object.busId}</addr>
+        <addr>1</addr>
         <ver>17</ver>
         <commandType>10978</commandType>
         <ctrlData></ctrlData>
     </DzRequest>
     <DzRequest>
-        <name>ups_hipulse_d${object.index}_get_analog3</name>
+        <name>ups_hipulse_d${object.index}_get_sys_analog3</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
-        <addr>${object.busId}</addr>
+        <addr>1</addr>
         <ver>17</ver>
         <commandType>10979</commandType>
         <ctrlData></ctrlData>

@@ -139,21 +139,6 @@
                 </calcList>
             </CommonDefine>
             <CommonDefine>
-                <name>UPS.Battery.Voltage</name>
-                <commandName>ups_hipulse_d${object.index}_get_sys_analog</commandName>
-                <index>74</index>
-                <length>8</length>
-                <divider>1</divider>
-                <precision>2</precision>
-                <isMean>false</isMean>
-                <calcList>
-                    <asciiToHexCalc></asciiToHexCalc>
-                    <ieee32FloatCalc>
-                        <highHead>false</highHead>
-                    </ieee32FloatCalc>
-                </calcList>
-            </CommonDefine>
-            <CommonDefine>
                 <name>UPS.Output.Frequency</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog</commandName>
                 <index>82</index>
@@ -168,9 +153,10 @@
                     </ieee32FloatCalc>
                 </calcList>
             </CommonDefine>
+
             <CommonDefine>
                 <name>UPS.Input.A.Current</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>28</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -185,7 +171,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Input.B.Current</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>36</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -200,7 +186,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Input.C.Current</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>44</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -215,7 +201,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Input.Frequency</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>52</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -230,7 +216,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Bypass.A.Voltage</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>68</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -245,7 +231,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Bypass.B.Voltage</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>76</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -260,7 +246,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Bypass.C.Voltage</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>84</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -275,7 +261,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Bypass.Frequency</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>92</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -290,7 +276,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Battery.Current</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog1</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog1</commandName>
                 <index>100</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -306,7 +292,7 @@
 
             <CommonDefine>
                 <name>UPS.Output.A.PowerFactor</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>4</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -321,7 +307,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.B.PowerFactor</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>12</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -336,7 +322,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.C.PowerFactor</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>20</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -351,7 +337,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.A.PeakRate</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>28</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -366,7 +352,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.B.PeakRate</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>36</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -381,7 +367,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.C.PeakRate</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>44</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -396,7 +382,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.A.ActivePower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>44</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -411,7 +397,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.B.ActivePower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>52</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -426,7 +412,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.C.ActivePower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>60</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -441,7 +427,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.A.ApparentPower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>68</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -456,7 +442,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.B.ApparentPower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>76</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -471,7 +457,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.C.ApparentPower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>84</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -486,7 +472,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.A.LoadRate</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>92</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -501,7 +487,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.B.LoadRate</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>100</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -516,7 +502,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.C.LoadRate</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog2</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
                 <index>108</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -532,7 +518,7 @@
 
             <CommonDefine>
                 <name>UPS.Output.A.ReactivePower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>4</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -547,7 +533,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.B.ReactivePower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>12</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -562,7 +548,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Output.C.ReactivePower</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>20</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -577,7 +563,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Battery.ReserveTime</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>100</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -592,7 +578,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Battery.Temperature</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>108</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -607,7 +593,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Temperature</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>116</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -622,7 +608,7 @@
             </CommonDefine>
             <CommonDefine>
                 <name>UPS.Battery.Agingcoefficient</name>
-                <commandName>ups_hipulse_d${object.index}_get_analog3</commandName>
+                <commandName>ups_hipulse_d${object.index}_get_sys_analog3</commandName>
                 <index>124</index>
                 <length>8</length>
                 <divider>1</divider>
@@ -653,6 +639,7 @@
                     </mapIntCalc>
                 </calcList>
             </CommonDefine>
+
             <CommonDefine>
                 <name>UPS.State.Battery.Test</name>
                 <commandName>ups_hipulse_d${object.index}_get_di</commandName>
@@ -950,5 +937,6 @@
             </CommonDefine>
         </iSensorDefines>
     </DeviceDefine>
+
 </#list>
 </linked-list>
