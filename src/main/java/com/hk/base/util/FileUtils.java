@@ -3,146 +3,77 @@ package com.hk.base.util;
 import io.netty.util.CharsetUtil;
 
 import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Stream;
 
 /**
  * Created by LuHj on 2018/10/9.
  */
 public class FileUtils {
 
+    public static String readFileToString(String filePath, Charset charset) {
+        StringBuilder stringBuilder = new StringBuilder();
+        Path path = Paths.get(filePath);
+        try (Stream<String> stream = Files.lines(path, charset)) {
+            stream.forEach(str -> stringBuilder.append(str).append("\n"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return stringBuilder.toString();
+    }
+
     public static String readFileToString(String filePath) {
-        FileInputStream fis = null;
-        InputStreamReader isr = null;
-        BufferedReader br = null;
-        String resultJson = "";
-        try {
-            fis = new FileInputStream(filePath);
-            isr = new InputStreamReader(fis, CharsetUtil.UTF_8);
-            br = new BufferedReader(isr);
-            StringBuilder sb = new StringBuilder();
-            String nextLine = "";
-            while ((nextLine = br.readLine()) != null) {
-                sb.append(nextLine);
-                sb.append(System.getProperty("line.separator"));
-            }
-            resultJson = sb.toString();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (br != null) {
-                    br.close();
-                }
-                if (isr != null) {
-                    isr.close();
-                }
-                if (fis != null) {
-                    fis.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return resultJson;
+        return readFileToString(filePath, StandardCharsets.UTF_8);
     }
 
-    public static String readFileWithLine(String filePath, IHandleLineString handleLineString) {
-        FileInputStream fis = null;
-        InputStreamReader isr = null;
-        BufferedReader br = null;
-        String resultJson = "";
-        try {
-            fis = new FileInputStream(filePath);
-            isr = new InputStreamReader(fis, "UTF-8");
-            br = new BufferedReader(isr);
-            StringBuilder sb = new StringBuilder();
-            String nextLine = "";
-            while ((nextLine = br.readLine()) != null) {
-                handleLineString.handle(filePath, nextLine);
-            }
-            resultJson = sb.toString();
-        } catch (Exception e) {
+    public static void readFileWithLine(String filePath, Charset charset, IHandleLineString handleLineString) {
+        Path path = Paths.get(filePath);
+        try (Stream<String> stream = Files.lines(path, charset)) {
+            stream.forEach(s -> {
+                handleLineString.handle(filePath, s);
+            });
+        } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (br != null) {
-                    br.close();
-                }
-                if (isr != null) {
-                    isr.close();
-                }
-                if (fis != null) {
-                    fis.close();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
-        return resultJson;
     }
 
-    public static List<String> scanFiles(String path) {
-        List<String> filePaths = new ArrayList<String>();
-        LinkedList<File> list = new LinkedList<File>();
-        File dir = new File(path);
-        File[] file = dir.listFiles();
+    public static void readFileWithLine(String filePath, IHandleLineString handleLineString) {
+        readFileWithLine(filePath, StandardCharsets.UTF_8, handleLineString);
+    }
 
-        for (int i = 0; i < file.length; i++) {
-            if (file[i].isDirectory()) {
-                // 把第一层的目录，全部放入链表
-                list.add(file[i]);
-            } else {
-                filePaths.add(file[i].getAbsolutePath());
-            }
-        }
-        // 循环遍历链表
-        while (!list.isEmpty()) {
-            // 把链表的第一个记录删除
-            File tmp = list.removeFirst();
-            // 如果删除的目录是一个路径的话
-            if (tmp.isDirectory()) {
-                // 列出这个目录下的文件到数组中
-                file = tmp.listFiles();
-                if (file == null) {// 空目录
-                    continue;
-                }
-                // 遍历文件数组
-                for (int i = 0; i < file.length; ++i) {
-                    if (file[i].isDirectory()) {
-                        // 如果遍历到的是目录，则将继续被加入链表
-                        list.add(file[i]);
-                    } else {
-                        filePaths.add(file[i].getAbsolutePath());
-                    }
-                }
-            }
+
+    public static List<String> scanFiles(String path, boolean isDirectory) {
+        List<String> filePaths = new ArrayList<>();
+        try (Stream<Path> pathStream = Files.list(Paths.get(path))) {
+            pathStream.filter(p -> p.toFile().isDirectory() == isDirectory)
+                    .forEach(s -> {
+                        filePaths.add(s.getFileName().toString());
+                    });
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return filePaths;
     }
 
     public static List<String> scanFolders(String path) {
-        List<String> filePaths = new ArrayList<String>();
-        File dir = new File(path);
-        File[] file = dir.listFiles();
-        for (File aFile : file) {
-            if (aFile.isDirectory()) {
-                // 把第一层的目录，全部放入链表
-                filePaths.add(aFile.getAbsolutePath());
-            }
-        }
-        return filePaths;
+        return scanFiles(path, true);
     }
 
-    public static boolean createFile(String name, String context) throws IOException {
+    public static boolean createFile(String filePath, String context) throws IOException {
+        Path path = Paths.get(filePath);
         boolean flag = false;
-        File filename = new File(name);
-        if (!filename.exists()) {
-            filename.createNewFile();
+        if (!Files.exists(path)){
+            Files.createFile(path);
+            Files.write(path, context.getBytes());
             flag = true;
-            writeFile(filename, context);
         }
         return flag;
     }
@@ -223,8 +154,14 @@ public class FileUtils {
     }
 
     public static void write(String filePath, String context) {
-        write(new File(filePath), context);
+        Path path = Paths.get(filePath);
+        try (BufferedWriter writer = Files.newBufferedWriter(path)){
+            writer.write(context);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
     public static void write(String filePath, String context, boolean isAppend) {
         write(new File(filePath), context, isAppend);
     }
