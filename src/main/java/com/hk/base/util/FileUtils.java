@@ -1,17 +1,12 @@
 package com.hk.base.util;
 
-import io.netty.util.CharsetUtil;
-
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Stream;
 
 /**
@@ -19,6 +14,13 @@ import java.util.stream.Stream;
  */
 public class FileUtils {
 
+    /**
+     * 读取文件
+     *
+     * @param filePath
+     * @param charset
+     * @return
+     */
     public static String readFileToString(String filePath, Charset charset) {
         StringBuilder stringBuilder = new StringBuilder();
         Path path = Paths.get(filePath);
@@ -30,10 +32,23 @@ public class FileUtils {
         return stringBuilder.toString();
     }
 
+    /**
+     * 读取文件
+     *
+     * @param filePath
+     * @return
+     */
     public static String readFileToString(String filePath) {
         return readFileToString(filePath, StandardCharsets.UTF_8);
     }
 
+    /**
+     * 每行读取文件内容
+     *
+     * @param filePath         文件路径
+     * @param charset          字符集
+     * @param handleLineString
+     */
     public static void readFileWithLine(String filePath, Charset charset, IHandleLineString handleLineString) {
         Path path = Paths.get(filePath);
         try (Stream<String> stream = Files.lines(path, charset)) {
@@ -45,17 +60,54 @@ public class FileUtils {
         }
     }
 
+    /**
+     * 每行读取文件内容
+     *
+     * @param filePath         文件路径
+     * @param handleLineString
+     */
     public static void readFileWithLine(String filePath, IHandleLineString handleLineString) {
         readFileWithLine(filePath, StandardCharsets.UTF_8, handleLineString);
     }
 
+    /**
+     * 获取所有文件名(递归每层的文件夹)
+     *
+     * @param path   文件路径
+     * @param result 结果集
+     */
+    public static void scanAllFiles(String path, List<String> result) {
+        List<String> fileList = scanFiles(path);
+        result.addAll(fileList);
+        List<String> optional = scanFolders(path);
+        optional.forEach(str -> {
+            scanAllFiles(str, result);
+        });
+    }
 
+    /**
+     * 获取路径下的所有文件(非文件夹)路径
+     *
+     * @param path 文件路径
+     * @return
+     */
+    public static List<String> scanFiles(String path) {
+        return scanFiles(path, false);
+    }
+
+    /**
+     * 获取路径下的所有文件路径
+     *
+     * @param path        文件路径
+     * @param isDirectory 是否是文件夹
+     * @return
+     */
     public static List<String> scanFiles(String path, boolean isDirectory) {
         List<String> filePaths = new ArrayList<>();
         try (Stream<Path> pathStream = Files.list(Paths.get(path))) {
             pathStream.filter(p -> p.toFile().isDirectory() == isDirectory)
                     .forEach(s -> {
-                        filePaths.add(s.getFileName().toString());
+                        filePaths.add(s.toString());
                     });
         } catch (IOException e) {
             e.printStackTrace();
@@ -63,116 +115,90 @@ public class FileUtils {
         return filePaths;
     }
 
+    /**
+     * 获取路径下的所有文件夹路径
+     *
+     * @param path 文件路径
+     * @return
+     */
     public static List<String> scanFolders(String path) {
         return scanFiles(path, true);
     }
 
-    public static boolean createFile(String filePath, String context) throws IOException {
+    /**
+     * 创建文件并写入内容
+     *
+     * @param filePath 文件路径
+     * @param context  写入内容
+     * @return
+     */
+    public static boolean createFile(String filePath, String context) {
         Path path = Paths.get(filePath);
         boolean flag = false;
-        if (!Files.exists(path)){
-            Files.createFile(path);
-            Files.write(path, context.getBytes());
-            flag = true;
-        }
-        return flag;
-    }
-
-    public static boolean writeFile(File file, String newStr) throws IOException {
-        boolean flag = false;
-        String filein = newStr + "\r\n";
-        String temp = "";
-        FileInputStream fis = null;
-        InputStreamReader isr = null;
-        BufferedReader br = null;
-        FileOutputStream fos = null;
-        PrintWriter pw = null;
-        try {
-            fis = new FileInputStream(file);
-            isr = new InputStreamReader(fis);
-            br = new BufferedReader(isr);
-            StringBuffer buf = new StringBuffer();
-            // 保存该文件原有的内容
-            for (int j = 1; (temp = br.readLine()) != null; j++) {
-                buf = buf.append(temp);
-                // 行与行之间的分隔符 相当于“\n”
-                buf = buf.append(System.getProperty("line.separator"));
-            }
-            buf.append(filein);
-
-            fos = new FileOutputStream(file);
-            pw = new PrintWriter(fos);
-            pw.write(buf.toString().toCharArray());
-            pw.flush();
-            flag = true;
-        } catch (IOException e1) {
-            throw e1;
-        } finally {
-            if (pw != null) {
-                pw.close();
-            }
-            if (fos != null) {
-                fos.close();
-            }
-            if (br != null) {
-                br.close();
-            }
-            if (isr != null) {
-                isr.close();
-            }
-            if (fis != null) {
-                fis.close();
-            }
-        }
-        return flag;
-    }
-
-    public static void write(File file, String context, boolean isAppend) {
-        FileOutputStream out = null;
-        try {
-            if (!file.exists()) {
-                file.createNewFile();
-            }
-            out = new FileOutputStream(file, isAppend);
-            out.write(context.getBytes(CharsetUtil.UTF_8));
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-
+        if (!Files.exists(path)) {
             try {
-                if (out != null) {
-                    out.close();
-                }
+                Files.createFile(path);
+                Files.write(path, context.getBytes());
+                flag = true;
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+        return flag;
     }
 
-    public static void write(File file, String context) {
-        write(file, context, true);
-    }
-
+    /**
+     * 覆盖文件内容
+     *
+     * @param filePath 文件路径
+     * @param context  覆盖的内容
+     */
     public static void write(String filePath, String context) {
+        write(filePath, context, false);
+    }
+
+    /**
+     * 写入文件
+     *
+     * @param filePath 文件路径
+     * @param context  写入内容
+     * @param isAppend 是否追加
+     */
+    public static boolean write(String filePath, String context, boolean isAppend) {
+        boolean flag = false;
         Path path = Paths.get(filePath);
-        try (BufferedWriter writer = Files.newBufferedWriter(path)){
-            writer.write(context);
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
+            if (isAppend) {
+                writer.append(context);
+            } else {
+                writer.write(context);
+            }
+            flag = true;
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return flag;
     }
 
-    public static void write(String filePath, String context, boolean isAppend) {
-        write(new File(filePath), context, isAppend);
-    }
-
+    /**
+     * 根据文件路径截取文件名
+     *
+     * @param filePath 文件路径
+     * @return
+     */
     public static String getFileName(String filePath) {
         String[] temp = filePath.trim().split("\\\\");
         return temp[temp.length - 1];
     }
 
+    /**
+     * 获取文件夹名称
+     *
+     * @param path 文件路径
+     * @return
+     */
     public static List<String> getFolderName(String path) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         File dir = new File(path);
         File[] file = dir.listFiles();
 
@@ -184,11 +210,47 @@ public class FileUtils {
         return list;
     }
 
-    public static void replaceFile(String path, Map<String, String> map) {
-        String context = readFileToString(path);
-        for (Map.Entry<String, String> s : map.entrySet()) {
-            context = context.replaceAll(s.getKey(), s.getValue());
+    /**
+     * 替换文件内容
+     *
+     * @param path   文件路径
+     * @param regex 正则表达式
+     * @param replacement 新字符串
+     * @param num    替换次数(num=0时全局替换)
+     * @return
+     */
+    public static boolean replaceFile(String path, String regex, String replacement, int num) {
+        if (regex == null || replacement == null) {
+            return false;
         }
-        write(path, context, false);
+        String context = readFileToString(path);
+        for (int i = 0; i < num; i++) {
+            context = context.replaceFirst(regex, replacement);
+        }
+        if (num <= 0) {
+            context = context.replaceAll(regex, replacement);
+        }
+        return write(path, context, false);
     }
+
+    /**
+     * 删除文件
+     * @param filePath
+     * @return
+     */
+    public static boolean deleteFile(String filePath) {
+        File file = new File(filePath);
+        return !(file.exists() && file.isFile() && !file.delete());
+    }
+
+    /**
+     * 复制文件
+     * @param srcPath 源文件
+     * @param desPath 目标文件
+     * @return
+     */
+    public static boolean copyFile(String srcPath, String desPath) {
+        return createFile(desPath, readFileToString(srcPath));
+    }
+
 }
