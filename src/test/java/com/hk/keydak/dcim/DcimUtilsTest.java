@@ -1,8 +1,10 @@
 package com.hk.keydak.dcim;
 
+import com.hk.base.util.FileUtils;
 import com.hk.freemarker.dcim.enums.DeviceType;
 import org.junit.Test;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -10,6 +12,22 @@ import java.util.UUID;
  */
 public class DcimUtilsTest {
     private static String INSERT_DEVICE_CATEGORY = "INSERT INTO [DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('%s', '%s', N'%s');";
+
+    @Test
+    public void testStr(){
+        String str = "01020304050607";
+        byte[] bytes = str.getBytes();
+
+        System.out.println(str);
+
+    }
+    @Test
+    public void testFile(){
+        List<String> list = FileUtils.scanFolders("E:\\homkey_wsp\\软件实施项目汇总\\沈阳联通\\软件\\三层\\collector");
+        list.forEach(name -> {
+            System.out.println(name.replaceAll("E:\\homkey_wsp\\软件实施项目汇总\\沈阳联通\\软件\\三层\\collector",""));
+        });
+    }
 
     @Test
     public void createUUID() {
@@ -484,6 +502,25 @@ public class DcimUtilsTest {
                     "            </SensorDefine>";
             index += 13;
             System.out.println(temp);
+        }
+    }
+
+    @Test
+    public void testInsertIpv() {
+        String ipvSql = "INSERT INTO [IpvInfo] ([IpvId], [IpvName], [IpvUrl], [IpvOrder]) VALUES ('%s', N'摄像头%s', N'rtsp://admin:admin@%s:554/h264/ch1/main/av_stream', '%s');";
+        String[] data = new String[]{
+                "192.168.10.186",
+                "192.168.10.187",
+                "192.168.10.188",
+                "192.168.10.189",
+                "192.168.10.190",
+                "192.168.10.191",
+                "192.168.10.192",
+                "192.168.10.193",
+                "192.168.10.194",
+        };
+        for (int i = 0; i < data.length; i++) {
+            System.out.println(String.format(ipvSql, UUID.randomUUID().toString(), String.valueOf(i + 1), data[i], String.valueOf(i + 1)));
         }
     }
 }

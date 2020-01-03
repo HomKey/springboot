@@ -1,13 +1,13 @@
 <linked-list>
-<#list elmList as object>
+<#list flList as object>
     <ModbusRequest>
-        <name>cmd_pm5350bw_${object.index}_3_3000_111</name>
-        <commandType>3</commandType>
+        <name>crac_dme_q1_${object.index}_A${object.busId}</name>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
-        <length>112</length>
-        <registerNumber>2999</registerNumber>
+        <commandType>3</commandType>
+        <registerNumber>0</registerNumber>
+        <length>11</length>
     </ModbusRequest>
 </#list>
 </linked-list>

@@ -25,49 +25,6 @@ public class HmpTest {
     }
 
     /**
-     * 先读取空调数据
-     * deviceid host port busid
-     * collector操作
-     * 1.commands.xml
-     * 替换 deviceid host port busid
-     * 2.DeviceDefines.xml
-     * 替换 deviceid
-     * 3.alertDefines.xml
-     * 替换host busid deviceid
-     * 4.uidataconfig.xml
-     * 替换deviceid
-     */
-    @Test
-    public void testCrv() {
-//        DeviceDefines devid busid
-//        commands devid busid name ip port
-        String tongdao = "1";
-        String collectorPath = "E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\软件\\CD2000黄茅坪IDC-4楼冷通道" + tongdao + "\\collector\\config";
-        String monitorPath = "E:\\homkey_wsp\\软件实施项目汇总\\黄茅坪\\软件\\CD2000黄茅坪IDC-4楼冷通道" + tongdao + "\\monitor\\config\\ac\\uidataconfig.xml";
-        String templatePath = "C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Output\\黄茅坪\\collector\\config";
-        String templatePahtMonitor = "C:\\Users\\tandewei\\Desktop\\CD2000配置生成工具\\CD2000_Output\\黄茅坪\\monitor\\config\\ac\\uidataconfig.xml";
-
-        Map<String, String> deviceMap = new HashMap<>();
-        Map<String, String> deviceidRepalce = new HashMap<>();
-        FileUtils.getFolderName(collectorPath).stream().filter(s -> s.contains("CRAC")).forEach(ac -> {
-            String[] array = ac.split("#");
-            deviceMap.put(array[0] + "#" + array[1], array[2]);
-        });
-        FileUtils.getFolderName(templatePath).stream().filter(s -> s.contains("CRAC")).forEach(ac -> {
-            String[] array = ac.split("#");
-            String deviceid = deviceMap.get(array[0] + "#" + array[1]);
-            deviceidRepalce.put(array[1], deviceid);
-            if (deviceid != null && !deviceid.equals("")){
-                // 替换文件名
-                File file = new File(templatePath + File.separator + ac);
-                file.renameTo(new File(templatePath + File.separator + ac.replace(array[1], deviceid)));
-            }
-        });
-        FileUtils.replaceFile(templatePahtMonitor,deviceMap);
-    }
-
-
-    /**
      * pdc
      *
      * @throws Exception

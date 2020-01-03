@@ -1,0 +1,207 @@
+{
+  "PDU": [
+    {
+      "deviceId": "74A79A33-0DEE-4478-AE02-8A367C338AD4",
+      "name": "IT设备柜1-1",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "94D0C1F6-9CE4-4F4B-AD9D-AFB3478DBFDD",
+      "name": "IT设备柜1-2",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "D0A3FB87-3EF7-414B-AAD9-E35D421CFBA3",
+      "name": "IT设备柜1-3",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "0D29D66C-3678-4334-872A-D6376ECD46A4",
+      "name": "IT设备柜1-4",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "EC5A1924-34D9-46F1-9C5D-5DCB27BE815C",
+      "name": "IT设备柜1-5",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "47523822-E2B6-45C1-BCB0-12F248EDAD9B",
+      "name": "IT设备柜1-6",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "8FCE2298-9846-4EBF-8B7B-20F1675884C2",
+      "name": "IT设备柜1-7",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "FF7D677B-07FA-4517-9387-FEBC4D2A1085",
+      "name": "IT设备柜1-8",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "88846985-514F-4335-A36A-4910A16BCBAA",
+      "name": "IT设备柜1-9",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "F794845C-ACB2-47FD-AA48-B48D5812A029",
+      "name": "IT设备柜1-10",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "36E5D45B-455D-4922-862C-68DB0FDED20D",
+      "name": "IT设备柜1-11",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "8A4EFD58-9429-429E-9A34-FB46BA72B714",
+      "name": "IT设备柜1-12",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "0533C8E1-8DBE-47F5-86FB-8FD9C6EA4EB6",
+      "name": "IT设备柜1-13",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "F19B1F32-CFA5-4577-AC2F-3C503D1837A9",
+      "name": "IT设备柜1-14",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "2182C612-E942-4213-866F-D827E0DA0A64",
+      "name": "IT设备柜1-15",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "7C0332E2-B04D-46D3-8F5B-EC2BA5AA7021",
+      "name": "IT设备柜1-16",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "1DFC21CE-5DDE-4C4D-804C-6EEF80823894",
+      "name": "IT设备柜1-17",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "F5C81318-D3FB-47BA-B43F-573A010C5E5B",
+      "name": "IT设备柜1-18",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "03E2DDCA-3135-4F47-8CCB-135A095C7653",
+      "name": "IT设备柜1-19",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "86B05A10-DF61-4619-9B25-C0642B7163AA",
+      "name": "IT设备柜1-20",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "D7CC22A9-6AAC-4D00-8901-95BF173F7ED9",
+      "name": "IT设备柜1-21",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "1A5C7185-369E-48FF-84D8-623D9D674A08",
+      "name": "IT设备柜1-22",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "32514D63-131A-42CF-9F00-61D9C967A153",
+      "name": "IT设备柜1-23",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "9909BE62-2775-4C48-867E-ED4E256BCE5A",
+      "name": "IT设备柜1-24",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "C7E6FA6B-BE2C-44F8-B662-CED3312B3E02",
+      "name": "IT设备柜1-25",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "ADC88CA9-FFC5-47FA-B6DB-E4AF03A87CA0",
+      "name": "IT设备柜1-26",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "E5CABB9B-601A-49E2-ABEB-43535A1AC5F5",
+      "name": "IT设备柜1-27",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "76AE665C-7C0C-4A09-862E-F4E008098DBD",
+      "name": "IT设备柜1-28",
+      "host": "",
+      "port": "",
+      "busId": ""
+    },
+    {
+      "deviceId": "1F5DB602-E9B2-4555-95C3-B76A4416E639",
+      "name": "IT设备柜1-29",
+      "host": "",
+      "port": "",
+      "busId": ""
+    }
+  ]
+}

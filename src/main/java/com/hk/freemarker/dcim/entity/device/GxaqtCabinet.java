@@ -11,6 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @ToString(callSuper = true)
 public class GxaqtCabinet {
+    private String name;
     private String deviceId;
     private String index;
     private String pduFrontIp;

@@ -8,59 +8,57 @@
                 <name>ELM.A.Current</name>
                 <highPropertyDefines>
                     <name>ELM.A.Current_h</name>
-                    <registerIndex>2999</registerIndex>
+                    <registerIndex>3000</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>1000</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.A.Current_l</name>
-                    <registerIndex>3000</registerIndex>
+                    <registerIndex>3001</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>1000</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
-
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.B.Current</name>
                 <highPropertyDefines>
                     <name>ELM.B.Current_h</name>
-                    <registerIndex>3001</registerIndex>
+                    <registerIndex>3002</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>1000</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.B.Current_l</name>
-                    <registerIndex>3002</registerIndex>
+                    <registerIndex>3003</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>1000</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
-
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.C.Current</name>
                 <highPropertyDefines>
                     <name>ELM.C.Current_h</name>
-                    <registerIndex>3003</registerIndex>
+                    <registerIndex>3004</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>1000</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.C.Current_l</name>
-                    <registerIndex>3004</registerIndex>
+                    <registerIndex>3005</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>1000</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
 
@@ -68,57 +66,57 @@
                 <name>ELM.LineVoltage.AB</name>
                 <highPropertyDefines>
                     <name>ELM.LineVoltage_AB_h</name>
-                    <registerIndex>3019</registerIndex>
+                    <registerIndex>3020</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.LineVoltage_AB_l</name>
-                    <registerIndex>3020</registerIndex>
+                    <registerIndex>3021</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.LineVoltage.BC</name>
                 <highPropertyDefines>
                     <name>ELM.LineVoltage_BC_h</name>
-                    <registerIndex>3021</registerIndex>
+                    <registerIndex>3022</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.LineVoltage_BC_l</name>
-                    <registerIndex>3022</registerIndex>
+                    <registerIndex>3023</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.LineVoltage.CA</name>
                 <highPropertyDefines>
                     <name>ELM.LineVoltage_CA_h</name>
-                    <registerIndex>3023</registerIndex>
+                    <registerIndex>3024</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.LineVoltage_CA_l</name>
-                    <registerIndex>3024</registerIndex>
+                    <registerIndex>3025</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
 
@@ -126,57 +124,57 @@
                 <name>ELM.A.Voltage</name>
                 <highPropertyDefines>
                     <name>ELM.A.Voltage_h</name>
-                    <registerIndex>3027</registerIndex>
+                    <registerIndex>3028</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.A.Voltage_l</name>
-                    <registerIndex>3028</registerIndex>
+                    <registerIndex>3029</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.B.Voltage</name>
                 <highPropertyDefines>
                     <name>ELM.B.Voltage_h</name>
-                    <registerIndex>3029</registerIndex>
+                    <registerIndex>3030</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.B.Voltage_l</name>
-                    <registerIndex>3030</registerIndex>
+                    <registerIndex>3031</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.C.Voltage</name>
                 <highPropertyDefines>
                     <name>ELM.C.Voltage_h</name>
-                    <registerIndex>3031</registerIndex>
+                    <registerIndex>3032</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.C.Voltage_l</name>
-                    <registerIndex>3032</registerIndex>
+                    <registerIndex>3033</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
 
@@ -184,57 +182,57 @@
                 <name>ELM.A.ActivePower</name>
                 <highPropertyDefines>
                     <name>ELM.A.ActivePower_h</name>
-                    <registerIndex>3053</registerIndex>
+                    <registerIndex>3054</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.A.ActivePower_l</name>
-                    <registerIndex>3054</registerIndex>
+                    <registerIndex>3055</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.B.ActivePower</name>
                 <highPropertyDefines>
                     <name>ELM.B.ActivePower_h</name>
-                    <registerIndex>3055</registerIndex>
+                    <registerIndex>3056</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.B.ActivePower_l</name>
-                    <registerIndex>3056</registerIndex>
+                    <registerIndex>3057</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.C.ActivePower</name>
                 <highPropertyDefines>
                     <name>ELM.C.ActivePower_h</name>
-                    <registerIndex>3057</registerIndex>
+                    <registerIndex>3058</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.C.ActivePower_l</name>
-                    <registerIndex>3058</registerIndex>
+                    <registerIndex>3059</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
 
@@ -242,19 +240,19 @@
                 <name>ELM.ActivePower</name>
                 <highPropertyDefines>
                     <name>ELM.ActivePower_h</name>
-                    <registerIndex>3059</registerIndex>
+                    <registerIndex>3060</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ActivePower_l</name>
-                    <registerIndex>3060</registerIndex>
+                    <registerIndex>3061</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
 
@@ -262,133 +260,133 @@
                 <name>ELM.A.ReactivePower</name>
                 <highPropertyDefines>
                     <name>ELM.A.ReactivePower_h</name>
-                    <registerIndex>3061</registerIndex>
+                    <registerIndex>3062</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.A.ReactivePower_l</name>
-                    <registerIndex>3062</registerIndex>
+                    <registerIndex>3063</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.B.ReactivePower</name>
                 <highPropertyDefines>
                     <name>ELM.B.ReactivePower_h</name>
-                    <registerIndex>3063</registerIndex>
+                    <registerIndex>3064</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.B.ReactivePower_l</name>
-                    <registerIndex>3064</registerIndex>
+                    <registerIndex>3065</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.C.ReactivePower</name>
                 <highPropertyDefines>
                     <name>ELM.C.ReactivePower_h</name>
-                    <registerIndex>3065</registerIndex>
+                    <registerIndex>3066</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.C.ReactivePower_l</name>
-                    <registerIndex>3066</registerIndex>
+                    <registerIndex>3067</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.ReactivePower</name>
                 <highPropertyDefines>
                     <name>ELM.ReactivePower_h</name>
-                    <registerIndex>3067</registerIndex>
+                    <registerIndex>3068</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ReactivePower_l</name>
-                    <registerIndex>3068</registerIndex>
+                    <registerIndex>3069</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.A.ApparentPower</name>
                 <highPropertyDefines>
                     <name>ELM.A.ApparentPower_h</name>
-                    <registerIndex>3069</registerIndex>
+                    <registerIndex>3070</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.A.ApparentPower_l</name>
-                    <registerIndex>3070</registerIndex>
+                    <registerIndex>3071</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.B.ApparentPower</name>
                 <highPropertyDefines>
                     <name>ELM.B.ApparentPower_h</name>
-                    <registerIndex>3071</registerIndex>
+                    <registerIndex>3072</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.B.ApparentPower_l</name>
-                    <registerIndex>3072</registerIndex>
+                    <registerIndex>3073</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.C.ApparentPower</name>
                 <highPropertyDefines>
                     <name>ELM.C.ApparentPower_h</name>
-                    <registerIndex>3073</registerIndex>
+                    <registerIndex>3074</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.C.ApparentPower_l</name>
-                    <registerIndex>3074</registerIndex>
+                    <registerIndex>3075</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
@@ -397,17 +395,17 @@
                     <name>ELM.ApparentPower_h</name>
                     <registerIndex>3076</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ApparentPower_l</name>
-                    <registerIndex>3076</registerIndex>
+                    <registerIndex>3077</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
 
@@ -416,95 +414,95 @@
                 <name>ELM.A.PowerFactor</name>
                 <highPropertyDefines>
                     <name>ELM.A.PowerFactor_h</name>
-                    <registerIndex>3077</registerIndex>
+                    <registerIndex>3078</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.A.PowerFactor_l</name>
-                    <registerIndex>3078</registerIndex>
+                    <registerIndex>3079</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.B.PowerFactor</name>
                 <highPropertyDefines>
                     <name>ELM.B.PowerFactor_h</name>
-                    <registerIndex>3079</registerIndex>
+                    <registerIndex>3080</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.B.PowerFactor_l</name>
-                    <registerIndex>3080</registerIndex>
+                    <registerIndex>3081</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.C.PowerFactor</name>
                 <highPropertyDefines>
                     <name>ELM.C.PowerFactor_h</name>
-                    <registerIndex>3081</registerIndex>
+                    <registerIndex>3082</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.C.PowerFactor_l</name>
-                    <registerIndex>3082</registerIndex>
+                    <registerIndex>3083</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.PowerFactor</name>
                 <highPropertyDefines>
                     <name>ELM.PowerFactor_h</name>
-                    <registerIndex>3083</registerIndex>
+                    <registerIndex>3084</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.PowerFactor_l</name>
-                    <registerIndex>3084</registerIndex>
+                    <registerIndex>3085</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
             <Byte4ToFloatComputeSensorDefine>
                 <name>ELM.Frequency</name>
                 <highPropertyDefines>
                     <name>ELM.Frequency_h</name>
-                    <registerIndex>3109</registerIndex>
+                    <registerIndex>3110</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.Frequency_l</name>
-                    <registerIndex>3110</registerIndex>
+                    <registerIndex>3111</registerIndex>
                     <scale>2</scale>
-                    <isMean>false</isMean>
+                    <isMean>true</isMean>
                     <commandName>cmd_pm5350bw_${object.index}_3_3000_111</commandName>
-                    <divider>1</divider>
+                    <divider>10</divider>
                 </lowPropertyDefines>
             </Byte4ToFloatComputeSensorDefine>
         </iSensorDefines>

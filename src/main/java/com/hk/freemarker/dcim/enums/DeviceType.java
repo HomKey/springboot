@@ -6,6 +6,7 @@ package com.hk.freemarker.dcim.enums;
  */
 public enum DeviceType {
     EMH("channelList","channel"),
+    EMH_XF("channelList","channel"),
     EMHv2("emhList","CAEMHv2"),
     PM5350BW("elmList","pm5350bw"),
     PM5350BW_ZL("elmList","pm5350bw"),

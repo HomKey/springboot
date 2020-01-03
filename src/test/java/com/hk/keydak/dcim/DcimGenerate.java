@@ -1,5 +1,7 @@
 package com.hk.keydak.dcim;
 
+import com.hk.base.util.FileUtils;
+import com.hk.base.util.IHandleLineString;
 import com.hk.freemarker.FreemarkerUtils;
 import com.hk.freemarker.dcim.entity.base.PositionDevice;
 import com.hk.freemarker.dcim.entity.base.DeviceDetail;
@@ -51,18 +53,45 @@ public class DcimGenerate {
      */
     @Test
     public void createCollectorXml() throws IOException, TemplateException {
-        Map<String, Object> acModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.Hipulse);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Hipulse.getPath(), FILE_NAME_COMMANDS), acModel);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Hipulse.getPath(), FILE_NAME_DEVICE_DEFINES), acModel);
+        Map<String, Object> acModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.EMH);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.EMH.getPath(), "action"), acModel);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.EMH.getPath(), "config"), acModel);
     }
 
     @Test
     public void test1288() throws IOException, TemplateException {
-        Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.ACRD300);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.ACRD300.getPath(), FILE_NAME_COMMANDS), emhModel);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.ACRD300.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
-
+        Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.GALAXY300);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.GALAXY300.getPath(), FILE_NAME_COMMANDS), emhModel);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.GALAXY300.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
     }
+
+    public static StringBuffer CommondXml = new StringBuffer();
+    public static StringBuffer DeviceDefineXml = new StringBuffer();
+
+    @Test
+    public void testHebing() {
+        CommondXml.append("<linked-list>\n");
+        DeviceDefineXml.append("<linked-list>\n");
+        List<String> list = FileUtils.scanFiles("D:\\freemarker\\device\\cabinet");
+        for (String fileSource : list) {
+            FileUtils.readFileWithLine(fileSource, (filePath, str) -> {
+                if (filePath.contains("Commands_")) {
+                    if (!str.contains("linked-list")) {
+                        CommondXml.append(str + "\n");
+                    }
+                } else if (filePath.contains("DeviceDefines_")) {
+                    if (!str.contains("linked-list")) {
+                        DeviceDefineXml.append(str + "\n");
+                    }
+                }
+            });
+        }
+        CommondXml.append("</linked-list>");
+        DeviceDefineXml.append("</linked-list>");
+        FileUtils.write("D:\\freemarker\\device\\cabinet\\Commands.xml", CommondXml.toString());
+        FileUtils.write("D:\\freemarker\\device\\cabinet\\DeviceDefines.xml", DeviceDefineXml.toString());
+    }
+
 
     @Test
     public void testZszlCAEMHv2() throws IOException, TemplateException {
@@ -214,7 +243,7 @@ public class DcimGenerate {
                 "6F6ECE56-369F-488C-8D1D-4B20035F10D6", // 通道3
                 "590C11C8-E015-48AD-9F54-94D8DC18088B"  // 通道4
         };
-        String whereSql = " AND ParentId = '" + parentIds[3] + "' ORDER BY SerialNumber DESC";
+        String whereSql = " AND ParentId = '" + parentIds[2] + "' ORDER BY SerialNumber DESC";
 
 
         List<Map<String, Object>> mapList = dcimJdbcTemplate.queryForList(baseSql + whereSql);
@@ -227,56 +256,83 @@ public class DcimGenerate {
 //        资产左 16 - 29
 //        资产右 30 - 43
 
-        int middle = 14;
-        String pduLeftFrontIp = "192.168.10.4";
-        String pduLeftBackIp = "192.168.10.5";
-        String pduRightFrontIp = "192.168.10.6";
-        String pduRightBackIp = "192.168.10.7";
-        String thLeft = "192.168.10.2";
-        String thRight = "192.168.10.3";
-        int assetLeftStart = 16;
-        int assetRightStart = 30;
-        String emhHost = "192.168.10.1";
-        String insertDeviceExtend = "INSERT INTO [DCIM-GXAQT].[dbo].[DeviceExtend] ([Id], [Key], [Value], [Description]) VALUES ('%s', N'AssetCode', N'%s', N'CD2000资产标记');\n"
-                + "INSERT INTO [DCIM-GXAQT].[dbo].[DeviceExtend] ([Id], [Key], [Value], [Description]) VALUES ('%s', N'CD2KHost', N'%s', N'CD2000地址');\n";
+        // 通道1
+//        String pduLeftFrontIp = "192.168.10.50";
+//        String pduLeftBackIp = "192.168.10.51";
+//        String pduRightFrontIp = "192.168.10.52";
+//        String pduRightBackIp = "192.168.10.53";
+//        String thLeft = "192.168.10.48";
+//        String thRight = "192.168.10.49";
+//
+//        int leftFront = 7;
+//        int leftBack = 12;
+//        int rightFront = 19;
+//        int rightBack = 25;
+
+        // 通道3
+        String thLeft = "192.168.10.138";
+        String thRight = "192.168.10.139";
+        String pduLeftFrontIp = "192.168.10.140";
+        String pduLeftBackIp = "192.168.10.141";
+        String pduRightFrontIp = "192.168.10.142";
+        String pduRightBackIp = "192.168.10.143";
+
+        int leftFront = 7;
+        int leftBack = 12;
+        int rightFront = 19;
+        int rightBack = 24;
+
+
         for (int i = 0; i < mapList.size(); i++) {
             String serialNumber = String.valueOf(mapList.get(i).get("SerialNumber"));
+            String name = String.valueOf(mapList.get(i).get("Name"));
             String deviceId = String.valueOf(mapList.get(i).get("id"));
             GxaqtCabinet cabinet = new GxaqtCabinet();
+            cabinet.setName(name);
             cabinet.setIndex(serialNumber);
             cabinet.setDeviceId(deviceId);
-            // 前14个为右列机柜
-            String busId = "";
-            if (i < middle) {
-                busId += (i + 1);
-                cabinet.setPduFrontIp(pduRightFrontIp);
-                cabinet.setPduBackIp(pduRightBackIp);
-                cabinet.setThIp(thRight);
-                System.out.println(String.format(insertDeviceExtend, deviceId, "192.168.10." + assetRightStart + ":6001:0:1", deviceId, emhHost));
-                assetRightStart++;
-            } else {
-                busId += (i - middle + 1);
-                cabinet.setPduFrontIp(pduLeftFrontIp);
-                cabinet.setPduBackIp(pduLeftBackIp);
-                cabinet.setThIp(thLeft);
-                System.out.println(String.format(insertDeviceExtend, deviceId, "192.168.10." + assetLeftStart + ":6001:0:1", deviceId, emhHost));
-                assetLeftStart++;
-            }
-            cabinet.setThBusId(busId);
-            cabinet.setPduFrontBusId(busId);
-            cabinet.setPduBackBusId(busId);
-            cabinet.setPduFrontPort("6001");
             cabinet.setPduBackPort("6001");
+            cabinet.setPduFrontPort("6001");
             cabinet.setThPort("6001");
+            int busId = i + 1;
+            if (i < leftFront) {
+                cabinet.setPduFrontIp(pduLeftFrontIp);
+                cabinet.setPduFrontBusId(String.valueOf(busId * 2 - 1));
+                cabinet.setPduBackIp(pduLeftFrontIp);
+                cabinet.setPduBackBusId(String.valueOf(busId * 2));
+                cabinet.setThIp(thLeft);
+                cabinet.setThBusId(String.valueOf(i + 1));
+            } else if (i >= leftFront && i < leftBack) {
+                cabinet.setPduFrontIp(pduLeftBackIp);
+                cabinet.setPduFrontBusId(String.valueOf((busId - leftFront) * 2 - 1));
+                cabinet.setPduBackIp(pduLeftBackIp);
+                cabinet.setPduBackBusId(String.valueOf((busId - leftFront) * 2));
+                cabinet.setThIp(thLeft);
+                cabinet.setThBusId(String.valueOf(i + 1));
+            } else if (i >= leftBack && i < rightFront) {
+                cabinet.setPduFrontIp(pduRightFrontIp);
+                cabinet.setPduFrontBusId(String.valueOf((busId - leftBack) * 2 - 1));
+                cabinet.setPduBackIp(pduRightFrontIp);
+                cabinet.setPduBackBusId(String.valueOf((busId - leftBack) * 2));
+                cabinet.setThIp(thRight);
+                cabinet.setThBusId(String.valueOf(i + 1 - leftBack));
+            }else if (i >= rightFront && i < rightBack) {
+                cabinet.setPduFrontIp(pduRightBackIp);
+                cabinet.setPduFrontBusId(String.valueOf((busId - rightFront) * 2 - 1));
+                cabinet.setPduBackIp(pduRightBackIp);
+                cabinet.setPduBackBusId(String.valueOf((busId - rightFront) * 2));
+                cabinet.setThIp(thRight);
+                cabinet.setThBusId(String.valueOf(i + 1 - leftBack));
+            }
             cabinetList.add(cabinet);
         }
         pduModel.put("cabinetList", cabinetList);
-//        try {
-//            freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Cabinet.getPath(), FILE_NAME_COMMANDS + "-cabinet"), pduModel);
-//            freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Cabinet.getPath(), FILE_NAME_DEVICE_DEFINES + "-cabinet"), pduModel);
-//        } catch (IOException | TemplateException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Cabinet.getPath(), FILE_NAME_COMMANDS + "-cabinet"), pduModel);
+            freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.Cabinet.getPath(), FILE_NAME_DEVICE_DEFINES + "-cabinet"), pduModel);
+        } catch (IOException | TemplateException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test

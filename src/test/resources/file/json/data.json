@@ -1,0 +1,22 @@
+{
+  "modelList": [
+    {
+      "id":"",
+      "name": "",
+      "properties": [
+        {
+          "name":"",
+          "displayName": "主机通讯",
+          "description": "Connection_Status"
+        }
+      ]
+    }
+  ],
+  "deviceList": [
+    {
+      "modelId": "",
+      "deviceName": "环境主机",
+      "deviceId": ""
+    }
+  ]
+}

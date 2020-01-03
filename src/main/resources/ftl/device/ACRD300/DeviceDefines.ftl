@@ -4,155 +4,594 @@
         <deviceId>${object.deviceId}</deviceId>
         <iSensorDefines>
             <SnmpSensorDefine>
+                <name>CRAC.Group.Minimum.Rack.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.1</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Group.Minimum.Rack.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.2</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Group.Maximum.Rack.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.3</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Group.Maximum.Rack.Humdity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.4</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Total.Airflow</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.5</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Total.Air.Side.Cooling.Demand</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.7</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Total.Sensible.Cooling.Power</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.8</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
                 <name>CRAC.Module.1.SupplyAir.Temperature</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.9</oid>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.9</oid>
                 <divider>10</divider>
-                <precision>1</precision>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Module.1.SupplyAir.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.10</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Maximum.Rack.Inlet.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.11</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Maximum.Rack.Inlet.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.12</oid>
+                <divider>10</divider>
+                <precision>10</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Module.1.ReturnAir.Temperature</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.13</oid>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.13</oid>
                 <divider>10</divider>
-                <precision>1</precision>
+                <precision>10</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Module.1.ReturnAir.Humidity</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.15</oid>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.14</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Room.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.16</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Dew.Point.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.18</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Airflow</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.20</oid>
                 <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
-
+            <SnmpSensorDefine>
+                <name>CRAC.Air.Filter.Pressure</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.22</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Cool.Demand</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.24</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Cool.Output</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.25</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Upper.Supply.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.26</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Upper.Supply.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.27</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Lower.Supply.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.28</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Lower.Supply.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.29</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Upper.Return.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.30</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Upper.Return.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.31</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Lower.Return.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.32</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Lower.Return.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.33</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Temperature.1</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.34</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Humidity.1</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.35</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Temperature.2</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.36</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Humidity.2</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.37</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Temperature.3</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.38</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Humidity.3</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.39</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Temperature.4</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.40</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Rack.Inlet.Humidity.4</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.41</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Suction.Pressure</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.42</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Discharge.Pressure</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.44</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Suction.Evap.Temp</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.46</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Suction.Evap.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.47</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Discharge.Cond.Temp</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.48</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Discharge.Cond.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.49</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Inlet.Evap.Coil.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.50</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Inlet.Evap.Coil.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.51</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Outlet.Evap.Coil.Temperature</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.52</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Outlet.Evap.Coil.Humidity</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.53</oid>
+                <divider>10</divider>
+                <precision>10</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Superheat</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.46</oid>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.54</oid>
                 <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
-                <name>CRAC.Fan.RPM</name>
+                <name>CRAC.Fan.1</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.48</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.56</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.2</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.57</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.3</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.58</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.4</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.59</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.5</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.60</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.6</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.61</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.7</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.62</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.8</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.63</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Compressor.Speed</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.49</oid>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.64</oid>
                 <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
+                <name>CRAC.EEV.Position</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.65</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Condenser.Fan.Speed</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.66</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.Power.Supply.1</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.67</oid>
+                <divider>10</divider>
+                <precision>00</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Fan.Power.Supply.2</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.68</oid>
+                <divider>10</divider>
+                <precision>00</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Condenser.Fan.Power</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.69</oid>
+                <divider>10</divider>
+                <precision>1</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
+                <name>CRAC.Compressor.Power</name>
+                <commandName>crac_acrd_D${object.index}_snmp1</commandName>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.70</oid>
+                <divider>10</divider>
+                <precision>00</precision>
+                <isMean>false</isMean>
+            </SnmpSensorDefine>
+            <SnmpSensorDefine>
                 <name>CRAC.Unit.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.55</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.71</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.AirFilter.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.56</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.72</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Compressor.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.57</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.73</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.CondenserFan.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.58</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.74</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.CondensatePump.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.59</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.75</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.1.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.60</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.76</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.2.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.61</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.77</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.3.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.62</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.78</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.4.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.63</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.79</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.5.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.64</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.80</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.6.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.65</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.81</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.7.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.66</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.82</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>
             <SnmpSensorDefine>
                 <name>CRAC.Fan.8.Runtime</name>
                 <commandName>crac_acrd_D${object.index}_snmp1</commandName>
-                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.67</oid>
-                <divider>1</divider>
+                <oid>.1.3.6.1.4.1.318.1.1.27.1.4.1.2.1.3.1.83</oid>
+                <divider>10</divider>
                 <precision>1</precision>
                 <isMean>false</isMean>
             </SnmpSensorDefine>

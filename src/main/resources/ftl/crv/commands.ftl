@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <linked-list>
   <ModbusRequest>
     <name>crac_q1_#{devid}_A#{busid}</name>

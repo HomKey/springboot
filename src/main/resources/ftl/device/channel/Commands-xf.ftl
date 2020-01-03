@@ -1,13 +1,15 @@
 <linked-list>
-<#list emhList as object>
+    <!-- 冷通道 -->
+<#list channelList as object>
     <ModbusRequest>
-        <name>Modbus_CAEMH_AI_8_124_d${object.index}</name>
-        <commandType>3</commandType>
+        <name>cmd_channel_xf_${object.index}_1_8_186</name>
+        <commandType>1</commandType>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
-        <length>124</length>
+        <length>186</length>
         <registerNumber>8</registerNumber>
     </ModbusRequest>
 </#list>
 </linked-list>
+

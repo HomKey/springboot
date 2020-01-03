@@ -1,0 +1,25 @@
+<linked-list>
+<#list channelList as object>
+    <DeviceDefine>
+        <deviceId>${object.deviceId}</deviceId>
+        <iSensorDefines>
+            <SensorDefine>
+                <name>ColdChannel.FireControl.InputSignal.OpenAlways</name>
+                <registerIndex>120</registerIndex>
+                <scale>0</scale>
+                <isMean>false</isMean>
+                <commandName>cmd_channel_xf_${object.index}_1_8_186</commandName>
+                <divider>1</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>ColdChannel.FireControl.InputSignal.CloseAlways</name>
+                <registerIndex>121</registerIndex>
+                <scale>0</scale>
+                <isMean>false</isMean>
+                <commandName>cmd_channel_xf_${object.index}_1_8_186</commandName>
+                <divider>1</divider>
+            </SensorDefine>
+        </iSensorDefines>
+    </DeviceDefine>
+</#list>
+</linked-list>

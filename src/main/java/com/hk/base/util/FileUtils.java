@@ -76,12 +76,18 @@ public class FileUtils {
      * @param path   文件路径
      * @param result 结果集
      */
-    public static void scanAllFiles(String path, List<String> result) {
+    public static List<String> scanAllFiles(String path) {
+        List<String> result = new ArrayList<>();
+        scanFiles(path, result);
+        return result;
+    }
+
+    private static void scanFiles(String path, List<String> result){
         List<String> fileList = scanFiles(path);
         result.addAll(fileList);
-        List<String> optional = scanFolders(path);
-        optional.forEach(str -> {
-            scanAllFiles(str, result);
+        List<String> folders = scanFolders(path);
+        folders.forEach(str -> {
+            scanFiles(str, result);
         });
     }
 

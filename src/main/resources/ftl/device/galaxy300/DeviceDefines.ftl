@@ -1112,7 +1112,7 @@
         <scale>1</scale>
         <isMean>false</isMean>
         <commandName>Modbus_MGE_Galaxy300_${object.index}_A2</commandName>
-        <divider>1.0</divider>
+        <divider>10</divider>
       </SensorDefine>
       <SensorDefine>
         <#--<displayName></displayName>-->
@@ -1121,7 +1121,7 @@
         <scale>1</scale>
         <isMean>false</isMean>
         <commandName>Modbus_MGE_Galaxy300_${object.index}_A2</commandName>
-        <divider>1.0</divider>
+        <divider>10</divider>
       </SensorDefine>
       <SensorDefine>
         <#--<displayName></displayName>-->
@@ -1130,7 +1130,7 @@
         <scale>1</scale>
         <isMean>false</isMean>
         <commandName>Modbus_MGE_Galaxy300_${object.index}_A2</commandName>
-        <divider>1.0</divider>
+        <divider>10</divider>
       </SensorDefine>
       <SensorDefine>
         <#--<displayName></displayName>-->

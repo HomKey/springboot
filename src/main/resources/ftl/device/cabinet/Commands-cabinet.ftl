@@ -1,6 +1,7 @@
 <linked-list>
 <#list cabinetList as object>
-    <!--AI量，请求超过30个长度就83错误码-->
+    <!-- 机柜名称${object.name} -->
+    <!-- PDU A -->
     <ModbusRequest>
         <name>pdu_spem_A_${object.index}_3_0_30</name>
         <commandType>3</commandType>
@@ -10,6 +11,7 @@
         <length>30</length>
         <registerNumber>0</registerNumber>
     </ModbusRequest>
+    <!-- PDU B -->
     <ModbusRequest>
         <name>pdu_spem_B_${object.index}_3_0_30</name>
         <commandType>3</commandType>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <linked-list>
 <#list upsList as object>
     <ModbusRequest>
@@ -25,8 +24,8 @@
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
-        <length>101</length>
-        <registerNumber>324</registerNumber>
+        <length>67</length>
+        <registerNumber>329</registerNumber>
     </ModbusRequest>
     <ModbusRequest>
         <name>Modbus_MGE_Galaxy300_${object.index}_A4</name>
@@ -34,8 +33,8 @@
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
-        <length>100</length>
-        <registerNumber>432</registerNumber>
+        <length>11</length>
+        <registerNumber>521</registerNumber>
     </ModbusRequest>
 </#list>
 </linked-list>

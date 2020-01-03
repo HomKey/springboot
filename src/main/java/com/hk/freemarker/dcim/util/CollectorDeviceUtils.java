@@ -28,10 +28,11 @@ public class CollectorDeviceUtils {
         init1288Pdc();
         init1288Floor();
         init1288Emh();
+        init1288Emh2();
 //        init1288Pdu();
         init1288Ups();
         init1288Ac();
-        initFan();
+//        initFan();
 
         // 肿瘤
         // 环境主机
@@ -49,7 +50,10 @@ public class CollectorDeviceUtils {
         initZlElm();
 
         initZlTh();
+
+
     }
+
 
     private static void initFan(){
         List<PositionDevice> list = new ArrayList<>();
@@ -161,29 +165,120 @@ public class CollectorDeviceUtils {
     // 电量仪
     private static void init1288Elm() {
         List<PositionDevice> elmList = new ArrayList<>();
+        DeviceType deviceType = DeviceType.PM5350BW;
+        PositionDevice pdc1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("4E5AC5DD-72B8-4E7F-BDAE-DBDA902E822B")
+                        .name("机房电量仪A1").index(1).ip("192.168.10.183").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("4E5AC5DD-72B8-4E7F-BDAE-DBDA902E822B")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(pdc1);
+        PositionDevice pdc2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("4623E900-CBA2-4F5F-A104-4DFC4D8E1910")
+                        .name("机房电量仪A2").index(2).ip("192.168.10.183").port("6001").busId("2").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("4623E900-CBA2-4F5F-A104-4DFC4D8E1910")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(pdc2);
+
+        PositionDevice dly1a = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("7CD955F1-9AD7-4F7C-B918-116E6B2A2CEC")
+                        .name("电量仪1A").index(3).ip("192.168.10.185").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("7CD955F1-9AD7-4F7C-B918-116E6B2A2CEC")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly1a);
+        PositionDevice dly1b = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("A863DB36-9F7B-47C5-9E2B-0E3B1ED1FD31")
+                        .name("电量仪1B").index(4).ip("192.168.10.185").port("6001").busId("2").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("A863DB36-9F7B-47C5-9E2B-0E3B1ED1FD31")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly1b);
+        PositionDevice dly2a = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("154F72CA-4DA9-4DCC-AA1B-1B47D7DF6AC5")
+                        .name("电量仪2A").index(5).ip("192.168.10.185").port("6001").busId("3").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("154F72CA-4DA9-4DCC-AA1B-1B47D7DF6AC5")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly2a);
+        PositionDevice dly2b = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("393684D1-ABDD-48EA-83FD-C00ECC8EB192")
+                        .name("电量仪2B").index(6).ip("192.168.10.185").port("6001").busId("4").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("393684D1-ABDD-48EA-83FD-C00ECC8EB192")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly2b);
+        PositionDevice dly3a = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("66648BAC-DC11-4BBC-BA84-79085FF4EA31")
+                        .name("电量仪3A").index(7).ip("192.168.10.185").port("6001").busId("5").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("66648BAC-DC11-4BBC-BA84-79085FF4EA31")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly3a);
+        PositionDevice dly3b = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("3B54677D-326A-490C-BD18-C4B4665148AC")
+                        .name("电量仪3B").index(8).ip("192.168.10.185").port("6001").busId("6").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("3B54677D-326A-490C-BD18-C4B4665148AC")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly3b);
+
         PositionDevice dly4 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("3C4F8CEC-C268-40D7-A38E-78992786FF36")
-                        .name("电量仪4").index(1).ip("192.168.0.140").port("6016").busId("7").build())
+                        .name("电量仪4").index(9).ip("192.168.10.185").port("6001").busId("7").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("3C4F8CEC-C268-40D7-A38E-78992786FF36")
                         .bubbleUrl("")
-                        .deviceType(DeviceType.PM5350BW)
+                        .deviceType(deviceType)
                         .build())
                 .build();
         elmList.add(dly4);
         PositionDevice dly5 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("677F7E86-EDE7-430D-AE06-A5AE3E630FA2")
-                        .name("电量仪5").index(2).ip("192.168.0.140").port("6016").busId("8").build())
+                        .name("电量仪5").index(10).ip("192.168.10.185").port("6001").busId("8").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("677F7E86-EDE7-430D-AE06-A5AE3E630FA2")
                         .bubbleUrl("")
-                        .deviceType(DeviceType.PM5350BW)
+                        .deviceType(deviceType)
                         .build())
                 .build();
         elmList.add(dly5);
-        data.put(DeviceType.PM5350BW, elmList);
+        data.put(deviceType, elmList);
     }
 
     // 温湿度
@@ -192,7 +287,7 @@ public class CollectorDeviceUtils {
         PositionDevice th1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("985718E4-E854-461C-BB37-263C75AE4628")
-                        .name("温湿度探头1").index(1).ip("192.168.0.140").port("6013").busId("1").build())
+                        .name("温湿度探头1").index(1).ip("192.168.10.180").port("6001").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("985718E4-E854-461C-BB37-263C75AE4628")
                         .bubbleUrl("")
@@ -202,7 +297,7 @@ public class CollectorDeviceUtils {
         PositionDevice th2 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("E059BE90-FA8C-47D0-9E51-8514A4782646")
-                        .name("温湿度探头2").index(2).ip("192.168.0.140").port("6013").busId("2").build())
+                        .name("温湿度探头2").index(2).ip("192.168.10.180").port("6001").busId("2").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("E059BE90-FA8C-47D0-9E51-8514A4782646")
                         .bubbleUrl("")
@@ -212,7 +307,7 @@ public class CollectorDeviceUtils {
         PositionDevice th3 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("430A3EFC-0CF1-418F-953D-4B2E7065F058")
-                        .name("温湿度探头3").index(3).ip("192.168.0.140").port("6013").busId("3").build())
+                        .name("温湿度探头3").index(3).ip("192.168.10.180").port("6001").busId("3").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("430A3EFC-0CF1-418F-953D-4B2E7065F058")
                         .bubbleUrl("")
@@ -222,7 +317,7 @@ public class CollectorDeviceUtils {
         PositionDevice th4 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("3404F713-4DDF-4821-BCA9-2E836CE2C466")
-                        .name("温湿度探头4").index(4).ip("192.168.0.140").port("6013").busId("4").build())
+                        .name("温湿度探头4").index(4).ip("192.168.10.180").port("6001").busId("4").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("3404F713-4DDF-4821-BCA9-2E836CE2C466")
                         .bubbleUrl("")
@@ -232,7 +327,7 @@ public class CollectorDeviceUtils {
         PositionDevice th5 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("872C8021-CE90-4D48-A33A-96A9A8DB1BBF")
-                        .name("温湿度探头5").index(5).ip("192.168.0.140").port("6013").busId("5").build())
+                        .name("温湿度探头5").index(5).ip("192.168.10.180").port("6001").busId("5").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("872C8021-CE90-4D48-A33A-96A9A8DB1BBF")
                         .bubbleUrl("")
@@ -242,7 +337,7 @@ public class CollectorDeviceUtils {
         PositionDevice th6 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("D5881239-FD56-45FC-8FF9-DE8529F7E478")
-                        .name("温湿度探头6").index(6).ip("192.168.0.140").port("6013").busId("6").build())
+                        .name("温湿度探头6").index(6).ip("192.168.10.180").port("6001").busId("6").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("D5881239-FD56-45FC-8FF9-DE8529F7E478")
                         .bubbleUrl("")
@@ -252,7 +347,7 @@ public class CollectorDeviceUtils {
         PositionDevice th7 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("7BA050DF-F2D1-487C-8E1C-F30B6B6CF654")
-                        .name("温湿度探头7").index(7).ip("192.168.0.140").port("6013").busId("7").build())
+                        .name("温湿度探头7").index(7).ip("192.168.10.180").port("6001").busId("7").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("7BA050DF-F2D1-487C-8E1C-F30B6B6CF654")
                         .bubbleUrl("")
@@ -262,7 +357,7 @@ public class CollectorDeviceUtils {
         PositionDevice th8 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("296BBB98-CE8B-4B55-9544-60C8A5D958D6")
-                        .name("温湿度探头8").index(8).ip("192.168.0.140").port("6013").busId("8").build())
+                        .name("温湿度探头8").index(8).ip("192.168.10.180").port("6001").busId("8").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("296BBB98-CE8B-4B55-9544-60C8A5D958D6")
                         .bubbleUrl("")
@@ -272,7 +367,7 @@ public class CollectorDeviceUtils {
         PositionDevice th9 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("EC701C2B-DD59-401F-912F-660439CE59C9")
-                        .name("温湿度探头9").index(9).ip("192.168.0.140").port("6013").busId("9").build())
+                        .name("温湿度探头9").index(9).ip("192.168.10.180").port("6001").busId("9").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("EC701C2B-DD59-401F-912F-660439CE59C9")
                         .bubbleUrl("")
@@ -282,7 +377,7 @@ public class CollectorDeviceUtils {
         PositionDevice th10 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("5AE4ECC5-F4C3-475B-8005-7EF01CA6E1D9")
-                        .name("温湿度探头10").index(10).ip("192.168.0.140").port("6013").busId("10").build())
+                        .name("温湿度探头10").index(10).ip("192.168.10.180").port("6001").busId("10").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("5AE4ECC5-F4C3-475B-8005-7EF01CA6E1D9")
                         .bubbleUrl("")
@@ -452,56 +547,36 @@ public class CollectorDeviceUtils {
     // 配电柜
     private static void init1288Pdc() {
         List<PositionDevice> pdcList = new ArrayList<>();
-//        PositionDevice pdc1 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("4E5AC5DD-72B8-4E7F-BDAE-DBDA902E822B")
-//                        .name("空调配电柜").index(1).ip("192.168.0.140").port("6015").busId("1").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("4E5AC5DD-72B8-4E7F-BDAE-DBDA902E822B")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.PDC)
-//                        .build())
-//                .build();
-//        PositionDevice pdc2 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("4623E900-CBA2-4F5F-A104-4DFC4D8E1910")
-//                        .name("市电配电柜").index(2).ip("192.168.0.140").port("6015").busId("2").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("4623E900-CBA2-4F5F-A104-4DFC4D8E1910")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.PDC)
-//                        .build())
-//                .build();
-//        PositionDevice pdc3 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("3A8846B9-9375-49B8-BC0D-91D704465280")
-//                        .name("精密配电柜A1-1").index(3).ip("192.168.0.140").port("6015").busId("3").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("3A8846B9-9375-49B8-BC0D-91D704465280")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.PDC)
-//                        .build())
-//                .build();
-//        PositionDevice pdc4 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("0A62A7DB-0F1D-4078-9330-8328DF968049")
-//                        .name("精密配电柜A2-1").index(4).ip("192.168.0.140").port("6015").busId("4").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("0A62A7DB-0F1D-4078-9330-8328DF968049")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.PDC)
-//                        .build())
-//                .build();
-//        PositionDevice pdc5 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("BF767C2F-8E76-4D67-B593-1AF6477222ED")
-//                        .name("精密配电柜A3-1").index(5).ip("192.168.0.140").port("6015").busId("5").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("BF767C2F-8E76-4D67-B593-1AF6477222ED")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.PDC)
-//                        .build())
-//                .build();
+        PositionDevice pdc3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("3A8846B9-9375-49B8-BC0D-91D704465280")
+                        .name("精密配电柜A1-1").index(3).ip("192.168.10.60").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("3A8846B9-9375-49B8-BC0D-91D704465280")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.PDC)
+                        .build())
+                .build();
+        PositionDevice pdc4 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("0A62A7DB-0F1D-4078-9330-8328DF968049")
+                        .name("精密配电柜A2-1").index(4).ip("192.168.10.103").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("0A62A7DB-0F1D-4078-9330-8328DF968049")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.PDC)
+                        .build())
+                .build();
+        PositionDevice pdc5 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("BF767C2F-8E76-4D67-B593-1AF6477222ED")
+                        .name("精密配电柜A3-1").index(5).ip("192.168.10.150").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("BF767C2F-8E76-4D67-B593-1AF6477222ED")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.PDC)
+                        .build())
+                .build();
         PositionDevice pdc6 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("4B251A67-1D30-499E-B47C-988BD4A0539F")
@@ -514,9 +589,9 @@ public class CollectorDeviceUtils {
                 .build();
 //        pdcList.add(pdc1);
 //        pdcList.add(pdc2);
-//        pdcList.add(pdc3);
-//        pdcList.add(pdc4);
-//        pdcList.add(pdc5);
+        pdcList.add(pdc3);
+        pdcList.add(pdc4);
+        pdcList.add(pdc5);
         pdcList.add(pdc6);
         data.put(DeviceType.PDC, pdcList);
     }
@@ -554,20 +629,20 @@ public class CollectorDeviceUtils {
     private static void init1288Floor() {
         PositionDevice flood1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("D501CC3B-6449-4939-B2DE-89626703A4C3")
-                        .name("水浸1-1").index(1).ip("192.168.0.140").port("6017").busId("1").build())
+                        .deviceId("99E9F8A1-000F-4224-94D4-98695DC46588")
+                        .name("水浸1-1").index(1).ip("192.168.10.52").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("D501CC3B-6449-4939-B2DE-89626703A4C3")
+                        .deviceId("99E9F8A1-000F-4224-94D4-98695DC46588")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
                 .build();
         PositionDevice flood2 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("99E9F8A1-000F-4224-94D4-98695DC46588")
-                        .name("水浸1-2").index(2).ip("192.168.0.140").port("6017").busId("2").build())
+                        .deviceId("D501CC3B-6449-4939-B2DE-89626703A4C3")
+                        .name("水浸1-2").index(2).ip("192.168.10.53").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("99E9F8A1-000F-4224-94D4-98695DC46588")
+                        .deviceId("D501CC3B-6449-4939-B2DE-89626703A4C3")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
@@ -575,7 +650,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood3 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("F6EB373A-E69C-4EE9-B5D3-4BC4B377FE84")
-                        .name("水浸1-3").index(3).ip("192.168.0.140").port("6017").busId("3").build())
+                        .name("水浸1-3").index(3).ip("192.168.10.51").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("F6EB373A-E69C-4EE9-B5D3-4BC4B377FE84")
                         .bubbleUrl("")
@@ -585,7 +660,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood4 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("2AF3700A-BEBC-4CA6-89AE-D27F70232494")
-                        .name("水浸1-4").index(4).ip("192.168.0.140").port("6017").busId("4").build())
+                        .name("水浸1-4").index(4).ip("192.168.10.50").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("2AF3700A-BEBC-4CA6-89AE-D27F70232494")
                         .bubbleUrl("")
@@ -594,20 +669,20 @@ public class CollectorDeviceUtils {
                 .build();
         PositionDevice flood5 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("91F4B297-FD73-4514-A9F1-06A20104513E")
-                        .name("水浸2-1").index(5).ip("192.168.0.140").port("6017").busId("5").build())
+                        .deviceId("010847C1-264E-477E-8A03-53789526474E")
+                        .name("水浸2-1").index(5).ip("192.168.10.93").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("91F4B297-FD73-4514-A9F1-06A20104513E")
+                        .deviceId("010847C1-264E-477E-8A03-53789526474E")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
                 .build();
         PositionDevice flood6 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("010847C1-264E-477E-8A03-53789526474E")
-                        .name("水浸2-2").index(6).ip("192.168.0.140").port("6017").busId("6").build())
+                        .deviceId("91F4B297-FD73-4514-A9F1-06A20104513E")
+                        .name("水浸2-2").index(6).ip("192.168.10.94").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("010847C1-264E-477E-8A03-53789526474E")
+                        .deviceId("91F4B297-FD73-4514-A9F1-06A20104513E")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
@@ -615,7 +690,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood7 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("6AD85CB7-7E1F-4768-B798-E6F98D192610")
-                        .name("水浸2-3").index(7).ip("192.168.0.140").port("6017").busId("7").build())
+                        .name("水浸2-3").index(7).ip("192.168.10.96").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("6AD85CB7-7E1F-4768-B798-E6F98D192610")
                         .bubbleUrl("")
@@ -625,7 +700,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood8 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("23B69B51-265C-4731-A43A-207A2DC2F7AF")
-                        .name("水浸2-4").index(8).ip("192.168.0.140").port("6017").busId("8").build())
+                        .name("水浸2-4").index(8).ip("192.168.10.95").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("23B69B51-265C-4731-A43A-207A2DC2F7AF")
                         .bubbleUrl("")
@@ -634,20 +709,20 @@ public class CollectorDeviceUtils {
                 .build();
         PositionDevice flood9 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("A2801D5A-9E62-437B-88B3-F646BD7567D6")
-                        .name("水浸3-1").index(9).ip("192.168.0.140").port("6017").busId("9").build())
+                        .deviceId("3B913045-0DC9-48DA-AA61-2D113D57AEC6")
+                        .name("水浸3-1").index(9).ip("192.168.10.142").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("A2801D5A-9E62-437B-88B3-F646BD7567D6")
+                        .deviceId("3B913045-0DC9-48DA-AA61-2D113D57AEC6")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
                 .build();
         PositionDevice flood10 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("3B913045-0DC9-48DA-AA61-2D113D57AEC6")
-                        .name("水浸3-2").index(10).ip("192.168.0.140").port("6017").busId("10").build())
+                        .deviceId("A2801D5A-9E62-437B-88B3-F646BD7567D6")
+                        .name("水浸3-2").index(10).ip("192.168.10.143").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("3B913045-0DC9-48DA-AA61-2D113D57AEC6")
+                        .deviceId("A2801D5A-9E62-437B-88B3-F646BD7567D6")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
@@ -655,7 +730,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood11 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("26496F68-563D-48E1-B73F-542F334A378A")
-                        .name("水浸3-3").index(11).ip("192.168.0.140").port("6017").busId("11").build())
+                        .name("水浸3-3").index(11).ip("192.168.10.141").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("26496F68-563D-48E1-B73F-542F334A378A")
                         .bubbleUrl("")
@@ -665,7 +740,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood12 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("0ADCC097-5954-4A36-8999-C96529F316A6")
-                        .name("水浸3-4").index(12).ip("192.168.0.140").port("6017").busId("12").build())
+                        .name("水浸3-4").index(12).ip("192.168.10.140").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("0ADCC097-5954-4A36-8999-C96529F316A6")
                         .bubbleUrl("")
@@ -674,20 +749,20 @@ public class CollectorDeviceUtils {
                 .build();
         PositionDevice flood13 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("38069B8F-FC9F-4735-A409-2C07941EAFF3")
-                        .name("水浸4-1").index(13).ip("192.168.0.140").port("6017").busId("13").build())
+                        .deviceId("1CF1777F-73C8-431D-AC61-7298E7613B00")
+                        .name("水浸4-1").index(13).ip("192.168.10.4").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("38069B8F-FC9F-4735-A409-2C07941EAFF3")
+                        .deviceId("1CF1777F-73C8-431D-AC61-7298E7613B00")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
                 .build();
         PositionDevice flood14 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("1CF1777F-73C8-431D-AC61-7298E7613B00")
-                        .name("水浸4-2").index(14).ip("192.168.0.140").port("6017").busId("14").build())
+                        .deviceId("38069B8F-FC9F-4735-A409-2C07941EAFF3")
+                        .name("水浸4-2").index(14).ip("192.168.10.5").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("1CF1777F-73C8-431D-AC61-7298E7613B00")
+                        .deviceId("38069B8F-FC9F-4735-A409-2C07941EAFF3")
                         .bubbleUrl("")
                         .deviceType(DeviceType.FLOOR)
                         .build())
@@ -695,7 +770,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood15 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("F06ED3A8-8BD4-446B-98B3-A744CB11EC22")
-                        .name("水浸4-3").index(15).ip("192.168.0.140").port("6017").busId("15").build())
+                        .name("水浸4-3").index(15).ip("192.168.10.7").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("F06ED3A8-8BD4-446B-98B3-A744CB11EC22")
                         .bubbleUrl("")
@@ -705,7 +780,7 @@ public class CollectorDeviceUtils {
         PositionDevice flood16 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("8D04DDA1-C0EF-4517-873F-DF4C1DD6CE21")
-                        .name("水浸4-4").index(16).ip("192.168.0.140").port("6017").busId("16").build())
+                        .name("水浸4-4").index(16).ip("192.168.10.6").port("6001").busId("253").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("8D04DDA1-C0EF-4517-873F-DF4C1DD6CE21")
                         .bubbleUrl("")
@@ -774,36 +849,36 @@ public class CollectorDeviceUtils {
 
     // 冷通道环境主机
     private static void init1288Emh() {
-//        PositionDevice channel1 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("4D2A9A3F-374C-4D42-8C2E-C55205D0717A")
-//                        .name("冷通道1").index(1).ip("192.168.0.140").port("6014").busId("1").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("4D2A9A3F-374C-4D42-8C2E-C55205D0717A")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.EMH)
-//                        .build())
-//                .build();
-//        PositionDevice channel2 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("00F04F8F-07D9-49BE-9C88-F8C78FFCCC9F")
-//                        .name("冷通道2").index(2).ip("192.168.0.140").port("6014").busId("2").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("00F04F8F-07D9-49BE-9C88-F8C78FFCCC9F")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.EMH)
-//                        .build())
-//                .build();
-//        PositionDevice channel3 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("6F6ECE56-369F-488C-8D1D-4B20035F10D6")
-//                        .name("冷通道3").index(3).ip("192.168.0.140").port("6014").busId("3").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("6F6ECE56-369F-488C-8D1D-4B20035F10D6")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.EMH)
-//                        .build())
-//                .build();
+        PositionDevice channel1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("4D2A9A3F-374C-4D42-8C2E-C55205D0717A")
+                        .name("冷通道1").index(1).ip("192.168.10.47").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("4D2A9A3F-374C-4D42-8C2E-C55205D0717A")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.EMH)
+                        .build())
+                .build();
+        PositionDevice channel2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("00F04F8F-07D9-49BE-9C88-F8C78FFCCC9F")
+                        .name("冷通道2").index(2).ip("192.168.10.90").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("00F04F8F-07D9-49BE-9C88-F8C78FFCCC9F")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.EMH)
+                        .build())
+                .build();
+        PositionDevice channel3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("6F6ECE56-369F-488C-8D1D-4B20035F10D6")
+                        .name("冷通道3").index(3).ip("192.168.10.137").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("6F6ECE56-369F-488C-8D1D-4B20035F10D6")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.EMH)
+                        .build())
+                .build();
         PositionDevice channel4 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("590C11C8-E015-48AD-9F54-94D8DC18088B")
@@ -815,11 +890,27 @@ public class CollectorDeviceUtils {
                         .build())
                 .build();
         List<PositionDevice> channelList = new ArrayList<>();
-//        channelList.add(channel1);
-//        channelList.add(channel2);
-//        channelList.add(channel3);
+        channelList.add(channel1);
+        channelList.add(channel2);
+        channelList.add(channel3);
         channelList.add(channel4);
         data.put(DeviceType.EMH, channelList);
+    }
+
+    private static void init1288Emh2() {
+        PositionDevice channel1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("28E83C4F-9E47-4442-9EE6-9B3C16F5F3C4")
+                        .name("消防主机").index(5).ip("192.168.10.179").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("28E83C4F-9E47-4442-9EE6-9B3C16F5F3C4")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.EMH_XF)
+                        .build())
+                .build();
+        List<PositionDevice> channelList = new ArrayList<>();
+        channelList.add(channel1);
+        data.put(DeviceType.EMH_XF, channelList);
     }
 
     // PDU
@@ -1134,7 +1225,7 @@ public class CollectorDeviceUtils {
         PositionDevice ups1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("5E674FFF-88F0-4915-85C1-8F2FE087ABBC")
-                        .name("UPS-A").index(1).ip("192.168.0.140").port("6005").busId("1").build())
+                        .name("UPS-A").index(1).ip("192.168.10.184").port("6001").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("5E674FFF-88F0-4915-85C1-8F2FE087ABBC")
                         .bubbleUrl("")
@@ -1145,7 +1236,7 @@ public class CollectorDeviceUtils {
         PositionDevice ups2 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("7A757E8F-5306-4A89-A441-DC9B37D91FE7")
-                        .name("UPS-B").index(2).ip("192.168.0.140").port("6005").busId("2").build())
+                        .name("UPS-B").index(2).ip("192.168.10.184").port("6001").busId("2").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("7A757E8F-5306-4A89-A441-DC9B37D91FE7")
                         .bubbleUrl("")
@@ -1159,142 +1250,142 @@ public class CollectorDeviceUtils {
     // AC
     private static void init1288Ac() {
         List<PositionDevice> list = new ArrayList<>();
-//        PositionDevice ac1 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .name("列间空调1-1").index(1).ip("192.168.0.140").port("6009").busId("1").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac1);
-//        PositionDevice ac2 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("DB9E7E02-A497-4C0E-BCD1-BD594DDFB288")
-//                        .name("列间空调1-2").index(2).ip("192.168.0.140").port("6009").busId("2").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac2);
-//        PositionDevice ac3 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("6022518C-C1F0-4AB0-B24C-915E83265A7A")
-//                        .name("列间空调1-3").index(3).ip("192.168.0.140").port("6009").busId("3").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac3);
-//        PositionDevice ac4 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("B8FA232C-9780-44DE-BD15-C2E53ED0487E")
-//                        .name("列间空调1-4").index(4).ip("192.168.0.140").port("6009").busId("4").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac4);
-//        PositionDevice ac5 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("13923545-C43F-4A4E-B663-08D569FF80E7")
-//                        .name("列间空调2-1").index(5).ip("192.168.0.140").port("6009").busId("5").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac5);
-//        PositionDevice ac6 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("643826FB-3F9C-45DD-90BC-C857F81CFB46")
-//                        .name("列间空调2-2").index(6).ip("192.168.0.140").port("6009").busId("6").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac6);
-//        PositionDevice ac7 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("BB93B93A-3E23-45D8-963C-3274C1A3E57A")
-//                        .name("列间空调2-3").index(7).ip("192.168.0.140").port("6009").busId("7").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac7);
-//        PositionDevice ac8 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("16473CA8-4F27-4403-851D-45B26D45F8E5")
-//                        .name("列间空调2-4").index(8).ip("192.168.0.140").port("6009").busId("8").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac8);
-//        PositionDevice ac9 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("634A6B3B-D7B1-4424-A731-00A15CA945F6")
-//                        .name("列间空调3-1").index(9).ip("192.168.0.140").port("6009").busId("9").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac9);
-//        PositionDevice ac10 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("141A4F72-7E8D-46E9-9380-9603F6EB546D")
-//                        .name("列间空调3-2").index(10).ip("192.168.0.140").port("6009").busId("10").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac10);
-//        PositionDevice ac11 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("1E939E0D-4F9E-4E4C-AD6E-1CFD1154FA14")
-//                        .name("列间空调3-3").index(11).ip("192.168.0.140").port("6009").busId("11").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac11);
-//        PositionDevice ac12 = PositionDevice.builder()
-//                .collectorDevice(CollectorDevice.builder()
-//                        .deviceId("2AB89017-D7B1-47C8-BAA9-7CB097EA9049")
-//                        .name("列间空调3-4").index(12).ip("192.168.0.140").port("6009").busId("12").build())
-//                .deviceDetail(DeviceDetail.builder()
-//                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
-//                        .bubbleUrl("")
-//                        .deviceType(DeviceType.ACRD300)
-//                        .build())
-//                .build();
-//        list.add(ac12);
+        PositionDevice ac1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .name("列间空调1-2").index(1).ip("192.168.10.57").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac1);
+        PositionDevice ac2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("DB9E7E02-A497-4C0E-BCD1-BD594DDFB288")
+                        .name("列间空调1-1").index(2).ip("192.168.10.56").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac2);
+        PositionDevice ac3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("6022518C-C1F0-4AB0-B24C-915E83265A7A")
+                        .name("列间空调1-3").index(3).ip("192.168.10.55").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac3);
+        PositionDevice ac4 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("B8FA232C-9780-44DE-BD15-C2E53ED0487E")
+                        .name("列间空调1-4").index(4).ip("192.168.10.54").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac4);
+        PositionDevice ac5 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("13923545-C43F-4A4E-B663-08D569FF80E7")
+                        .name("列间空调2-1").index(5).ip("192.168.10.98").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac5);
+        PositionDevice ac6 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("643826FB-3F9C-45DD-90BC-C857F81CFB46")
+                        .name("列间空调2-2").index(6).ip("192.168.10.97").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac6);
+        PositionDevice ac7 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("BB93B93A-3E23-45D8-963C-3274C1A3E57A")
+                        .name("列间空调2-3").index(7).ip("192.168.10.100").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac7);
+        PositionDevice ac8 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("16473CA8-4F27-4403-851D-45B26D45F8E5")
+                        .name("列间空调2-4").index(8).ip("192.168.10.99").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac8);
+        PositionDevice ac9 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("634A6B3B-D7B1-4424-A731-00A15CA945F6")
+                        .name("列间空调3-1").index(9).ip("192.168.10.147").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac9);
+        PositionDevice ac10 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("141A4F72-7E8D-46E9-9380-9603F6EB546D")
+                        .name("列间空调3-2").index(10).ip("192.168.10.144").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac10);
+        PositionDevice ac11 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("1E939E0D-4F9E-4E4C-AD6E-1CFD1154FA14")
+                        .name("列间空调3-3").index(11).ip("192.168.10.144").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac11);
+        PositionDevice ac12 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("2AB89017-D7B1-47C8-BAA9-7CB097EA9049")
+                        .name("列间空调3-4").index(12).ip("192.168.10.145").port("161").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACRD300)
+                        .build())
+                .build();
+        list.add(ac12);
         PositionDevice ac13 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("81842AB9-888D-40D1-AAF2-DE195BB95002")
-                        .name("列间空调4-1").index(13).ip("192.168.10.8").port("6001").busId("2").build())
+                        .name("列间空调4-1").index(13).ip("192.168.10.9").port("161").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
                         .bubbleUrl("")
@@ -1305,7 +1396,7 @@ public class CollectorDeviceUtils {
         PositionDevice ac14 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("E37F3495-9811-4413-BA2D-9261ECA28220")
-                        .name("列间空调4-2").index(14).ip("192.168.10.8").port("6001").busId("1").build())
+                        .name("列间空调4-2").index(14).ip("192.168.10.8").port("161").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
                         .bubbleUrl("")
@@ -1316,7 +1407,7 @@ public class CollectorDeviceUtils {
         PositionDevice ac15 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("F85290FD-EA27-4332-A9AD-56C8AAA16448")
-                        .name("列间空调4-3").index(15).ip("192.168.10.9").port("6001").busId("2").build())
+                        .name("列间空调4-3").index(15).ip("192.168.10.46").port("161").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
                         .bubbleUrl("")
@@ -1327,7 +1418,7 @@ public class CollectorDeviceUtils {
         PositionDevice ac16 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("406BC4F1-F6EE-48B8-8CD1-2DB320B60A73")
-                        .name("列间空调4-4").index(16).ip("192.168.10.9").port("6001").busId("1").build())
+                        .name("列间空调4-4").index(16).ip("192.168.10.45").port("161").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("1C57301D-67D9-4EC3-B10A-B6860D3F166E")
                         .bubbleUrl("")
