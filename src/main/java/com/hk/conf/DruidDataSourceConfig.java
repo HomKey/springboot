@@ -5,6 +5,7 @@ import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.env.Environment;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
@@ -41,6 +43,12 @@ public class DruidDataSourceConfig implements EnvironmentAware {
     private String url;
     private String urlPatterns;
     private String exclusions;
+
+    @Bean(name = "druidJdbcTemplate")
+    public JdbcTemplate druidJdbcTemplate (
+            @Qualifier("dataSource") DataSource dataSource){
+        return new JdbcTemplate(dataSource);
+    }
 
 
     @Override
