@@ -21,13 +21,13 @@ spring:
     cd2k-source:
       driver-class-name: com.mysql.jdbc.Driver
       #?useSSL=false
-      jdbc-url: jdbc:mysql://192.168.7.136:3307/monitor_dev_hk?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+      jdbc-url: jdbc:mysql://192.168.7.130:3306/monitor_v2.2_hjy?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
       username: root
       password: root
     cd2k-target:
       driver-class-name: com.mysql.jdbc.Driver
       #?useSSL=false
-      jdbc-url: jdbc:mysql://192.168.7.136:3307/monitor_v2.2_std?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+      jdbc-url: jdbc:mysql://192.168.7.136:3307/monitor_dev_hk?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
       username: root
       password: root
     mysql:
