@@ -1,0 +1,31 @@
+<linked-list>
+<#list acList as object>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_XRow_DX_AI_0x0100_0x0E</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>14</length>
+        <registerNumber>256</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_XRow_DX_AI_0x0500_112</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>112</length>
+        <registerNumber>1280</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_Row_DX_AI_0x0200_0x15</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>21</length>
+        <registerNumber>512</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

@@ -52,8 +52,299 @@ public class CollectorDeviceUtils {
         initZlTh();
 
 
+        // 河池
+        initHcDly(); // 电量仪DTM830 1个
+        initHcEk5a(); // 电量仪 ek5a 3个
+        initHcPdc(); // 配电柜 PDC 1个
+        initHcUps(); // UPS 2个
+        initHcCrac(); // 精密空调 1个
+        initHcAc(); // 列间空调 4个
+        initHcDiom(); // 控制器 1个（包括1个消防和3个水浸）
+        initHcTh(); // 单温传感器 8个
     }
 
+    private static void initHcDly(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_DTM;
+        PositionDevice emh = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("7561D1EC-1C77-40BC-B098-80CD771BA6CB")
+                        .name("电量仪").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("7561D1EC-1C77-40BC-B098-80CD771BA6CB")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(emh);
+        data.put(deviceType, list);
+    }
+    private static void initHcEk5a(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_Ek5a;
+        PositionDevice dly1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("A6909DED-97F0-4214-B431-A099774EB7D6")
+                        .name("交流互感器1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("A6909DED-97F0-4214-B431-A099774EB7D6")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(dly1);
+        PositionDevice dly2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("5D5EFB93-2EBF-4EE9-A937-499207044934")
+                        .name("交流互感器2").index(2).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("5D5EFB93-2EBF-4EE9-A937-499207044934")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(dly2);
+        PositionDevice dly3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("4877E2B3-D99D-49CC-A226-1688989DFAF7")
+                        .name("交流互感器3").index(3).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("4877E2B3-D99D-49CC-A226-1688989DFAF7")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(dly3);
+        data.put(deviceType, list);
+    }
+    private static void initHcPdc(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_PDC;
+        PositionDevice pdc1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("157EF66D-8FC4-4E67-A230-B6C25752401C")
+                        .name("配电柜1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("157EF66D-8FC4-4E67-A230-B6C25752401C")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(pdc1);
+        PositionDevice pdc2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("1CEBD090-DFEC-4EE8-BCB0-F35EC4D8047D")
+                        .name("配电柜2").index(2).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1CEBD090-DFEC-4EE8-BCB0-F35EC4D8047D")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(pdc2);
+        data.put(deviceType, list);
+    }
+    private static void initHcUps(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_UPS;
+        PositionDevice ups1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("C37EF19D-AFF5-416E-907D-9DC12E9CCCE0")
+                        .name("UPS1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("C37EF19D-AFF5-416E-907D-9DC12E9CCCE0")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(ups1);
+        PositionDevice ups2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("CC6D6D38-0BA1-4BFF-A7D5-6C74EDEA7C30")
+                        .name("UPS2").index(2).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("CC6D6D38-0BA1-4BFF-A7D5-6C74EDEA7C30")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(ups2);
+        data.put(deviceType, list);
+    }
+    private static void initHcCrac(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_CRAC;
+        PositionDevice emh = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("D7EF40FB-9A1E-453C-B353-C504313C34EE")
+                        .name("精密空调").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("D7EF40FB-9A1E-453C-B353-C504313C34EE")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(emh);
+        data.put(deviceType, list);
+    }
+    private static void initHcAc(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_AC;
+        PositionDevice ac1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("EB6A54F1-4339-4560-8713-87F14E5F2A26")
+                        .name("列间空调1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("EB6A54F1-4339-4560-8713-87F14E5F2A26")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(ac1);
+        PositionDevice ac2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("B8B89002-1B7B-4707-82CC-9652C2D757A0")
+                        .name("列间空调2").index(2).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("B8B89002-1B7B-4707-82CC-9652C2D757A0")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(ac2);
+        PositionDevice ac3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("0A4F66CA-AAD6-4615-8A50-736CBF9D96C4")
+                        .name("列间空调3").index(3).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("0A4F66CA-AAD6-4615-8A50-736CBF9D96C4")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(ac3);
+        PositionDevice ac4 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("6AD00109-99A9-428A-A546-06973358217F")
+                        .name("列间空调4").index(4).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("6AD00109-99A9-428A-A546-06973358217F")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(ac4);
+        data.put(deviceType, list);
+    }
+    private static void initHcDiom(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_DIOM;
+        PositionDevice emh = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("32C7DC09-0E0F-4FA7-ACEB-B00D35ED9845")
+                        .name("控制器").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("32C7DC09-0E0F-4FA7-ACEB-B00D35ED9845")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(emh);
+        data.put(deviceType, list);
+    }
+    private static void initHcTh(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Hc_TH;
+        PositionDevice th1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("01E9478D-8D8C-437F-9324-072328C3DDB6")
+                        .name("单温传感器1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("01E9478D-8D8C-437F-9324-072328C3DDB6")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th1);
+        PositionDevice th2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("5BCED41E-0C97-4BD6-BF5A-FA2CB38070C6")
+                        .name("单温传感器2").index(2).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("5BCED41E-0C97-4BD6-BF5A-FA2CB38070C6")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th2);
+        PositionDevice th3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("D03A8C4A-0718-47FF-8224-8332EEBD40ED")
+                        .name("单温传感器3").index(3).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("D03A8C4A-0718-47FF-8224-8332EEBD40ED")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th3);
+        PositionDevice th4 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("D8DA47D2-B844-4373-87C6-D56B69F0A11B")
+                        .name("单温传感器4").index(4).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("D8DA47D2-B844-4373-87C6-D56B69F0A11B")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th4);
+        PositionDevice th5 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("DAC689C8-A415-406F-B382-B195A20287BE")
+                        .name("单温传感器5").index(5).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("DAC689C8-A415-406F-B382-B195A20287BE")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th5);
+        PositionDevice th6 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("B3569769-5166-45B7-94A8-245C247BBF67")
+                        .name("单温传感器6").index(6).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("B3569769-5166-45B7-94A8-245C247BBF67")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th6);
+        PositionDevice th7 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("EFFBF01F-DAF8-4FAF-879F-F493B888BDC6")
+                        .name("单温传感器7").index(7).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("EFFBF01F-DAF8-4FAF-879F-F493B888BDC6")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th7);
+        PositionDevice th8 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("F08E3136-EB66-41CC-B573-D714BCFE1589")
+                        .name("单温传感器8").index(8).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("F08E3136-EB66-41CC-B573-D714BCFE1589")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(th8);
+        data.put(deviceType, list);
+    }
 
     private static void initFan(){
         List<PositionDevice> list = new ArrayList<>();

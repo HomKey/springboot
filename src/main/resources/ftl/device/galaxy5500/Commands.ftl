@@ -1,0 +1,22 @@
+<linked-list>
+<#list upsList as object>
+    <ModbusRequest>
+        <name>cmd_galaxy5500_${object.index}_3_64_16</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>16</length>
+        <registerNumber>64</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>cmd_galaxy5500_${object.index}_3_256_80</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>80</length>
+        <registerNumber>256</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

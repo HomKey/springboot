@@ -32,7 +32,7 @@ public class DcimUtilsTest {
     @Test
     public void createUUID() {
         for (int i = 0; i < 10; i++) {
-            System.out.println(UUID.randomUUID().toString());
+            System.out.println(UUID.randomUUID().toString().toUpperCase());
         }
     }
 

@@ -27,7 +27,15 @@ public enum DeviceType {
     DME_Modbus("dmeList","dme_Modbus"),
     ACRD300("acrdList","ACRD300"),
     FanTsd("tsdList","TSD"),
-    PDUv2("pduList","pdu2");
+    PDUv2("pduList","pdu2"),
+    Hc_Ek5a("elmList","ek5a"),
+    Hc_DTM("elmList","DTM830C"),
+    Hc_PDC("pdcList","pdc"),
+    Hc_UPS("upsList","galaxy5500"),
+    Hc_CRAC("acList","pex"),
+    Hc_AC("acList","XROW"),
+    Hc_TH("thList","WS11R"),
+    Hc_DIOM("diomList","BC-U301");
 
     private String key;
     private String path;
