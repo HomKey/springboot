@@ -1,12 +1,97 @@
-new String[]{"4c073df9-e7f5-45c4-b8a9-58fa45a200aa","温湿度传感器1"},
-new String[]{"aa9c72b3-116a-4d5b-a09f-7043d292ef25","温湿度传感器2"},
-new String[]{"b685cb4b-db01-4490-9686-fcc365cca504","温湿度传感器3"},
-new String[]{"cbec977b-fbb9-4788-a0b5-c5b7a5c6a480","温湿度传感器4"},
-new String[]{"2ab5433f-c5de-4194-95ed-b873328c5421","温湿度传感器5"},
-new String[]{"1203e964-075d-458a-a0bb-0e5fbb0f7fe8","温湿度传感器6"},
-new String[]{"73912b35-a9d7-432d-a02e-28509025ad40","温湿度传感器7"},
-new String[]{"d38e5011-932b-463d-ad9e-083bc3b2559e","温湿度传感器8"},
-new String[]{"1b745ea8-ba18-4cde-9185-504fc0333d2d","温湿度传感器9"},
-new String[]{"054698ad-1e07-4615-8b67-8d44ece875a5","温湿度传感器10"},
-new String[]{"5b54077a-2290-498e-bc18-4db58acce3ac","温湿度传感器11"},
-new String[]{"38fd8694-5494-49ef-9117-9f9cc83e7162","温湿度传感器12"}
+<div class="content" ng-controller="ScenceDeviceDetailCtrl"  ng-init="groupIndex=1">
+    <div class="title" ng-click="switchIndex(0)">
+        <i></i>设备属性
+        <a href="javascript:void(0)" class="right" ng-click="close()">关闭</a>
+    </div>
+    <div class="pane" ng-show="groupIndex==0">
+        <div class="item">
+            <label>设备名称：</label><span><input type="text" class="name" ng-model="detailObject.Properties[0].Content[0].Descrition" /></span>
+        </div>
+        <div class="item odd">
+            <label>设备描述：</label><span><input type="text" class="name" ng-model="detailObject.Properties[0].Content[1].Descrition" /></span>
+        </div>
+        <div class="item">
+            <label>设备类型：</label><span>Schneider Galaxy 5500 UPS</span>
+        </div>
+    </div>
+    <div class="title" ng-click="switchIndex(1)">
+        <i></i>监控数据
+    </div>
+    <div id="ups" class="pane monitor" ng-show="groupIndex==1">
+        <div class="item odd">
+            <label>干线1的输入频率：</label>
+            <span>{{detailObject.Monitor.UPS_Mains_1_Frequency.Value}}HZ</span>
+        </div>
+        <div class="item">
+            <label>干线2的输入频率：</label>
+            <span>{{detailObject.Monitor.UPS_Mains_2_Frequency.Value}}HZ</span>
+        </div>
+        <div class="item odd">
+            <label>输出频率：</label>
+            <span>{{detailObject.Monitor.UPS_Output_Frequency.Value}}HZ</span>
+        </div>
+        <div class="item three">
+            <label>输出电压：</label>
+            <span><strong>1N：</strong>{{detailObject.Monitor.UPS_Output_U1N_Voltage.Value}}V</span>
+            <span><strong>2N：</strong>{{detailObject.Monitor.UPS_Output_U2N_Voltage.Value}}V</span>
+            <span><strong>3N：</strong>{{detailObject.Monitor.UPS_Output_U3N_Voltage.Value}}V</span>
+        </div>
+        <div class="item odd three">
+            <label>输出电流：</label>
+            <span><strong>I1：</strong>{{detailObject.Monitor.UPS_Output_I1_Current.Value}}A</span>
+            <span><strong>I2：</strong>{{detailObject.Monitor.UPS_Output_I2_Current.Value}}A</span>
+            <span><strong>I3：</strong>{{detailObject.Monitor.UPS_Output_I3_Current.Value}}A</span>
+        </div>
+        <div class="item">
+            <label>UPS输出电流：</label><span>{{detailObject.Monitor.UPS_Battery_Current.Value}}A</span>
+        </div>
+        <div class="item odd three">
+            <label>输出有功功率：</label>
+            <span><strong>1N：</strong>{{detailObject.Monitor.UPS_Output_1_ActivePower.Value}}kW</span>
+            <span><strong>2N：</strong>{{detailObject.Monitor.UPS_Output_2_ActivePower.Value}}kW</span>
+            <span><strong>3N：</strong>{{detailObject.Monitor.UPS_Output_3_ActivePower.Value}}kW</span>
+        </div>
+        <div class="item three">
+            <label>输出视在功率：</label>
+            <span><strong>1N：</strong>{{detailObject.Monitor.UPS_Output_1_ApparentPower.Value}}kW</span>
+            <span><strong>2N：</strong>{{detailObject.Monitor.UPS_Output_2_ApparentPower.Value}}kW</span>
+            <span><strong>3N：</strong>{{detailObject.Monitor.UPS_Output_3_ApparentPower.Value}}kW</span>
+        </div>
+
+        <div class="item odd">
+            <label>电池电量：</label><span>{{detailObject.Monitor.UPS_Battery_ChargingRate.Value}}%</span>
+        </div>
+        <div class="item">
+            <label>电池备用时间：</label><span>{{detailObject.Monitor.UPS_Battery_Backup_Time.Value}}分钟</span>
+        </div>
+        <div class="item odd">
+            <label>电池温度：</label><span>{{detailObject.Monitor.UPS_Battery_Temperature.Value}}℃</span>
+        </div>
+        <div class="item">
+            <label>电池电流：</label><span>{{detailObject.Monitor.UPS_Battery_Current.Value}}A</span>
+        </div>
+        <div class="item odd">
+            <label>电池电压：</label><span>{{detailObject.Monitor.UPS_Battery_Voltage.Value}}V</span>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    #ups {
+    }
+
+        #ups .three {
+        }
+
+            #ups .three > * {
+                display: inline-block;
+            }
+
+        #ups label {
+            width: 32%;
+            display: inline-block;
+        }
+
+        #ups .three span {
+            width: 20%;
+        }
+</style>

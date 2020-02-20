@@ -4,7 +4,7 @@
         <deviceId>${object.deviceId}</deviceId>
         <iSensorDefines>
             <SensorDefine>
-                <name>Diom.DO1</name>
+                <name>DIOM.DO1</name>
                 <registerIndex>0</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -12,7 +12,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DO2</name>
+                <name>DIOM.DO2</name>
                 <registerIndex>1</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -20,7 +20,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DO3</name>
+                <name>DIOM.DO3</name>
                 <registerIndex>2</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -28,7 +28,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DO4</name>
+                <name>DIOM.DO4</name>
                 <registerIndex>3</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -36,7 +36,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI1</name>
+                <name>DIOM.DI1</name>
                 <registerIndex>0</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -44,7 +44,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI2</name>
+                <name>DIOM.DI2</name>
                 <registerIndex>1</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -52,7 +52,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI3</name>
+                <name>DIOM.DI3</name>
                 <registerIndex>2</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -60,7 +60,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI4</name>
+                <name>DIOM.DI4</name>
                 <registerIndex>3</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -68,7 +68,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI5</name>
+                <name>DIOM.DI5</name>
                 <registerIndex>4</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -76,7 +76,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI6</name>
+                <name>DIOM.DI6</name>
                 <registerIndex>5</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -84,7 +84,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI7</name>
+                <name>DIOM.DI7</name>
                 <registerIndex>6</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
@@ -92,7 +92,7 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>Diom.DI8</name>
+                <name>DIOM.DI8</name>
                 <registerIndex>7</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>

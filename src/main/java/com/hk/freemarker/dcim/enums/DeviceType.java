@@ -35,7 +35,8 @@ public enum DeviceType {
     Hc_CRAC("acList","pex"),
     Hc_AC("acList","XROW"),
     Hc_TH("thList","WS11R"),
-    Hc_DIOM("diomList","BC-U301");
+    Hc_DIOM("diomList","BC-U301"),
+    Hc_EMH("channelList","channel");
 
     private String key;
     private String path;

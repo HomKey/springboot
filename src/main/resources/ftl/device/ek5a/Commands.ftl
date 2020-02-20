@@ -1,5 +1,5 @@
 <linked-list>
-  <#list dlyList as object>
+  <#list elmList as object>
       <ModbusRequest>
           <name>cmd_ek5a_${object.index}_3_0_45</name>
           <commandType>3</commandType>

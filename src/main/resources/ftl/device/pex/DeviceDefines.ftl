@@ -244,14 +244,6 @@
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>CRAC.Alarm.CoolingWater.Temperature.High</name>
-                <registerIndex>10065</registerIndex>
-                <scale>0</scale>
-                <isMean>true</isMean>
-                <commandName>cmd_pex_${object.index}_2_10064_2</commandName>
-                <divider>1</divider>
-            </SensorDefine>
-            <SensorDefine>
                 <name>CRAC.Alarm.Indoor.Temperature.Over</name>
                 <registerIndex>10067</registerIndex>
                 <scale>0</scale>
@@ -318,14 +310,6 @@
             <SensorDefine>
                 <name>CRAC.Alarm.CoolingWater.WaterFlow.Lose</name>
                 <registerIndex>10075</registerIndex>
-                <scale>0</scale>
-                <isMean>true</isMean>
-                <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
-                <divider>1</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.Alarm.Filter.Block</name>
-                <registerIndex>10076</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>

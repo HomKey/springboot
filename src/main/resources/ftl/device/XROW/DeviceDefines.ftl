@@ -428,8 +428,24 @@
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
-                <name>XRowDX.ReturnAir.Humidity</name>
+                <name>XRowDX.ReturnAir.1.Humidity</name>
                 <registerIndex>269</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>Modbus_${object.index}_XRow_DX_AI_0x0100_0x0E</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>XRowDX.OutAir.1.Humidity</name>
+                <registerIndex>270</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>Modbus_${object.index}_XRow_DX_AI_0x0100_0x0E</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>XRowDX.ReturnAir.3.Humidity</name>
+                <registerIndex>271</registerIndex>
                 <scale>1</scale>
                 <isMean>true</isMean>
                 <commandName>Modbus_${object.index}_XRow_DX_AI_0x0100_0x0E</commandName>

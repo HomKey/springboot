@@ -121,7 +121,7 @@
             <name>UPS.Alarm.RectifierThermal.Overload</name>
             <registerIndex>68</registerIndex>
             <commandName>cmd_galaxy5500_${object.index}_3_64_16</commandName>
-            <routeIndex>C</routeIndex>
+            <routeIndex>12</routeIndex>
         </SwitchSensorDefine>
         <SwitchSensorDefine>
             <name>UPS.Mains.2.Overload</name>
@@ -231,8 +231,6 @@
             <commandName>cmd_galaxy5500_${object.index}_3_64_16</commandName>
             <routeIndex>1</routeIndex>
         </SwitchSensorDefine>
-
-
         <SensorDefine>
             <name>UPS.Mains.1.I1.Current</name>
             <registerIndex>256</registerIndex>

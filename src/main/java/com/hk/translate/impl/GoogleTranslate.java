@@ -53,18 +53,18 @@ public class GoogleTranslate implements ITranslate {
         nameValuePairs.add(new BasicNameValuePair("tl", targetGoogleLang.getValue()));
         nameValuePairs.add(new BasicNameValuePair("q", text));
         // https
-//        String httpsResp = HttpUtils.postHttp(HTTPS_PATH, nameValuePairs);
-//        if (null == httpsResp) {
-//            return "";
-//        }
-        // http
-        nameValuePairs.add(new BasicNameValuePair("ie","UTF-8"));
-        nameValuePairs.add(new BasicNameValuePair("dj","1"));
-        String httpResp = HttpUtils.postHttp(HTTP_PATH, nameValuePairs);
-        if (null == httpResp) {
+        String resp = HttpUtils.postHttp(HTTPS_PATH, nameValuePairs);
+        if (null == resp) {
             return "";
         }
-        return getResult(httpResp);
+        // http
+//        nameValuePairs.add(new BasicNameValuePair("ie","UTF-8"));
+//        nameValuePairs.add(new BasicNameValuePair("dj","1"));
+//        String resp = HttpUtils.postHttp(HTTP_PATH, nameValuePairs);
+//        if (null == resp) {
+//            return "";
+//        }
+        return getResult(resp);
     }
 
     private String getResult(String jsonResponse) {
