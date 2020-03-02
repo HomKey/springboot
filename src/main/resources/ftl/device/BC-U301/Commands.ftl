@@ -1,0 +1,22 @@
+<linked-list>
+<#list diomList as object>
+    <ModbusRequest>
+        <name>cmd_bcu301_${object.index}_1_0_4</name>
+        <commandType>1</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>4</length>
+        <registerNumber>0</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>cmd_bcu301_${object.index}_2_0_8</name>
+        <commandType>2</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>8</length>
+        <registerNumber>0</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

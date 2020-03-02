@@ -1,0 +1,31 @@
+<linked-list>
+<#list elmList as object>
+    <ModbusRequest>
+        <name>cmd_dtm830c_${object.index}_3_40051_24</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>24</length>
+        <registerNumber>40051</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>cmd_dtm830c_${object.index}_3_40075_39</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>39</length>
+        <registerNumber>40075</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>cmd_dtm830c_${object.index}_3_40114_17</name>
+        <commandType>3</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>17</length>
+        <registerNumber>40114</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

@@ -59,12 +59,12 @@ public class DcimGenerate {
     }
 
     @Test
-    public void test1288() throws IOException, TemplateException {
-        Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(DeviceType.GALAXY300);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.GALAXY300.getPath(), FILE_NAME_COMMANDS), emhModel);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(DeviceType.GALAXY300.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
+    public void testXml() throws IOException, TemplateException {
+        DeviceType deviceType = DeviceType.Hc_EMH;
+        Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(deviceType);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_COMMANDS), emhModel);
+        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
     }
-
     public static StringBuffer CommondXml = new StringBuffer();
     public static StringBuffer DeviceDefineXml = new StringBuffer();
 

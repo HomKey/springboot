@@ -1,0 +1,31 @@
+<linked-list>
+    <#list emhList as object>
+        <ModbusRequest>
+            <name>emh_${object.index}_1_8_111</name>
+            <commandType>1</commandType>
+            <destinationHost>${object.ip}</destinationHost>
+            <port>${object.port}</port>
+            <busId>${object.busId}</busId>
+            <length>111</length>
+            <registerNumber>8</registerNumber>
+        </ModbusRequest>
+        <ModbusRequest>
+            <name>emh_${object.index}_1_119_75</name>
+            <commandType>1</commandType>
+            <destinationHost>${object.ip}</destinationHost>
+            <port>${object.port}</port>
+            <busId>${object.busId}</busId>
+            <length>75</length>
+            <registerNumber>119</registerNumber>
+        </ModbusRequest>
+        <ModbusRequest>
+            <name>emh_${object.index}_3_8_34</name>
+            <commandType>3</commandType>
+            <destinationHost>${object.ip}</destinationHost>
+            <port>${object.port}</port>
+            <busId>${object.busId}</busId>
+            <length>34</length>
+            <registerNumber>8</registerNumber>
+        </ModbusRequest>
+    </#list>
+</linked-list>
