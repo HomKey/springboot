@@ -4,6 +4,7 @@ import com.hk.base.util.FileUtils;
 import com.hk.freemarker.dcim.enums.DeviceType;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 

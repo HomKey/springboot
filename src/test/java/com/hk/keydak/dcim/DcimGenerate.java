@@ -60,26 +60,28 @@ public class DcimGenerate {
 
     @Test
     public void testXml() throws IOException, TemplateException {
-        DeviceType deviceType = DeviceType.Hc_EMH;
+        DeviceType deviceType = DeviceType.Hc_AC;
         Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(deviceType);
         freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_COMMANDS), emhModel);
         freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
     }
+
     public static StringBuffer CommondXml = new StringBuffer();
     public static StringBuffer DeviceDefineXml = new StringBuffer();
 
     @Test
     public void testHebing() {
+        String path = "E:\\homkey_wsp\\DCIM\\南宁公安局灾备中心\\NNZBZX.OrchestratorSvc\\ProjectConfig\\河池学院";
         CommondXml.append("<linked-list>\n");
         DeviceDefineXml.append("<linked-list>\n");
-        List<String> list = FileUtils.scanFiles("D:\\freemarker\\device\\cabinet");
+        List<String> list = FileUtils.scanAllFiles(path);
         for (String fileSource : list) {
             FileUtils.readFileWithLine(fileSource, (filePath, str) -> {
-                if (filePath.contains("Commands_")) {
+                if (filePath.contains("Commands")) {
                     if (!str.contains("linked-list")) {
                         CommondXml.append(str + "\n");
                     }
-                } else if (filePath.contains("DeviceDefines_")) {
+                } else if (filePath.contains("DeviceDefines")) {
                     if (!str.contains("linked-list")) {
                         DeviceDefineXml.append(str + "\n");
                     }
@@ -88,8 +90,8 @@ public class DcimGenerate {
         }
         CommondXml.append("</linked-list>");
         DeviceDefineXml.append("</linked-list>");
-        FileUtils.write("D:\\freemarker\\device\\cabinet\\Commands.xml", CommondXml.toString());
-        FileUtils.write("D:\\freemarker\\device\\cabinet\\DeviceDefines.xml", DeviceDefineXml.toString());
+        FileUtils.write(path + "\\Commands.xml", CommondXml.toString());
+        FileUtils.write(path + "\\DeviceDefines.xml", DeviceDefineXml.toString());
     }
 
 
@@ -316,7 +318,7 @@ public class DcimGenerate {
                 cabinet.setPduBackBusId(String.valueOf((busId - leftBack) * 2));
                 cabinet.setThIp(thRight);
                 cabinet.setThBusId(String.valueOf(i + 1 - leftBack));
-            }else if (i >= rightFront && i < rightBack) {
+            } else if (i >= rightFront && i < rightBack) {
                 cabinet.setPduFrontIp(pduRightBackIp);
                 cabinet.setPduFrontBusId(String.valueOf((busId - rightFront) * 2 - 1));
                 cabinet.setPduBackIp(pduRightBackIp);
