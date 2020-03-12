@@ -5,7 +5,7 @@
         <iSensorDefines>
             <SensorDefine>
                 <name>ELM.A.Voltage</name>
-                <registerIndex>40051</registerIndex>
+                <registerIndex>50</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -13,7 +13,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.Voltage</name>
-                <registerIndex>40052</registerIndex>
+                <registerIndex>51</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -21,7 +21,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.Voltage</name>
-                <registerIndex>40053</registerIndex>
+                <registerIndex>52</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -29,7 +29,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.LineVoltage.AB</name>
-                <registerIndex>40054</registerIndex>
+                <registerIndex>53</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -37,7 +37,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.LineVoltage.BC</name>
-                <registerIndex>40055</registerIndex>
+                <registerIndex>54</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -45,7 +45,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.LineVoltage.CA</name>
-                <registerIndex>40056</registerIndex>
+                <registerIndex>55</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -53,7 +53,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.Current</name>
-                <registerIndex>40057</registerIndex>
+                <registerIndex>56</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -61,7 +61,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.Current</name>
-                <registerIndex>40058</registerIndex>
+                <registerIndex>57</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -69,7 +69,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.Current</name>
-                <registerIndex>40059</registerIndex>
+                <registerIndex>58</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -79,7 +79,7 @@
                 <name>ELM.ActivePower</name>
                 <highPropertyDefines>
                     <name>ELM.ActivePower_h</name>
-                    <registerIndex>40061</registerIndex>
+                    <registerIndex>60</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
                     <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -87,7 +87,7 @@
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ActivePower_l</name>
-                    <registerIndex>40060</registerIndex>
+                    <registerIndex>59</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
                     <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -98,7 +98,7 @@
                 <name>ELM.ReactivePower</name>
                 <highPropertyDefines>
                     <name>ELM.ReactivePower_h</name>
-                    <registerIndex>40063</registerIndex>
+                    <registerIndex>62</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
                     <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -106,7 +106,7 @@
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ReactivePower_l</name>
-                    <registerIndex>40062</registerIndex>
+                    <registerIndex>61</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
                     <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -115,7 +115,7 @@
             </ComputeSensorDefine>
             <SensorDefine>
                 <name>ELM.PowerFactor</name>
-                <registerIndex>40064</registerIndex>
+                <registerIndex>63</registerIndex>
                 <scale>3</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -123,7 +123,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.ActivePower</name>
-                <registerIndex>40065</registerIndex>
+                <registerIndex>64</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -131,7 +131,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.ActivePower</name>
-                <registerIndex>40066</registerIndex>
+                <registerIndex>65</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -139,7 +139,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.ActivePower</name>
-                <registerIndex>40067</registerIndex>
+                <registerIndex>66</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -147,7 +147,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.ReactivePower</name>
-                <registerIndex>40068</registerIndex>
+                <registerIndex>67</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -155,7 +155,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.ReactivePower</name>
-                <registerIndex>40069</registerIndex>
+                <registerIndex>68</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -163,7 +163,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.ReactivePower</name>
-                <registerIndex>40070</registerIndex>
+                <registerIndex>69</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -171,7 +171,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.PowerFactor</name>
-                <registerIndex>40071</registerIndex>
+                <registerIndex>70</registerIndex>
                 <scale>3</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -179,7 +179,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.PowerFactor</name>
-                <registerIndex>40072</registerIndex>
+                <registerIndex>71</registerIndex>
                 <scale>3</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -187,7 +187,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.PowerFactor</name>
-                <registerIndex>40073</registerIndex>
+                <registerIndex>72</registerIndex>
                 <scale>3</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -195,7 +195,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.Frequency</name>
-                <registerIndex>40074</registerIndex>
+                <registerIndex>73</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_dtm830c_${object.index}_3_40051_24</commandName>
@@ -205,18 +205,18 @@
                 <name>ELM.ActiveDegree</name>
                 <highPropertyDefines>
                     <name>ELM.ActiveDegree_h</name>
-                    <registerIndex>40076</registerIndex>
+                    <registerIndex>75</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ActiveDegree_l</name>
-                    <registerIndex>40075</registerIndex>
+                    <registerIndex>74</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
@@ -224,18 +224,18 @@
                 <name>ELM.ReactiveDegree</name>
                 <highPropertyDefines>
                     <name>ELM.ReactiveDegree_h</name>
-                    <registerIndex>40078</registerIndex>
+                    <registerIndex>77</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ReactiveDegree_l</name>
-                    <registerIndex>40077</registerIndex>
+                    <registerIndex>76</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
@@ -243,18 +243,18 @@
                 <name>ELM.Input.ActiveDegree</name>
                 <highPropertyDefines>
                     <name>ELM.Input.ActiveDegree_h</name>
-                    <registerIndex>40080</registerIndex>
+                    <registerIndex>79</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.Input.ActiveDegree_l</name>
-                    <registerIndex>40079</registerIndex>
+                    <registerIndex>78</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
@@ -262,18 +262,18 @@
                 <name>ELM.Output.ActiveDegree</name>
                 <highPropertyDefines>
                     <name>ELM.Output.ActiveDegree_h</name>
-                    <registerIndex>40082</registerIndex>
+                    <registerIndex>81</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.Output.ActiveDegree_l</name>
-                    <registerIndex>40081</registerIndex>
+                    <registerIndex>80</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
@@ -281,18 +281,18 @@
                 <name>ELM.Input.ReactiveDegree</name>
                 <highPropertyDefines>
                     <name>ELM.Input.ReactiveDegree_h</name>
-                    <registerIndex>40084</registerIndex>
+                    <registerIndex>83</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.Input.ReactiveDegree_l</name>
-                    <registerIndex>40083</registerIndex>
+                    <registerIndex>82</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
@@ -300,347 +300,207 @@
                 <name>ELM.Output.ReactiveDegree</name>
                 <highPropertyDefines>
                     <name>ELM.Output.ReactiveDegree_h</name>
-                    <registerIndex>40086</registerIndex>
+                    <registerIndex>85</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.Output.ReactiveDegree_l</name>
-                    <registerIndex>40085</registerIndex>
+                    <registerIndex>84</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
             <SensorDefine>
                 <name>ELM.Switch.Status</name>
-                <registerIndex>40087</registerIndex>
+                <registerIndex>86</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.Relay.Status</name>
-                <registerIndex>40088</registerIndex>
+                <registerIndex>87</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>1</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.Voltage.THD</name>
-                <registerIndex>40089</registerIndex>
+                <registerIndex>88</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.Voltage.THD</name>
-                <registerIndex>40090</registerIndex>
+                <registerIndex>89</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.Voltage.THD</name>
-                <registerIndex>40091</registerIndex>
+                <registerIndex>90</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.Current.THD</name>
-                <registerIndex>40092</registerIndex>
+                <registerIndex>91</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.Current.THD</name>
-                <registerIndex>40093</registerIndex>
+                <registerIndex>92</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.Current.THD</name>
-                <registerIndex>40094</registerIndex>
+                <registerIndex>93</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <!--中线性电流-->
             <SensorDefine>
                 <name>ELM.Middle.Current</name>
-                <registerIndex>40095</registerIndex>
+                <registerIndex>94</registerIndex>
                 <scale>3</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>1000</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.Average.Current</name>
-                <registerIndex>40096</registerIndex>
+                <registerIndex>95</registerIndex>
                 <scale>3</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>1000</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.Line.Average.Voltage</name>
-                <registerIndex>40097</registerIndex>
+                <registerIndex>96</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>100</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.ABC.Average.Voltage</name>
-                <registerIndex>40098</registerIndex>
+                <registerIndex>97</registerIndex>
                 <scale>2</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>100</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.Voltage.Distortion.Rate</name>
-                <registerIndex>40099</registerIndex>
+                <registerIndex>98</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.Voltage.Distortion.Rate</name>
-                <registerIndex>40100</registerIndex>
+                <registerIndex>99</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.Voltage.Distortion.Rate</name>
-                <registerIndex>40101</registerIndex>
+                <registerIndex>100</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.Current.Distortion.Rate</name>
-                <registerIndex>40102</registerIndex>
+                <registerIndex>101</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.Current.Distortion.Rate</name>
-                <registerIndex>40103</registerIndex>
+                <registerIndex>102</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.Current.Distortion.Rate</name>
-                <registerIndex>40104</registerIndex>
+                <registerIndex>103</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.A.ApparentPower</name>
-                <registerIndex>40106</registerIndex>
+                <registerIndex>105</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.B.ApparentPower</name>
-                <registerIndex>40107</registerIndex>
+                <registerIndex>106</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
                 <name>ELM.C.ApparentPower</name>
-                <registerIndex>40108</registerIndex>
+                <registerIndex>107</registerIndex>
                 <scale>1</scale>
                 <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <ComputeSensorDefine>
                 <name>ELM.ApparentPower</name>
                 <highPropertyDefines>
                     <name>ELM.ApparentPower_h</name>
-                    <registerIndex>40110</registerIndex>
+                    <registerIndex>109</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
                 </highPropertyDefines>
                 <lowPropertyDefines>
                     <name>ELM.ApparentPower_l</name>
-                    <registerIndex>40109</registerIndex>
+                    <registerIndex>108</registerIndex>
                     <scale>1</scale>
                     <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
+                    <commandName>cmd_dtm830c_${object.index}_3_40075_35</commandName>
                     <divider>10</divider>
-                </lowPropertyDefines>
-            </ComputeSensorDefine>
-            <SensorDefine>
-                <name>ELM.A.Average.Current</name>
-                <registerIndex>40111</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>ELM.B.Average.Current</name>
-                <registerIndex>40112</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>ELM.C.Average.Current</name>
-                <registerIndex>40113</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40075_39</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>ELM.Zero.Average.Current</name>
-                <registerIndex>40114</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <ComputeSensorDefine>
-                <name>ELM.Average.ActivePower</name>
-                <highPropertyDefines>
-                    <name>ELM.Average.ActivePower_h</name>
-                    <registerIndex>40116</registerIndex>
-                    <scale>1</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>10</divider>
-                </highPropertyDefines>
-                <lowPropertyDefines>
-                    <name>ELM.Average.ActivePower_l</name>
-                    <registerIndex>40115</registerIndex>
-                    <scale>1</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>10</divider>
-                </lowPropertyDefines>
-            </ComputeSensorDefine>
-            <ComputeSensorDefine>
-                <name>ELM.Average.ReactivePower</name>
-                <highPropertyDefines>
-                    <name>ELM.Average.ReactivePower_h</name>
-                    <registerIndex>40118</registerIndex>
-                    <scale>1</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>10</divider>
-                </highPropertyDefines>
-                <lowPropertyDefines>
-                    <name>ELM.Average.ReactivePower_l</name>
-                    <registerIndex>40117</registerIndex>
-                    <scale>1</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>10</divider>
-                </lowPropertyDefines>
-            </ComputeSensorDefine>
-            <SensorDefine>
-                <name>ELM.A.Max.Current</name>
-                <registerIndex>40121</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>ELM.B.Max.Current</name>
-                <registerIndex>40122</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>ELM.C.Max.Current</name>
-                <registerIndex>40123</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>ELM.Zero.Max.Current</name>
-                <registerIndex>40124</registerIndex>
-                <scale>3</scale>
-                <isMean>false</isMean>
-                <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                <divider>1000</divider>
-            </SensorDefine>
-            <ComputeSensorDefine>
-                <name>ELM.Apparent.Energy</name>
-                <highPropertyDefines>
-                    <name>ELM.Apparent.Energy_h</name>
-                    <registerIndex>40128</registerIndex>
-                    <scale>1</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>10</divider>
-                </highPropertyDefines>
-                <lowPropertyDefines>
-                    <name>ELM.Apparent.Energy_l</name>
-                    <registerIndex>40127</registerIndex>
-                    <scale>1</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>10</divider>
-                </lowPropertyDefines>
-            </ComputeSensorDefine>
-            <ComputeSensorDefine>
-                <name>ELM.Runtime</name>
-                <highPropertyDefines>
-                    <name>ELM.Runtime_h</name>
-                    <registerIndex>40130</registerIndex>
-                    <scale>0</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>1</divider>
-                </highPropertyDefines>
-                <lowPropertyDefines>
-                    <name>ELM.Runtime_l</name>
-                    <registerIndex>40129</registerIndex>
-                    <scale>0</scale>
-                    <isMean>true</isMean>
-                    <commandName>cmd_dtm830c_${object.index}_3_40114_17</commandName>
-                    <divider>1</divider>
                 </lowPropertyDefines>
             </ComputeSensorDefine>
         </iSensorDefines>

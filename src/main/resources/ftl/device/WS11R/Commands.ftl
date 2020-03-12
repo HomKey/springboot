@@ -6,7 +6,7 @@
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
-        <length>1</length>
+        <length>2</length>
         <registerNumber>0</registerNumber>
     </ModbusRequest>
 </#list>

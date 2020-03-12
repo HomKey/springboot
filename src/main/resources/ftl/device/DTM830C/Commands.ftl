@@ -7,25 +7,25 @@
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
         <length>24</length>
-        <registerNumber>40051</registerNumber>
+        <registerNumber>51</registerNumber>
     </ModbusRequest>
     <ModbusRequest>
-        <name>cmd_dtm830c_${object.index}_3_40075_39</name>
+        <name>cmd_dtm830c_${object.index}_3_40075_35</name>
         <commandType>3</commandType>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>
         <busId>${object.busId}</busId>
-        <length>39</length>
-        <registerNumber>40075</registerNumber>
+        <length>35</length><!--39-->
+        <registerNumber>75</registerNumber>
     </ModbusRequest>
-    <ModbusRequest>
-        <name>cmd_dtm830c_${object.index}_3_40114_17</name>
-        <commandType>3</commandType>
-        <destinationHost>${object.ip}</destinationHost>
-        <port>${object.port}</port>
-        <busId>${object.busId}</busId>
-        <length>17</length>
-        <registerNumber>40114</registerNumber>
-    </ModbusRequest>
+    <#--<ModbusRequest>-->
+        <#--<name>cmd_dtm830c_${object.index}_3_40111_20</name>-->
+        <#--<commandType>3</commandType>-->
+        <#--<destinationHost>${object.ip}</destinationHost>-->
+        <#--<port>${object.port}</port>-->
+        <#--<busId>${object.busId}</busId>-->
+        <#--<length>20</length><!--39&ndash;&gt;-->
+        <#--<registerNumber>111</registerNumber>-->
+    <#--</ModbusRequest>-->
 </#list>
 </linked-list>

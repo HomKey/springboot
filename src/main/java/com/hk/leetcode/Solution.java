@@ -1,7 +1,5 @@
 package com.hk.leetcode;
 
-import com.hk.leetcode.common.ListNode;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,9 +47,6 @@ public class Solution {
             map.put(nums[i], i);
         }
         throw new IllegalArgumentException("No two sum solution");
-    }
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        return null;
     }
     /**
      给定一个字符串，找出不含有重复字符的最长子串的长度。

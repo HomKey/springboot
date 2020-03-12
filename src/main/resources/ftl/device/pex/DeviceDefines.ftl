@@ -5,7 +5,7 @@
         <iSensorDefines>
             <SensorDefine>
                 <name>CRAC.Fan.State</name>
-                <registerIndex>10025</registerIndex>
+                <registerIndex>25</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -13,7 +13,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Cooling.State</name>
-                <registerIndex>10026</registerIndex>
+                <registerIndex>26</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -21,7 +21,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.FreeCooling.State</name>
-                <registerIndex>10027</registerIndex>
+                <registerIndex>27</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -29,7 +29,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.HotWaterAndGas.State</name>
-                <registerIndex>10028</registerIndex>
+                <registerIndex>28</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -37,7 +37,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.ElectricReheat.State</name>
-                <registerIndex>10029</registerIndex>
+                <registerIndex>29</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -45,7 +45,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Humidifier.State</name>
-                <registerIndex>10030</registerIndex>
+                <registerIndex>30</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -53,7 +53,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Dehumidifier.State</name>
-                <registerIndex>10031</registerIndex>
+                <registerIndex>31</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -61,7 +61,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Buzzer.Status</name>
-                <registerIndex>10032</registerIndex>
+                <registerIndex>32</registerIndex>
                 <scale>0</scale>
                 <isMean>false</isMean>
                 <commandName>cmd_pex_${object.index}_2_10025_8</commandName>
@@ -69,7 +69,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Fan.Overload</name>
-                <registerIndex>10034</registerIndex>
+                <registerIndex>34</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -77,7 +77,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.AirFlow.Loss</name>
-                <registerIndex>10035</registerIndex>
+                <registerIndex>35</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -85,7 +85,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.WaterFlow.Loss</name>
-                <registerIndex>10036</registerIndex>
+                <registerIndex>36</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -93,7 +93,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.1.Pressure.High</name>
-                <registerIndex>10037</registerIndex>
+                <registerIndex>37</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -101,7 +101,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.1.Pressure.Low</name>
-                <registerIndex>10038</registerIndex>
+                <registerIndex>38</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -109,7 +109,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.1.Overload</name>
-                <registerIndex>10039</registerIndex>
+                <registerIndex>39</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -117,7 +117,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.1.PumpDown.Fail</name>
-                <registerIndex>10040</registerIndex>
+                <registerIndex>40</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -125,7 +125,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.2.Pressure.High</name>
-                <registerIndex>10041</registerIndex>
+                <registerIndex>41</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -133,7 +133,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.2.Pressure.Low</name>
-                <registerIndex>10042</registerIndex>
+                <registerIndex>42</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -141,7 +141,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.2.Overload</name>
-                <registerIndex>10043</registerIndex>
+                <registerIndex>43</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -149,7 +149,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.2.PumpDown.Fail</name>
-                <registerIndex>10044</registerIndex>
+                <registerIndex>44</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -157,7 +157,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Smoke</name>
-                <registerIndex>10047</registerIndex>
+                <registerIndex>47</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -165,7 +165,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Water</name>
-                <registerIndex>10048</registerIndex>
+                <registerIndex>48</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -173,7 +173,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Humidifier.Issue</name>
-                <registerIndex>10049</registerIndex>
+                <registerIndex>49</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -181,7 +181,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Indoor.TH.Issue</name>
-                <registerIndex>10053</registerIndex>
+                <registerIndex>53</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -189,7 +189,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Compressor.Power.Lose</name>
-                <registerIndex>10054</registerIndex>
+                <registerIndex>54</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -197,7 +197,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Blower.AirFlow.Lose</name>
-                <registerIndex>10055</registerIndex>
+                <registerIndex>55</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10034_22</commandName>
@@ -205,7 +205,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Humidifier.WaterLevel.Low</name>
-                <registerIndex>10058</registerIndex>
+                <registerIndex>58</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10058_4</commandName>
@@ -213,7 +213,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Humidifier.Current.High</name>
-                <registerIndex>10059</registerIndex>
+                <registerIndex>59</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10058_4</commandName>
@@ -221,7 +221,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Temperature.High</name>
-                <registerIndex>10060</registerIndex>
+                <registerIndex>60</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10058_4</commandName>
@@ -229,7 +229,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Unknow</name>
-                <registerIndex>10064</registerIndex>
+                <registerIndex>64</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10064_2</commandName>
@@ -237,7 +237,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.CoolingWater.Temperature.High</name>
-                <registerIndex>10065</registerIndex>
+                <registerIndex>65</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10064_2</commandName>
@@ -245,7 +245,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Indoor.Temperature.Over</name>
-                <registerIndex>10067</registerIndex>
+                <registerIndex>67</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -253,7 +253,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Indoor.Temperature.Under</name>
-                <registerIndex>10068</registerIndex>
+                <registerIndex>68</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -261,7 +261,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Indoor.Humidity.High</name>
-                <registerIndex>10069</registerIndex>
+                <registerIndex>69</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -269,7 +269,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Indoor.Humidity.Low</name>
-                <registerIndex>10070</registerIndex>
+                <registerIndex>70</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -277,7 +277,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.A.Temperature.Over</name>
-                <registerIndex>10071</registerIndex>
+                <registerIndex>71</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -285,7 +285,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.A.Temperature.Under</name>
-                <registerIndex>10072</registerIndex>
+                <registerIndex>72</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -293,7 +293,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.A.Humidity.High</name>
-                <registerIndex>10073</registerIndex>
+                <registerIndex>73</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -301,7 +301,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.A.Humidity.Low</name>
-                <registerIndex>10074</registerIndex>
+                <registerIndex>74</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -309,7 +309,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.CoolingWater.WaterFlow.Lose</name>
-                <registerIndex>10075</registerIndex>
+                <registerIndex>75</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -317,7 +317,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Filter.Block</name>
-                <registerIndex>10076</registerIndex>
+                <registerIndex>76</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -325,7 +325,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Fan.OverTime</name>
-                <registerIndex>10080</registerIndex>
+                <registerIndex>80</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -333,7 +333,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Compressor.1.OverTime</name>
-                <registerIndex>10081</registerIndex>
+                <registerIndex>81</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -341,7 +341,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Compressor.2.OverTime</name>
-                <registerIndex>10082</registerIndex>
+                <registerIndex>82</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -349,7 +349,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.FreeCooling.OverTime</name>
-                <registerIndex>10083</registerIndex>
+                <registerIndex>83</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -357,7 +357,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.ElectricReheater.1.OverTime</name>
-                <registerIndex>10084</registerIndex>
+                <registerIndex>84</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -365,7 +365,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.ElectricReheater.2.OverTime</name>
-                <registerIndex>10085</registerIndex>
+                <registerIndex>85</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -373,7 +373,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.ElectricReheater.3.OverTime</name>
-                <registerIndex>10086</registerIndex>
+                <registerIndex>86</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -381,7 +381,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.HotWaterAndGas.OverTime</name>
-                <registerIndex>10087</registerIndex>
+                <registerIndex>87</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -389,7 +389,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Humidifier.OverTime</name>
-                <registerIndex>10088</registerIndex>
+                <registerIndex>88</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
@@ -397,88 +397,87 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Alarm.Dehumidifier.OverTime</name>
-                <registerIndex>10089</registerIndex>
+                <registerIndex>89</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_2_10067_23</commandName>
                 <divider>1</divider>
             </SensorDefine>
-
             <SensorDefine>
                 <name>CRAC.ReturnAir.Temperature</name>
-                <registerIndex>30110</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.SupplyAir.Temperature</name>
-                <registerIndex>30112</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.FreeCooling.FluidTemperature</name>
-                <registerIndex>30115</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.Ext.AirSensor.A.Temperature</name>
-                <registerIndex>30116</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.Ext.AirSensor.B.Temperature</name>
-                <registerIndex>30117</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.Ext.AirSensor.C.Temperature</name>
-                <registerIndex>30118</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.DigScrollComp.1.Discharge.Temperature</name>
-                <registerIndex>30119</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.DigScrollComp.2.Discharge.Temperature</name>
-                <registerIndex>30120</registerIndex>
-                <scale>1</scale>
-                <isMean>true</isMean>
-                <commandName>crac_unity_q1_d${object.index}_AI_30103_17</commandName>
-                <divider>10</divider>
-            </SensorDefine>
-            <SensorDefine>
-                <name>CRAC.ReturnAir.Humidity</name>
-                <registerIndex>30130</registerIndex>
+                <registerIndex>110</registerIndex>
                 <scale>1</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
                 <divider>10</divider>
             </SensorDefine>
             <SensorDefine>
+                <name>CRAC.SupplyAir.Temperature</name>
+                <registerIndex>112</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.FreeCooling.FluidTemperature</name>
+                <registerIndex>115</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.Ext.AirSensor.A.Temperature</name>
+                <registerIndex>116</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.Ext.AirSensor.B.Temperature</name>
+                <registerIndex>117</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.Ext.AirSensor.C.Temperature</name>
+                <registerIndex>118</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.DigScrollComp.1.Discharge.Temperature</name>
+                <registerIndex>119</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.DigScrollComp.2.Discharge.Temperature</name>
+                <registerIndex>120</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>10</divider>
+            </SensorDefine>
+            <SensorDefine>
+                <name>CRAC.ReturnAir.Humidity</name>
+                <registerIndex>130</registerIndex>
+                <scale>1</scale>
+                <isMean>true</isMean>
+                <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
+                <divider>1</divider>
+            </SensorDefine>
+            <SensorDefine>
                 <name>CRAC.Ext.AirSensor.A.Humidity</name>
-                <registerIndex>30132</registerIndex>
+                <registerIndex>132</registerIndex>
                 <scale>1</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -486,7 +485,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Ext.AirSensor.B.Humidity</name>
-                <registerIndex>30133</registerIndex>
+                <registerIndex>133</registerIndex>
                 <scale>1</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -494,7 +493,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.Ext.AirSensor.C.Humidity</name>
-                <registerIndex>30134</registerIndex>
+                <registerIndex>134</registerIndex>
                 <scale>1</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -503,7 +502,7 @@
             <!-- 风机运行时间 小时-->
             <SensorDefine>
                 <name>CRAC.Fan.RunningTime</name>
-                <registerIndex>30141</registerIndex>
+                <registerIndex>141</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -512,7 +511,7 @@
             <!-- 压缩机运行时间 小时-->
             <SensorDefine>
                 <name>CRAC.Compressor.1.RunningTime</name>
-                <registerIndex>30142</registerIndex>
+                <registerIndex>142</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -521,7 +520,7 @@
             <!-- 压缩机运行时间 小时-->
             <SensorDefine>
                 <name>CRAC.Compressor.2.RunningTime</name>
-                <registerIndex>30143</registerIndex>
+                <registerIndex>143</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -530,7 +529,7 @@
             <!-- 加湿器运行 时间 -->
             <SensorDefine>
                 <name>CRAC.Humidifier.RunningTime</name>
-                <registerIndex>30144</registerIndex>
+                <registerIndex>144</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -539,7 +538,7 @@
             <!-- 除湿器运行 时间 -->
             <SensorDefine>
                 <name>CRAC.Dehumidifier.RunningTime</name>
-                <registerIndex>30145</registerIndex>
+                <registerIndex>145</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -548,7 +547,7 @@
             <!-- 自然冷却运行 时间 -->
             <SensorDefine>
                 <name>CRAC.FreeCooling.RunningTime</name>
-                <registerIndex>30146</registerIndex>
+                <registerIndex>146</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -557,7 +556,7 @@
             <!-- 电加热运行 时间 -->
             <SensorDefine>
                 <name>CRAC.ElectricReheater.1.RunningTime</name>
-                <registerIndex>30147</registerIndex>
+                <registerIndex>147</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -565,7 +564,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.ElectricReheater.2.RunningTime</name>
-                <registerIndex>30148</registerIndex>
+                <registerIndex>148</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -573,7 +572,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.ElectricReheater.3.RunningTime</name>
-                <registerIndex>30149</registerIndex>
+                <registerIndex>149</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>
@@ -581,7 +580,7 @@
             </SensorDefine>
             <SensorDefine>
                 <name>CRAC.HotWaterAndGas.RunningTime</name>
-                <registerIndex>30150</registerIndex>
+                <registerIndex>150</registerIndex>
                 <scale>0</scale>
                 <isMean>true</isMean>
                 <commandName>cmd_pex_${object.index}_4_30110_41</commandName>

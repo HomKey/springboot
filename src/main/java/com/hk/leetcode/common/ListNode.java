@@ -1,10 +1,13 @@
 package com.hk.leetcode.common;
 
 /**
- * Created by LuHj on 2018/8/1.
+ * Created by HomKey on 2020/3/6.
  */
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
+    public int val;
+    public ListNode next;
+    public ListNode(int x) {
+        val = x;
+    }
+
 }

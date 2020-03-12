@@ -60,10 +60,21 @@ public class DcimGenerate {
 
     @Test
     public void testXml() throws IOException, TemplateException {
-        DeviceType deviceType = DeviceType.Hc_AC;
-        Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(deviceType);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_COMMANDS), emhModel);
-        freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
+        List<DeviceType> deviceTypeList = new ArrayList<>();
+//        deviceTypeList.add(DeviceType.Hc_CRAC);
+//        deviceTypeList.add(DeviceType.Hc_Ek5a);
+//        deviceTypeList.add(DeviceType.Hc_UPS);
+        deviceTypeList.add(DeviceType.Hc_TH);
+//        deviceTypeList.add(DeviceType.Hc_AC);
+//        deviceTypeList.add(DeviceType.Hc_DTM);
+//        deviceTypeList.add(DeviceType.Hc_DIOM);
+//        deviceTypeList.add(DeviceType.Hc_PDC);
+
+        for (DeviceType deviceType : deviceTypeList) {
+            Map<String, Object> emhModel = CollectorDeviceUtils.getCollectorDeviceModel(deviceType);
+            freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_COMMANDS), emhModel);
+            freemarkerUtils.createFreemarker(getDcimFtlPath(deviceType.getPath(), FILE_NAME_DEVICE_DEFINES), emhModel);
+        }
     }
 
     public static StringBuffer CommondXml = new StringBuffer();
@@ -71,7 +82,7 @@ public class DcimGenerate {
 
     @Test
     public void testHebing() {
-        String path = "E:\\homkey_wsp\\DCIM\\南宁公安局灾备中心\\NNZBZX.OrchestratorSvc\\ProjectConfig\\河池学院";
+        String path = "D:\\freemarker\\device\\hebing";
         CommondXml.append("<linked-list>\n");
         DeviceDefineXml.append("<linked-list>\n");
         List<String> list = FileUtils.scanAllFiles(path);
