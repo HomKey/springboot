@@ -176,4 +176,22 @@ public class HexUtil {
         }
         return out;
     }
+
+    public static Integer byteArrayToInt(byte[] d, int start, int length) {
+        byte[] data = new byte[length];
+        System.arraycopy(d, start, data, 0, length);
+        byte[] temp = new byte[4];
+        int i = temp.length - 1, j = data.length - 1;
+        for (; i >= 0; i--, j--) {//从b的尾部(即int值的低位)开始copy数据
+            if (j >= 0)
+                temp[i] = data[j];
+            else
+                temp[i] = 0;//如果b.length不足4,则将高位补0
+        }
+        int v0 = (temp[0] & 0xff) << 24;//&0xff将byte值无差异转成int,避免Java自动类型提升后,会保留高位的符号位
+        int v1 = (temp[1] & 0xff) << 16;
+        int v2 = (temp[2] & 0xff) << 8;
+        int v3 = (temp[3] & 0xff);
+        return v0 + v1 + v2 + v3;
+    }
 }

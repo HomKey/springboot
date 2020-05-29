@@ -169,4 +169,9 @@ public class NoSpringbootTest {
         }
         System.out.println("end");
     }
+
+    @Test
+    public void testHexString(){
+
+    }
 }

@@ -11,6 +11,12 @@ public enum DeviceType {
     PM5350BW("elmList","pm5350bw"),
     PM5350BW_ZL("elmList","pm5350bw"),
     TH("thList","th"),
+    // 肿瘤
+    EmhPlusTH_ZL("emhPlusList","emhPlus"),
+    LCD_TH_ZL("thList","LCD_TH"),
+    CabinetPduV2("pduList","cabinet"),
+    EMH_ZL("channelList","channel"),
+
     TH_ZL("thList","th"),
     PDC("pdcList","pdc"),
     FLOOR("floorList","floor"),
@@ -18,7 +24,6 @@ public enum DeviceType {
     PDC_ZL("pdcList","pdc"),
     PDU3("pduList","pdu3"),
     Cabinet("cabinetList","cabinet"),
-    CabinetPduV2("pduList","cabinet"),
     GALAXY300("upsList","galaxy300"),
     DME3000("dmeList","DataMate3000"),
     Hipulse("hipulseList","Hipulse"),

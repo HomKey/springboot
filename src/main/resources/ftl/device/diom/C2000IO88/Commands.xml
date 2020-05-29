@@ -1,0 +1,22 @@
+<linked-list>
+
+  <ModbusRequest>
+    <name>cmd_r2_diom_elm_d1_QDO</name>
+    <commandType>1</commandType>
+    <destinationHost>192.168.82.87</destinationHost>
+    <port>6001</port>
+    <busId>1</busId>
+    <length>8</length>
+    <registerNumber>100</registerNumber>
+  </ModbusRequest>
+  <ModbusRequest>
+    <name>cmd_r2_diom_elm_d1_QDI</name>
+    <commandType>2</commandType>
+    <destinationHost>192.168.82.87</destinationHost>
+    <port>6001</port>
+    <busId>1</busId>
+    <length>8</length>
+    <registerNumber>200</registerNumber>
+  </ModbusRequest>
+    
+</linked-list>

@@ -1,86 +1,13 @@
-UPS_Alarm_Battery_Maintain	UPS电池维护告警
-UPS_Battery_TestResult_Status	电池状态测试（0：ok，1：error）
-UPS_Battery_Testing_Status	电池测试状态（0：测试中，1：激活状态）
-UPS_Alarm_Battery_Temperature_Over	电池温度过高
-UPS_Battery_CircuitBreaker_Switch_Status	电池断路器开关状态
-UPS_Mains_1_Input_Switch_Status	干线1输入开关状态（0：关，1：开）
-UPS_Mains_1_Voltage_Over	干线1电压过电压
-UPS_Mains_1_Fuse_Fault	干线1保险丝故障
-UPS_Mains_1_Frequency_Over	干线1频率过高
-UPS_Alarm_RectifierThermal_Overload	UPS整流器热过载
-UPS_Mains_2_Overload	干线2过载
-UPS_Mains_2_Thermal_Overload	干线2热过载
-UPS_Alarm_Bypass_VoltageOrFrequency_Over	旁路电压或频率过高
-UPS_Mains_2_Voltage_Over	干线2电压过电压
-UPS_Alarm_M2_Over	M2相超差
-UPS_Mains_2_Input_Switch_Status	干线2输入开关状态（0：关，1：开）
-UPS_Output_Switch_Status	输出开关状态（0：关，1：开）
-UPS_Alarm_ChargerGeneral_Fault	一般充电异常
-UPS_Battery_Charged_Status	UPS电池充电状态（0：no，1：yes）
-UPS_Alarm_Major_Fault	重大故障告警
-UPS_Alarm_Inverter_Overload	逆变器过载
-UPS_Alarm_Inverter_Thermal_Overload	逆变器热过载
-UPS_Mains_1_U12_Voltage	干线1的U12线电压
-UPS_Mains_1_U23_Voltage	干线1的U23线电压
-UPS_Mains_1_U31_Voltage	干线1的U31线电压
-UPS_Inverter_U1N_Voltage	逆变器1N相电压
-UPS_Inverter_U2N_Voltage	逆变器2N相电压
-UPS_Inverter_U3N_Voltage	逆变器3N相电压
-UPS_Mains_2_U12_Voltage	干线2的U12线电压
-UPS_Mains_2_U23_Voltage	干线2的U23线电压
-UPS_Mains_2_U31_Voltage	干线2的U31线电压
-UPS_Output_U1N_Voltage	输出的1N相电压
-UPS_Output_U2N_Voltage	输出的2N相电压
-UPS_Output_U3N_Voltage	输出的3N相电压
-UPS_Output_U12_Voltage	输出的U12线电压
-UPS_Output_U23_Voltage	输出的U23线电压
-UPS_Output_U31_Voltage	输出的U31线电压
-UPS_Output_1_ActivePower	输出的1N有功功率
-UPS_Output_2_ActivePower	输出的2N有功功率
-UPS_Output_3_ActivePower	输出的3N有功功率
-UPS_Output_1_ApparentPower	输出的1N视在功率
-UPS_Output_2_ApparentPower	输出的2N视在功率
-UPS_Output_3_ApparentPower	输出的3N视在功率
-UPS_Output_ActivePower	输出总有功功率
-UPS_Output_ApparentPower	输出总视在功率
-UPS_Output_LoadRate	输出负载率
-UPS_1_PowerFactor	1N功率因数
-UPS_2_PowerFactor	2N功率因数
-UPS_3_PowerFactor	3N功率因数
-UPS_PowerFactor	总功率因数
-UPS_Mains_1_Frequency	干线1的频率
-UPS_Inverter_Frequency	逆变器频率
-UPS_Mains_2_Frequency	干线2的频率
-UPS_Alarm_Inverter_Fuse_Fault	逆变器故障告警
-UPS_Alarm_Output_Thermal_Overload	输出热过载告警
-UPS_Alarm_Output_Overload	输出过载告警
-UPS_Output_ShortCircuit_Status	输出短路状态
-UPS_Warrant_End	保修期到期
-UPS_Mains_1_I1_Current	干线1的I1电流
-UPS_Mains_1_I2_Current	干线1的I2电流
-UPS_Mains_1_I3_Current	干线1的I3电流
-UPS_Mains_2_I1_Current	干线2的I1电流
-UPS_Mains_2_I2_Current	干线2的I2电流
-UPS_Mains_2_I3_Current	干线2的I3电流
-UPS_Output_I1_Current	输出I1电流
-UPS_Output_I2_Current	输出I2电流
-UPS_Output_I3_Current	输出I3电流
-UPS_Battery_ChargingRate	电池电量
-UPS_Battery_RechargeDuration_Time	电池充电持续时间时间
-UPS_LoadProtected_Status	负载保护状态
-UPS_Coupled_Status	耦合状态
-UPS_Alarm_Unit	机组告警
-UPS_System_Downgraded_Operation	系统降级操作
-UPS_Backup_Switch_Status	备用电源开关状态
-UPS_Alarm_Battery_low	电池电量不足
-UPS_Emergency_Stop_Status	紧急制停
-UPS_Mode_OnLine_Status	UPS在线状态
-UPS_Mode_Eco_Status	UPS Eco模式
-UPS_Battery_Backup_Time	电池备用时间
-UPS_Inverter_Limitation_Status	0 -无电流限制 1 -电流限制
-UPS_Bypass_Switch_Status	旁路开关状态
-UPS_Battery_Current	电池电流
-UPS_Battery_Voltage	电池电压
-UPS_Battery_Temperature	电池温度（℃）
-UPS_Output_Frequency	输出频率
-AccessFault	通讯故障
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.RunState', N' 开机状态');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Indoor.Temperature', N' 室内温度');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Indoor.Humidity', N' 室内湿度');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Outdoor.Temperature', N' 室外温度');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Setting.Temperature', N' 设定温度');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Precision.Temperature', N' ');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Setting.Humidity', N' 设定湿度');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Precision.Humidity', N' ');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Module.1.InnerBlower.1.RunState', N' 风机状态');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Module.1.Humidify.RunState', N' 除湿状态');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Module.1.Dehumidify.RunState', N' 加湿告警');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Module.1.Alarm.Filter.Fault', N' 过滤网告警');
+INSERT INTO [DCIM-ZSZL].[dbo].[DeviceCategoryModel] ([CategoryId], [SensorName], [SensorDescription]) VALUES ('5AE9C654-F597-4F74-9414-36E592511C69', 'CRAC.Module.1.Alarm.Communication', N' 通讯告警');

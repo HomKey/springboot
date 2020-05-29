@@ -36,7 +36,14 @@ public class DcimUtilsTest {
             System.out.println(UUID.randomUUID().toString().toUpperCase());
         }
     }
-
+    @Test
+    public void createInsertSql() {
+        for (int i = 2; i <= 18; i++) {
+            String id = UUID.randomUUID().toString().toUpperCase();
+            System.out.println("INSERT INTO [DCIM-GZAQJ].[dbo].[DeviceBase] ([Id], [Name], [Description], [CategoryId], [ParentId], [QrCode], [SerialNumber]) VALUES ('"+id+"', N'IPv"+i+"', N'IPv"+i+"', '50D6BADB-1B0E-440E-9F45-2BAE3870726F', '2D6A9B27-E1C5-426B-8B14-C6BE31C72BEE', NULL, N'');\n");
+            System.out.println("INSERT INTO [DCIM-GZAQJ].[dbo].[ThingBase] ([Id], [ModelId], [LocationX], [LocationY], [LocationZ], [TowardsX], [TowardsY], [TowardsZ], [HasChildScene], [ParentId]) VALUES ('"+id+"', N'EB463DBF-5418-43C2-A4E9-0A2B03545A7C', '"+(i*10+130)+"', '30.000', '20.000', '1.000', '.000', '.000', '0', '2D6A9B27-E1C5-426B-8B14-C6BE31C72BEE');\n");
+        }
+    }
     @Test
     public void testPositionString() {
         String[][] dataA = new String[][]{

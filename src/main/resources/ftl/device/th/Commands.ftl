@@ -1,7 +1,7 @@
 <linked-list>
 <#list thList as object>
     <ModbusRequest>
-        <name>th_r2_d${object.index}_AI</name>
+        <name>th_r2_d${object.ip}_${object.index}_AI</name>
         <commandType>3</commandType>
         <destinationHost>${object.ip}</destinationHost>
         <port>${object.port}</port>

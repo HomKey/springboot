@@ -1,0 +1,77 @@
+<linked-list>
+
+  <DeviceDefine>
+    <deviceId>9FB53904-3D1D-4531-8355-0B046C4CACE4</deviceId>
+    <iSensorDefines>
+	
+      <SensorDefine>
+        <name>DIOM.DO1</name>
+        <registerIndex>100</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDO</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+      <SensorDefine>
+        <name>DIOM.DO2</name>
+        <registerIndex>101</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDO</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+      <SensorDefine>
+        <name>DIOM.DO3</name>
+        <registerIndex>102</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDO</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+      <SensorDefine>
+        <name>DIOM.DO4</name>
+        <registerIndex>103</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDO</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+	  
+      <SensorDefine>
+        <name>DIOM.DI1</name>
+        <registerIndex>200</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDI</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+      <SensorDefine>
+        <name>DIOM.DI2</name>
+        <registerIndex>201</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDI</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+      <SensorDefine>
+        <name>DIOM.DI3</name>
+        <registerIndex>202</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDI</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+      <SensorDefine>
+        <name>DIOM.DI4</name>
+        <registerIndex>203</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_r2_diom_thunderPro_d1_QDI</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+	  
+    </iSensorDefines>
+  </DeviceDefine>
+
+
+</linked-list>

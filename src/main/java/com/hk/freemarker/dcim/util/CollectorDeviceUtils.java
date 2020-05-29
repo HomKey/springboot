@@ -4,9 +4,9 @@ import com.hk.freemarker.dcim.entity.base.CollectorDevice;
 import com.hk.freemarker.dcim.entity.base.PositionDevice;
 import com.hk.freemarker.dcim.entity.base.DeviceDetail;
 import com.hk.freemarker.dcim.entity.device.ChannelV2;
+import com.hk.freemarker.dcim.entity.device.DoubleDevice;
 import com.hk.freemarker.dcim.enums.DeviceModel;
 import com.hk.freemarker.dcim.enums.DeviceType;
-
 import java.util.*;
 
 /**
@@ -36,7 +36,11 @@ public class CollectorDeviceUtils {
 
         // 肿瘤
         // 环境主机
+        initZlEmh();
+        initZlTh();
+        initZlPdu();
         initHipulse(); // ups
+
         initZlPdc();
         // 空调
         // ACM03U1
@@ -45,11 +49,8 @@ public class CollectorDeviceUtils {
         initDME();
         // unity
         initUnity();
-
         initZlFloor();
         initZlElm();
-
-        initZlTh();
 
 
         // 河池
@@ -66,6 +67,9 @@ public class CollectorDeviceUtils {
         initHcEmh();
     }
 
+    /**
+     * 河池学院
+     */
     private static void initHcEmh(){
         List<PositionDevice> list = new ArrayList<>();
         DeviceType deviceType = DeviceType.Hc_EMH;
@@ -361,95 +365,6 @@ public class CollectorDeviceUtils {
         data.put(deviceType, list);
     }
 
-    private static void initDME() {
-        List<PositionDevice> list1 = new ArrayList<>();
-        DeviceType deviceType = DeviceType.DME_Modbus;
-        PositionDevice ac1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("0b4dba4e-75c8-42c1-a97c-c2211fa25857")
-                        .name("空调2").index(2).ip("192.168.0.140").port("6019").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("0b4dba4e-75c8-42c1-a97c-c2211fa25857")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        list1.add(ac1);
-        data.put(deviceType, list1);
-    }
-
-    private static void initUnity() {
-        List<PositionDevice> list1 = new ArrayList<>();
-        DeviceType deviceType = DeviceType.Unity;
-        PositionDevice ac1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("7b06dbc2-4b38-4793-9070-c9cc30250aab")
-                        .name("空调3").index(3).ip("192.168.0.140").port("16008").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("7b06dbc2-4b38-4793-9070-c9cc30250aab")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        list1.add(ac1);
-        data.put(deviceType, list1);
-    }
-
-    private static void initACM03U1() {
-        List<PositionDevice> list1 = new ArrayList<>();
-        PositionDevice ac1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("3c11b56a-98b6-41eb-9969-64e2247b3245")
-                        .name("空调1").index(1).ip("192.168.0.140").port("6009").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("3c11b56a-98b6-41eb-9969-64e2247b3245")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.ACM03U1)
-                        .build())
-                .build();
-        list1.add(ac1);
-        data.put(DeviceType.ACM03U1, list1);
-    }
-
-    // 电量仪
-    private static void initZlElm() {
-        List<PositionDevice> elmList = new ArrayList<>();
-        DeviceType deviceType = DeviceType.PM5350BW_ZL;
-        PositionDevice dly1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("3766aa69-d969-4500-a0df-a3ad797ab2a7")
-                        .name("电量仪1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("3766aa69-d969-4500-a0df-a3ad797ab2a7")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        PositionDevice dly2 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("57980c88-7781-4fb8-855e-d5a674de4ed0")
-                        .name("电量仪2").index(2).ip("192.168.0.140").port("6018").busId("2").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("57980c88-7781-4fb8-855e-d5a674de4ed0")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        PositionDevice dly3 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("8283736f-0a3f-4c1e-92e5-ee0883cfc174")
-                        .name("电量仪3").index(3).ip("192.168.0.140").port("6018").busId("3").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("8283736f-0a3f-4c1e-92e5-ee0883cfc174")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        elmList.add(dly1);
-        elmList.add(dly2);
-        elmList.add(dly3);
-        data.put(deviceType, elmList);
-    }
 
     // 电量仪
     private static void init1288Elm() {
@@ -686,153 +601,6 @@ public class CollectorDeviceUtils {
         data.put(DeviceType.TH, thList);
     }
 
-    private static void initZlTh() {
-        List<PositionDevice> list = new ArrayList<>();
-        PositionDevice th1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("4c073df9-e7f5-45c4-b8a9-58fa45a200aa")
-                        .name("th-1").index(1).ip("192.168.0.140").port("6003").busId("2").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("4c073df9-e7f5-45c4-b8a9-58fa45a200aa")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th1);
-
-        PositionDevice th2 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("aa9c72b3-116a-4d5b-a09f-7043d292ef25")
-                        .name("th-2").index(2).ip("192.168.0.140").port("6003").busId("3").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("aa9c72b3-116a-4d5b-a09f-7043d292ef25")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th2);
-
-        PositionDevice th3 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("b685cb4b-db01-4490-9686-fcc365cca504")
-                        .name("th-3").index(3).ip("192.168.0.140").port("6003").busId("4").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("b685cb4b-db01-4490-9686-fcc365cca504")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th3);
-
-        PositionDevice th4 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("cbec977b-fbb9-4788-a0b5-c5b7a5c6a480")
-                        .name("th-4").index(4).ip("192.168.0.140").port("6003").busId("5").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("cbec977b-fbb9-4788-a0b5-c5b7a5c6a480")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th4);
-
-        PositionDevice th5 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("2ab5433f-c5de-4194-95ed-b873328c5421")
-                        .name("th-5").index(5).ip("192.168.0.140").port("6003").busId("6").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("2ab5433f-c5de-4194-95ed-b873328c5421")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th5);
-
-        PositionDevice th6 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("1203e964-075d-458a-a0bb-0e5fbb0f7fe8")
-                        .name("th-6").index(6).ip("192.168.0.140").port("6003").busId("7").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("1203e964-075d-458a-a0bb-0e5fbb0f7fe8")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th6);
-
-        PositionDevice th7 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("73912b35-a9d7-432d-a02e-28509025ad40")
-                        .name("th-7").index(7).ip("192.168.0.140").port("6003").busId("8").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("73912b35-a9d7-432d-a02e-28509025ad40")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th7);
-
-        PositionDevice th8 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("d38e5011-932b-463d-ad9e-083bc3b2559e")
-                        .name("th-8").index(8).ip("192.168.0.140").port("6003").busId("9").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("d38e5011-932b-463d-ad9e-083bc3b2559e")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th8);
-
-        PositionDevice th9 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("1b745ea8-ba18-4cde-9185-504fc0333d2d")
-                        .name("th-9").index(9).ip("192.168.0.140").port("6003").busId("10").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("1b745ea8-ba18-4cde-9185-504fc0333d2d")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th9);
-
-        PositionDevice th10 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("054698ad-1e07-4615-8b67-8d44ece875a5")
-                        .name("th-10").index(10).ip("192.168.0.140").port("6003").busId("11").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("054698ad-1e07-4615-8b67-8d44ece875a5")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th10);
-
-        PositionDevice th11 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("5b54077a-2290-498e-bc18-4db58acce3ac")
-                        .name("th-11").index(11).ip("192.168.0.140").port("6003").busId("12").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("5b54077a-2290-498e-bc18-4db58acce3ac")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th11);
-
-        PositionDevice th12 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("38fd8694-5494-49ef-9117-9f9cc83e7162")
-                        .name("th-12").index(12).ip("192.168.0.140").port("6003").busId("13").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("38fd8694-5494-49ef-9117-9f9cc83e7162")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.TH_ZL)
-                        .build())
-                .build();
-        list.add(th12);
-        data.put(DeviceType.TH_ZL, list);
-    }
     // 配电柜
     private static void init1288Pdc() {
         List<PositionDevice> pdcList = new ArrayList<>();
@@ -885,14 +653,225 @@ public class CollectorDeviceUtils {
         data.put(DeviceType.PDC, pdcList);
     }
 
-    // 配电柜
+    /**
+     * 肿瘤
+     */
+    private static void initZlEmh(){
+        List<PositionDevice> list = new ArrayList<>();
+        DeviceType deviceType = DeviceType.EMH_ZL;
+        PositionDevice emh1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("A74AD405-2251-43E0-BE39-D95B2502168B")
+                        .name("冷通道1").index(1).ip("192.168.7.136").port("6001").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("1")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list.add(emh1);
+        data.put(deviceType, list);
+    }
+    // pdu 1个机柜2条pdu 29*2
+    private static void initZlPdu(){
+        String[][] cabinetData = new String[][]{
+                {"74A79A33-0DEE-4478-AE02-8A367C338AD4", "1", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"94D0C1F6-9CE4-4F4B-AD9D-AFB3478DBFDD", "2", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"D0A3FB87-3EF7-414B-AAD9-E35D421CFBA3", "3", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"0D29D66C-3678-4334-872A-D6376ECD46A4", "4", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"EC5A1924-34D9-46F1-9C5D-5DCB27BE815C", "5", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"47523822-E2B6-45C1-BCB0-12F248EDAD9B", "6", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"8FCE2298-9846-4EBF-8B7B-20F1675884C2", "7", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"FF7D677B-07FA-4517-9387-FEBC4D2A1085", "8", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"88846985-514F-4335-A36A-4910A16BCBAA", "9", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"F794845C-ACB2-47FD-AA48-B48D5812A029", "10", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"36E5D45B-455D-4922-862C-68DB0FDED20D", "11", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"8A4EFD58-9429-429E-9A34-FB46BA72B714", "12", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"0533C8E1-8DBE-47F5-86FB-8FD9C6EA4EB6", "13", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"F19B1F32-CFA5-4577-AC2F-3C503D1837A9", "14", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"2182C612-E942-4213-866F-D827E0DA0A64", "15", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"7C0332E2-B04D-46D3-8F5B-EC2BA5AA7021", "16", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"1DFC21CE-5DDE-4C4D-804C-6EEF80823894", "17", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"F5C81318-D3FB-47BA-B43F-573A010C5E5B", "18", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"03E2DDCA-3135-4F47-8CCB-135A095C7653", "19", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"86B05A10-DF61-4619-9B25-C0642B7163AA", "20", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"D7CC22A9-6AAC-4D00-8901-95BF173F7ED9", "21", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"1A5C7185-369E-48FF-84D8-623D9D674A08", "22", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"32514D63-131A-42CF-9F00-61D9C967A153", "23", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"9909BE62-2775-4C48-867E-ED4E256BCE5A", "24", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"C7E6FA6B-BE2C-44F8-B662-CED3312B3E02", "25", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"ADC88CA9-FFC5-47FA-B6DB-E4AF03A87CA0", "26", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"E5CABB9B-601A-49E2-ABEB-43535A1AC5F5", "27", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"76AE665C-7C0C-4A09-862E-F4E008098DBD", "28", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"},
+                {"1F5DB602-E9B2-4555-95C3-B76A4416E639", "29", "192.168.7.136", "192.168.7.136", "6002", "6002", "1", "2"}
+        };
+        List<DoubleDevice> list = new ArrayList<>();
+        for (String[] item : cabinetData) {
+            DoubleDevice doubleDevice = DoubleDevice.builder()
+                    .index(Integer.parseInt(item[1]))
+                    .deviceId(item[0])
+                    .ip1(item[2])
+                    .ip2(item[3])
+                    .port1(item[4])
+                    .port2(item[5])
+                    .busId1(item[6])
+                    .busId2(item[7])
+                    .build();
+            list.add(doubleDevice);
+        }
+        data.put(DeviceType.CabinetPduV2, list);
+    }
+    // UPS hipulse 2台
+    private static void initHipulse() {
+        List<PositionDevice> list = new ArrayList<>();
+        PositionDevice ups1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("dacadba1-8e30-4fdd-affc-187fdcbce97e")
+                        .name("ups1").index(1).ip("192.168.0.140").port("6012").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("dacadba1-8e30-4fdd-affc-187fdcbce97e")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.Hipulse)
+                        .build())
+                .build();
+        list.add(ups1);
+        PositionDevice ups2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("09b44ae8-0467-4ce6-b06f-ecee1168c1fa")
+                        .name("ups2").index(2).ip("192.168.0.140").port("6012").busId("2").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("09b44ae8-0467-4ce6-b06f-ecee1168c1fa")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.Hipulse)
+                        .build())
+                .build();
+        list.add(ups2);
+        data.put(DeviceType.Hipulse, list);
+    }
+    // 电量仪 3台
+    private static void initZlElm() {
+        List<PositionDevice> elmList = new ArrayList<>();
+        DeviceType deviceType = DeviceType.PM5350BW_ZL;
+        PositionDevice dly1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("3766aa69-d969-4500-a0df-a3ad797ab2a7")
+                        .name("电量仪1").index(1).ip("192.168.0.140").port("6018").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("3766aa69-d969-4500-a0df-a3ad797ab2a7")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        PositionDevice dly2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("57980c88-7781-4fb8-855e-d5a674de4ed0")
+                        .name("电量仪2").index(2).ip("192.168.0.140").port("6018").busId("2").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("57980c88-7781-4fb8-855e-d5a674de4ed0")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        PositionDevice dly3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("8283736f-0a3f-4c1e-92e5-ee0883cfc174")
+                        .name("电量仪3").index(3).ip("192.168.0.140").port("6018").busId("3").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("8283736f-0a3f-4c1e-92e5-ee0883cfc174")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        elmList.add(dly1);
+        elmList.add(dly2);
+        elmList.add(dly3);
+        data.put(deviceType, elmList);
+    }
+    // 6个增强型单元 12个温湿度
+    private static void initZlTh() {
+        Map<String,Object> model = new HashMap<>();
+        String ip = "192.168.7.136";
+        String port = "6001";
+        int busId = 0;
+        List<CollectorDevice> unitList = new ArrayList<>();
+        CollectorDevice th1 = CollectorDevice.builder()
+                        .deviceId("4c073df9-e7f5-45c4-b8a9-58fa45a200aa")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-1").index(1).build();
+        unitList.add(th1);
+        CollectorDevice th2 = CollectorDevice.builder()
+                        .deviceId("aa9c72b3-116a-4d5b-a09f-7043d292ef25")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-2").index(2).build();
+        unitList.add(th2);
+        CollectorDevice th3 = CollectorDevice.builder()
+                        .deviceId("b685cb4b-db01-4490-9686-fcc365cca504")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-3").index(3).build();
+        unitList.add(th3);
+
+        CollectorDevice th4 = CollectorDevice.builder()
+                        .deviceId("cbec977b-fbb9-4788-a0b5-c5b7a5c6a480")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-4").index(4).build();
+        unitList.add(th4);
+
+        CollectorDevice th5 = CollectorDevice.builder()
+                        .deviceId("2ab5433f-c5de-4194-95ed-b873328c5421")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-5").index(5).build();
+        unitList.add(th5);
+
+        CollectorDevice th6 = CollectorDevice.builder()
+                        .deviceId("1203e964-075d-458a-a0bb-0e5fbb0f7fe8")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-6").index(6).build();
+        unitList.add(th6);
+
+        CollectorDevice th7 = CollectorDevice.builder()
+                        .deviceId("73912b35-a9d7-432d-a02e-28509025ad40")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-7").index(7).build();
+        unitList.add(th7);
+
+        CollectorDevice th8 = CollectorDevice.builder()
+                        .deviceId("d38e5011-932b-463d-ad9e-083bc3b2559e")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-8").index(8).build();
+        unitList.add(th8);
+
+        CollectorDevice th9 = CollectorDevice.builder()
+                        .deviceId("1b745ea8-ba18-4cde-9185-504fc0333d2d")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-9").index(9).build();
+        unitList.add(th9);
+
+        CollectorDevice th10 = CollectorDevice.builder()
+                        .deviceId("054698ad-1e07-4615-8b67-8d44ece875a5")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-10").index(10).build();
+        unitList.add(th10);
+
+        CollectorDevice th11 = CollectorDevice.builder()
+                        .deviceId("5b54077a-2290-498e-bc18-4db58acce3ac")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-11").index(11).build();
+        unitList.add(th11);
+        CollectorDevice th12 = CollectorDevice.builder()
+                        .deviceId("38fd8694-5494-49ef-9117-9f9cc83e7162")
+                        .ip(ip).port(port).busId(String.valueOf(++busId))
+                        .name("th-12").index(12).build();
+        unitList.add(th12);
+        data.put(DeviceType.LCD_TH_ZL, unitList);
+    }
+    // 配电柜 1条通道1台 暂时只有1台
     private static void initZlPdc() {
         List<PositionDevice> pdcList = new ArrayList<>();
         DeviceType deviceType = DeviceType.PDC_ZL;
         PositionDevice tdPdc = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
                         .deviceId("5d1d94c0-9706-4baa-bdc8-7e9920e0ec4b")
-                        .name("配电柜").index(1).ip("192.168.0.140").port("6013").busId("1").build())
+                        .name("配电柜").index(1).ip("192.168.7.136").port("6003").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
                         .deviceId("5d1d94c0-9706-4baa-bdc8-7e9920e0ec4b")
                         .bubbleUrl("")
@@ -900,20 +879,112 @@ public class CollectorDeviceUtils {
                         .build())
                 .build();
         pdcList.add(tdPdc);
-        PositionDevice upsPdc = PositionDevice.builder()
+//        PositionDevice upsPdc = PositionDevice.builder()
+//                .collectorDevice(CollectorDevice.builder()
+//                        .deviceId("9fe9f501-e90e-4a39-9839-58249cd6d30c")
+//                        .name("配电间配电柜").index(2).ip("192.168.0.140").port("6014").busId("1").build())
+//                .deviceDetail(DeviceDetail.builder()
+//                        .deviceId("9fe9f501-e90e-4a39-9839-58249cd6d30c")
+//                        .bubbleUrl("")
+//                        .deviceType(deviceType)
+//                        .build())
+//                .build();
+//        pdcList.add(upsPdc);
+        data.put(deviceType, pdcList);
+    }
+    // 肿瘤漏水 1台空调1个水浸
+    private static void initZlFloor() {
+        DeviceType deviceType = DeviceType.FLOOR_ZL;
+        PositionDevice flood1 = PositionDevice.builder()
                 .collectorDevice(CollectorDevice.builder()
-                        .deviceId("9fe9f501-e90e-4a39-9839-58249cd6d30c")
-                        .name("配电间配电柜").index(2).ip("192.168.0.140").port("6014").busId("1").build())
+                        .deviceId("b9565f0b-189e-45d8-b13a-806f92c50f63")
+                        .name("水浸1").index(1).ip("192.168.0.140").port("6021").busId("1").build())
                 .deviceDetail(DeviceDetail.builder()
-                        .deviceId("9fe9f501-e90e-4a39-9839-58249cd6d30c")
+                        .deviceId("b9565f0b-189e-45d8-b13a-806f92c50f63")
                         .bubbleUrl("")
                         .deviceType(deviceType)
                         .build())
                 .build();
-        pdcList.add(upsPdc);
-        data.put(deviceType, pdcList);
+        PositionDevice flood2 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("d15fc220-fc78-4f1c-80e3-d368e227845b")
+                        .name("水浸2").index(2).ip("192.168.0.140").port("6021").busId("2").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("d15fc220-fc78-4f1c-80e3-d368e227845b")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        PositionDevice flood3 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("7fcfa8b7-01db-4a98-97c3-64e38b520894")
+                        .name("水浸3").index(3).ip("192.168.0.140").port("6021").busId("3").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("7fcfa8b7-01db-4a98-97c3-64e38b520894")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        List<PositionDevice> floodList = new ArrayList<>();
+        floodList.add(flood1);
+        floodList.add(flood2);
+        floodList.add(flood3);
+        data.put(deviceType, floodList);
     }
 
+    private static void initACM03U1() {
+        List<PositionDevice> list1 = new ArrayList<>();
+        PositionDevice ac1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("3c11b56a-98b6-41eb-9969-64e2247b3245")
+                        .name("空调1").index(1).ip("192.168.7.136").port("6004").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("3c11b56a-98b6-41eb-9969-64e2247b3245")
+                        .bubbleUrl("")
+                        .deviceType(DeviceType.ACM03U1)
+                        .build())
+                .build();
+        list1.add(ac1);
+        data.put(DeviceType.ACM03U1, list1);
+    }
+
+    private static void initDME() {
+        List<PositionDevice> list1 = new ArrayList<>();
+        DeviceType deviceType = DeviceType.DME_Modbus;
+        PositionDevice ac1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("0b4dba4e-75c8-42c1-a97c-c2211fa25857")
+                        .name("空调2").index(2).ip("192.168.0.140").port("6019").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("0b4dba4e-75c8-42c1-a97c-c2211fa25857")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list1.add(ac1);
+        data.put(deviceType, list1);
+    }
+
+    private static void initUnity() {
+        List<PositionDevice> list1 = new ArrayList<>();
+        DeviceType deviceType = DeviceType.Unity;
+        PositionDevice ac1 = PositionDevice.builder()
+                .collectorDevice(CollectorDevice.builder()
+                        .deviceId("7b06dbc2-4b38-4793-9070-c9cc30250aab")
+                        .name("空调3").index(3).ip("192.168.0.140").port("16008").busId("1").build())
+                .deviceDetail(DeviceDetail.builder()
+                        .deviceId("7b06dbc2-4b38-4793-9070-c9cc30250aab")
+                        .bubbleUrl("")
+                        .deviceType(deviceType)
+                        .build())
+                .build();
+        list1.add(ac1);
+        data.put(deviceType, list1);
+    }
+
+    /**
+     * 1288项目
+     */
     // 漏水
     private static void init1288Floor() {
         PositionDevice flood1 = PositionDevice.builder()
@@ -1095,47 +1166,6 @@ public class CollectorDeviceUtils {
         floodList.add(flood16);
         data.put(DeviceType.FLOOR, floodList);
     }
-
-    // 肿瘤漏水
-    private static void initZlFloor() {
-        DeviceType deviceType = DeviceType.FLOOR_ZL;
-        PositionDevice flood1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("b9565f0b-189e-45d8-b13a-806f92c50f63")
-                        .name("水浸1").index(1).ip("192.168.0.140").port("6021").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("b9565f0b-189e-45d8-b13a-806f92c50f63")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        PositionDevice flood2 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("d15fc220-fc78-4f1c-80e3-d368e227845b")
-                        .name("水浸2").index(2).ip("192.168.0.140").port("6021").busId("2").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("d15fc220-fc78-4f1c-80e3-d368e227845b")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        PositionDevice flood3 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("7fcfa8b7-01db-4a98-97c3-64e38b520894")
-                        .name("水浸3").index(3).ip("192.168.0.140").port("6021").busId("3").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("7fcfa8b7-01db-4a98-97c3-64e38b520894")
-                        .bubbleUrl("")
-                        .deviceType(deviceType)
-                        .build())
-                .build();
-        List<PositionDevice> floodList = new ArrayList<>();
-        floodList.add(flood1);
-        floodList.add(flood2);
-        floodList.add(flood3);
-        data.put(deviceType, floodList);
-    }
-
     // 冷通道环境主机
     private static void init1288Emh() {
         PositionDevice channel1 = PositionDevice.builder()
@@ -1718,33 +1748,6 @@ public class CollectorDeviceUtils {
         data.put(DeviceType.ACRD300, list);
     }
 
-    // UPS hipulse
-    private static void initHipulse() {
-        List<PositionDevice> list = new ArrayList<>();
-        PositionDevice ups1 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("dacadba1-8e30-4fdd-affc-187fdcbce97e")
-                        .name("ups1").index(1).ip("192.168.0.140").port("6012").busId("1").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("dacadba1-8e30-4fdd-affc-187fdcbce97e")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.Hipulse)
-                        .build())
-                .build();
-        list.add(ups1);
-        PositionDevice ups2 = PositionDevice.builder()
-                .collectorDevice(CollectorDevice.builder()
-                        .deviceId("09b44ae8-0467-4ce6-b06f-ecee1168c1fa")
-                        .name("ups2").index(2).ip("192.168.0.140").port("6012").busId("2").build())
-                .deviceDetail(DeviceDetail.builder()
-                        .deviceId("09b44ae8-0467-4ce6-b06f-ecee1168c1fa")
-                        .bubbleUrl("")
-                        .deviceType(DeviceType.Hipulse)
-                        .build())
-                .build();
-        list.add(ups2);
-        data.put(DeviceType.Hipulse, list);
-    }
 
     private static void clear() {
         data.clear();
@@ -1765,6 +1768,12 @@ public class CollectorDeviceUtils {
             }
         }
         model.put(deviceType.getKey(), result);
+        return model;
+    }
+    public static Map<String, Object> getCollectorDeviceModel2(DeviceType deviceType) {
+        Map<String, Object> model = new HashMap<>();
+        List list = data.get(deviceType);
+        model.put(deviceType.getKey(), list);
         return model;
     }
 

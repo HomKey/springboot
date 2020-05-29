@@ -1,0 +1,22 @@
+<linked-list>
+
+  <ModbusRequest>
+    <name>cmd_r2_diom_thunderPro_d1_QDO</name>
+    <commandType>1</commandType>
+    <destinationHost>192.168.82.84</destinationHost>
+    <port>6001</port>
+    <busId>1</busId>
+    <length>4</length>
+    <registerNumber>100</registerNumber>
+  </ModbusRequest>
+  <ModbusRequest>
+    <name>cmd_r2_diom_thunderPro_d1_QDI</name>
+    <commandType>2</commandType>
+    <destinationHost>192.168.82.84</destinationHost>
+    <port>6001</port>
+    <busId>1</busId>
+    <length>4</length>
+    <registerNumber>200</registerNumber>
+  </ModbusRequest>
+    
+</linked-list>

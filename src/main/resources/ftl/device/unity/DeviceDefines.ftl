@@ -184,7 +184,7 @@
                 <commandName>crac_unity_q2_d${object.index}_AI_30130_20</commandName>
                 <divider>1</divider>
             </SensorDefine>
-            <!-- 除湿器运行 时间 -->
+            <!-- 除湿器运行 时间 分钟 -->
             <SensorDefine>
                 <name>CRAC.Dehumidifier.RunningTime</name>
                 <registerIndex>30145</registerIndex>

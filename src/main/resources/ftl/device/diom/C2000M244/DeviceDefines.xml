@@ -1,0 +1,20 @@
+<linked-list>
+
+  <DeviceDefine>
+    <deviceId>01C67153-7C7D-4CFF-8F4D-32290DAB70C5</deviceId>
+    <iSensorDefines>
+	
+      <SensorDefine>
+        <name>FanMachine.RunStatus</name>
+        <registerIndex>28</registerIndex>
+        <scale>1</scale>
+        <isMean>false</isMean>
+        <commandName>cmd_m244_d1_AI1</commandName>
+        <divider>1</divider>
+      </SensorDefine>
+	  
+    </iSensorDefines>
+  </DeviceDefine>
+
+
+</linked-list>

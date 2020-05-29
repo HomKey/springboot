@@ -82,7 +82,7 @@ public class DcimGenerate {
 
     @Test
     public void testHebing() {
-        String path = "D:\\freemarker\\device\\hebing";
+        String path = "C:\\Users\\tandewei\\Desktop\\肿瘤-待实施\\实施\\单独配置";
         CommondXml.append("<linked-list>\n");
         DeviceDefineXml.append("<linked-list>\n");
         List<String> list = FileUtils.scanAllFiles(path);
@@ -400,7 +400,10 @@ public class DcimGenerate {
     }
 
     @Test
-    public void createDeviceSensors() {
+    public void createSqlBySceneId() {
+        String sceneId = "D745755A-C4BF-4CE2-AD04-86DB13F52058";
+        String baseSql = "SELECT t.Id,t.Name FROM SceneBase t WHERE t.Id = '"+sceneId+"'";
+        List<Map<String, Object>> mapList = dcimJdbcTemplate.queryForList(baseSql);
     }
 
     private static String getDcimFtlPath(String modelName, String fileName) {
@@ -409,6 +412,6 @@ public class DcimGenerate {
 
     private void execSql(String template, Object... params) {
         System.out.println(String.format(template, params));
-        dcimJdbcTemplate.execute(String.format(template, params));
+//        dcimJdbcTemplate.execute(String.format(template, params));
     }
 }

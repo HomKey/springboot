@@ -1,0 +1,49 @@
+<linked-list>
+<#list acList as object>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_CRV_AI_0_51</name>
+        <commandType>4</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>51</length>
+        <registerNumber>0</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_CRV_AI_64_51</name>
+        <commandType>4</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>51</length>
+        <registerNumber>64</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_CRV_AI_130_19</name>
+        <commandType>4</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>19</length>
+        <registerNumber>130</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_CRV_AI_218_13</name>
+        <commandType>4</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>13</length>
+        <registerNumber>218</registerNumber>
+    </ModbusRequest>
+    <ModbusRequest>
+        <name>Modbus_${object.index}_CRV_AI_0_101</name>
+        <commandType>2</commandType>
+        <destinationHost>${object.ip}</destinationHost>
+        <port>${object.port}</port>
+        <busId>${object.busId}</busId>
+        <length>101</length>
+        <registerNumber>0</registerNumber>
+    </ModbusRequest>
+</#list>
+</linked-list>

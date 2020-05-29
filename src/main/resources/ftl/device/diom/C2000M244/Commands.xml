@@ -1,0 +1,14 @@
+<linked-list>
+
+  <BytesRequest>
+    <name>cmd_m244_d1_AI1</name>
+    <commandType>0</commandType>
+    <destinationHost>192.168.80.92</destinationHost>
+    <port>6001</port>
+    <busId>1</busId>
+    <length>0</length>
+    <registerNumber>0</registerNumber>
+    <command>00 01 00 00 00 06 01 03 00 18 00 10</command>
+  </BytesRequest>
+    
+</linked-list>

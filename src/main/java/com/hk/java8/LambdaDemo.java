@@ -1,5 +1,9 @@
 package com.hk.java8;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * Created by LuHj on 2018/8/20.
  */
@@ -37,6 +41,9 @@ public class LambdaDemo {
 
         greetService1.sayMessage("Runoob");
         greetService2.sayMessage("Google");
+
+        List<String> ls = Arrays.asList("1", "2");
+        List<Integer> collect = ls.stream().map(item -> Integer.valueOf(item)).collect(Collectors.toList());
     }
 
     interface MathOperation {

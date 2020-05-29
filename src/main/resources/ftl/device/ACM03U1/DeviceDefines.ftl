@@ -1185,25 +1185,6 @@
                 </calcList>
             </CommonDefine>
             <CommonDefine>
-                <name>CRAC.Alert.Remote.ShutDown</name>
-                <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
-                <index>3</index>
-                <length>1</length>
-                <divider>1</divider>
-                <precision>2</precision>
-                <isMean>false</isMean>
-                <calcList>
-                    <asciiToHexCalc></asciiToHexCalc>
-                    <getBitCalc>
-                        <bitIndex>7</bitIndex>
-                    </getBitCalc>
-                    <mapIntCalc except="0">
-                        <map val="1" target="1"></map>
-                        <map val="0" target="0"></map>
-                    </mapIntCalc>
-                </calcList>
-            </CommonDefine>
-            <CommonDefine>
                 <name>CRAC.Alert.TH.Check.Exception</name>
                 <commandName>crac_acm03u1_dz_d${object.index}_24709_33</commandName>
                 <index>4</index>

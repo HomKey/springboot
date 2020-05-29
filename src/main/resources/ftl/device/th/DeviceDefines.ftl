@@ -8,7 +8,7 @@
         <registerIndex>0</registerIndex>
         <scale>2</scale>
         <isMean>false</isMean>
-        <commandName>th_r2_d${object.index}_AI</commandName>
+        <commandName>th_r2_d${object.ip}_${object.index}_AI</commandName>
         <divider>100</divider>
       </SensorDefine>
       <SensorDefine>
@@ -16,7 +16,7 @@
         <registerIndex>1</registerIndex>
         <scale>2</scale>
         <isMean>false</isMean>
-        <commandName>th_r2_d${object.index}_AI</commandName>
+        <commandName>th_r2_d${object.ip}_${object.index}_AI</commandName>
         <divider>100</divider>
       </SensorDefine>
     </iSensorDefines>

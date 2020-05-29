@@ -1,338 +1,1717 @@
 {
-  "internalId": 0,
-  "id": "keydak1234",
-  "name": "CD2000冷通道",
-  "shortName": "CD2000",
-  "ratedPower": 5600,
-  "time": "2019-07-12 02:11:52",
-  "lan": {
-    "ip": "192.168.7.236",
-    "mask": "255.255.255.0",
-    "gateway": "192.168.0.10"
+  "CD500_Smoke_Alarm_State": {
+    "sensorId": "CD500_Smoke_Alarm_State",
+    "value": 0,
+    "time": 1584776057600
   },
-  "wlan": {
-    "wanName": "keydak16dev",
-    "wanPassword": "kd11223344",
-    "ip": "",
-    "mask": "",
-    "gateway": ""
+  "CD500_H_5_Less": {
+    "sensorId": "CD500_H_5_Less",
+    "value": 0,
+    "time": 1584776057600
   },
-  "isTest": false,
-  "platform": "linux",
-  "cabinets": {
-    "rows": 2,
-    "cols": 12,
-    "height": 42,
-    "cabinets": [
-      [{
-        "internalId": 0,
-        "id": "a1",
-        "displayName": "列头柜",
-        "typeId": "c",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "ec87bfc4-b1fd-4ec9-8dc5-fc9913af3103",
-        "displayName": "机柜1",
-        "typeId": "e",
-        "devices": [{
-          "internalId": 0,
-          "id": "3867dccf-ab40-4149-93b7-4af2d3cc45b7",
-          "displayName": "ubit1",
-          "modelId": "8",
-          "connectionId": "7f4b7848-f62c-41be-877d-a4ae37bade48",
-          "busId": 1,
-          "on": false,
-          "deviceModel": {
-            "internalId": 0,
-            "id": "8",
-            "displayName": "U位",
-            "description": "Keydak UBit",
-            "reference": "保留字段",
-            "model": "KEYDAK_UBit",
-            "function": "EditDevice",
-            "protocolName": "default"
-          }
-        }]
-      }, {
-        "internalId": 0,
-        "id": "b1c98abc-a358-4c62-88a6-01897f9ce47c",
-        "displayName": "机柜2",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "087c7997-7330-47fb-9f4f-67c6e90b4421",
-        "displayName": "机柜3",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "d3218b9e-2627-4f29-8758-dc36076cc4a5",
-        "displayName": "行间空调1",
-        "typeId": "a",
-        "devices": [{
-          "internalId": 0,
-          "id": "2fdae3e4-8860-4eb6-b3b3-65b4c0d7303b",
-          "displayName": "行间空调1",
-          "modelId": "9",
-          "connectionId": "76368282-6952-4bf0-8292-c9f16eedd16c",
-          "busId": 1,
-          "on": false,
-          "deviceModel": {
-            "internalId": 0,
-            "id": "9",
-            "displayName": "SCA机组",
-            "description": "SCA依米康",
-            "reference": "保留字段",
-            "model": "SCA",
-            "function": "EditDevice",
-            "protocolName": "default"
-          }
-        }]
-      }, {
-        "internalId": 0,
-        "id": "54284555-1be3-421b-afec-9057c405d4f7",
-        "displayName": "机柜5",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "44c1ab8d-3e6b-4811-b236-36ff9c9620e7",
-        "displayName": "行间空调1",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "3849b204-ae45-420f-82a5-13ede3d094cc",
-        "displayName": "机柜6",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "fcbc1739-2428-4db7-a402-bbf5e29034aa",
-        "displayName": "机柜7",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "eb6f6a70-478a-43bc-86a6-fe08110f1be4",
-        "displayName": "机柜8",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "7bd304b1-8990-4f9e-8fe7-84a079631c90",
-        "displayName": "机柜9",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "34f76387-0bce-47fd-9b26-c51d4a1e9267",
-        "displayName": "机柜10",
-        "typeId": "p",
-        "devices": []
-      }],
-      [{
-        "internalId": 0,
-        "id": "61aa5b10-75d1-4d82-9b3d-5d92aa60bd4f",
-        "displayName": "列头柜",
-        "typeId": "c",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "8e53357e-f623-4f72-9c40-acb552203ae2",
-        "displayName": "机柜11",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "72fce7f3-ec97-42eb-8351-d24080dd2d17",
-        "displayName": "机柜12",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "06a130d0-8c0d-46d4-a9c8-d221af145b8b",
-        "displayName": "机柜13",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "f8079dd5-4aea-4873-a7e7-e9b622898d18",
-        "displayName": "行间空调2",
-        "typeId": "a",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "c94d6817-b60b-40d4-908a-ac3cf20ba4d8",
-        "displayName": "机柜14",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "4347bf8c-8631-46d5-84ae-387945f41eee",
-        "displayName": "机柜15",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "7b55632b-d80a-4ded-9448-8223b969d73d",
-        "displayName": "机柜16",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "dd6259a8-64d4-4075-ad31-dae3d2413809",
-        "displayName": "行间空调3",
-        "typeId": "a",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "3fb85487-5041-4aa5-9577-88ee2e54cf81",
-        "displayName": "机柜17",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "39946d4f-b420-479a-a591-021159aa17af",
-        "displayName": "机柜18",
-        "typeId": "e",
-        "devices": []
-      }, {
-        "internalId": 0,
-        "id": "808b6edd-cc14-40f9-9a26-2e7eafadf115",
-        "displayName": "机柜19",
-        "typeId": "p",
-        "devices": []
-      }]
-    ]
+  "CD500_Smoke_State": {
+    "sensorId": "CD500_Smoke_State",
+    "value": 0,
+    "time": 1584776057600
   },
-  "menus": [{
-    "internalID": 0,
-    "id": "Index",
-    "name": "主监控",
-    "icon": "&#xe600;",
-    "modules": [{
-      "id": "TH",
-      "name": "冷通道温湿度",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }, {
-    "internalID": 0,
-    "id": "Electric",
-    "name": "配电",
-    "icon": "&#xe602;",
-    "modules": [{
-      "id": "PDC",
-      "name": "配电柜",
-      "display": true,
-      "internalId": 0
-    }, {
-      "id": "PDU",
-      "name": "PDU",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }, {
-    "internalID": 0,
-    "id": "Environment",
-    "name": "环境",
-    "icon": "&#xe603;",
-    "modules": [{
-      "id": "CHART",
-      "name": "图示",
-      "display": true,
-      "internalId": 0
-    }, {
-      "id": "DATA",
-      "name": "实时数据",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }, {
-    "internalID": 0,
-    "id": "Sf",
-    "name": "安防与消防",
-    "icon": "&#xe605;",
-    "modules": [{
-      "id": "SF",
-      "name": "监控状态",
-      "display": true,
-      "internalId": 0
-    }, {
-      "id": "DOOR",
-      "name": "门禁记录",
-      "display": true,
-      "internalId": 0
-    }, {
-      "id": "CAMERA",
-      "name": "视频监控",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }, {
-    "internalID": 0,
-    "id": "Ac",
-    "name": "空调",
-    "icon": "&#xe604;",
-    "modules": [{
-      "id": "CHART",
-      "name": "图示",
-      "display": true,
-      "internalId": 0
-    }, {
-      "id": "DATA",
-      "name": "实时数据",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }, {
-    "internalID": 0,
-    "id": "Asset",
-    "name": "资产",
-    "icon": "&#xe65a;",
-    "modules": [{
-      "id": "Asset",
-      "name": "资产管理",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }, {
-    "internalID": 0,
-    "id": "Us",
-    "name": "U位",
-    "icon": "&#xe65a;",
-    "modules": [{
-      "id": "Us",
-      "name": "U位管理",
-      "display": true,
-      "internalId": 0
-    }],
-    "display": true
-  }],
-  "cameras": [{
-    "internalId": 0,
-    "id": "1",
-    "name": "前门摄像头",
-    "url": "http://192.168.0.230/video/channel101.m3u8",
-    "rtspUrl": "rtsp://admin:admin@192.168.0.193:554/h264/ch1/main/av_stream"
-  }, {
-    "internalId": 0,
-    "id": "2",
-    "name": "后门摄像头",
-    "url": "http://192.168.0.230/video/channel202.m3u8",
-    "rtspUrl": "rtsp://admin:admin@192.168.0.194:554/h264/ch1/main/av_stream"
-  }],
-  "home": {
-    "internalId": 0,
-    "type": 2
+  "CD500_T_6_Over": {
+    "sensorId": "CD500_T_6_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_Over": {
+    "sensorId": "CD500_H_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_3_Less": {
+    "sensorId": "CD500_T_3_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_9_T": {
+    "sensorId": "CD500_9_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "CD500_H_7_Less": {
+    "sensorId": "CD500_H_7_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_8_H": {
+    "sensorId": "CD500_8_H",
+    "value": 82.1,
+    "time": 1584776057600
+  },
+  "CD500_H_8_Over": {
+    "sensorId": "CD500_H_8_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_8_Over": {
+    "sensorId": "CD500_T_8_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Magnetometer_1_Access_State": {
+    "sensorId": "CD500_Magnetometer_1_Access_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_T_4_Over": {
+    "sensorId": "CD500_T_4_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_Water": {
+    "sensorId": "AlarmLamp_E_Water",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Fan_E_BDF_CMD": {
+    "sensorId": "Fan_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Water": {
+    "sensorId": "FlickBDoor_E_Water",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_T_O": {
+    "sensorId": "Acousto_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Lean_Alarm_State": {
+    "sensorId": "CD500_Lean_Alarm_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_AlarmLamp_CMD": {
+    "sensorId": "AlarmLamp_E_AlarmLamp_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_Door": {
+    "sensorId": "AlarmLamp_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_FDP_CMD": {
+    "sensorId": "Acousto_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_10_Less": {
+    "sensorId": "CD500_H_10_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_LeanEnable": {
+    "sensorId": "T_LeanEnable",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_FDP_CMD": {
+    "sensorId": "Fan_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_Upper": {
+    "sensorId": "T_Upper",
+    "value": 30,
+    "time": 1584776057600
+  },
+  "CD500_8_T": {
+    "sensorId": "CD500_8_T",
+    "value": 24.05,
+    "time": 1584776057600
+  },
+  "BackLight_E_Smoke": {
+    "sensorId": "BackLight_E_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_BLP_CMD": {
+    "sensorId": "Acousto_E_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Door": {
+    "sensorId": "FlickBDoor_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_ALL": {
+    "sensorId": "BackLight_E_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_Lean": {
+    "sensorId": "OPortOutput_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_FLP_CMD": {
+    "sensorId": "Buzzer_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Door_2_Access_State": {
+    "sensorId": "BuzzerTone_E_Door_2_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Back_DoorHandle_State": {
+    "sensorId": "CD500_Back_DoorHandle_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_Water": {
+    "sensorId": "BackLight_E_Water",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_6_Access_State": {
+    "sensorId": "CD500_TH_6_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_220V_In": {
+    "sensorId": "CD500_220V_In",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "FrontLight_E_FDP_CMD": {
+    "sensorId": "FrontLight_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_7_H": {
+    "sensorId": "CD500_7_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_T_L": {
+    "sensorId": "Buzzer_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_Baffle_CMD": {
+    "sensorId": "OPortOutput_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_T_O": {
+    "sensorId": "Buzzer_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_8_Access_State": {
+    "sensorId": "CD500_TH_8_Access_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_H_1_Over": {
+    "sensorId": "CD500_H_1_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_4_Over": {
+    "sensorId": "CD500_H_4_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Lean_State": {
+    "sensorId": "BuzzerTone_E_Lean_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_FDP_CMD": {
+    "sensorId": "FrontDoor_PE_FDP_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "H_Upper": {
+    "sensorId": "H_Upper",
+    "value": 90,
+    "time": 1584776057600
+  },
+  "Acousto_E_Baffle_CMD": {
+    "sensorId": "Acousto_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_ALL": {
+    "sensorId": "FlickBDoor_E_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_5_Less": {
+    "sensorId": "CD500_T_5_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_BLP_CMD": {
+    "sensorId": "FrontDoor_PE_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Smoke_Access_State": {
+    "sensorId": "BuzzerTone_E_Smoke_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Baffle_CMD": {
+    "sensorId": "BackDoor_PE_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_External_DI": {
+    "sensorId": "OPortOutput_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Magnetometer_2_Access_State": {
+    "sensorId": "CD500_Magnetometer_2_Access_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_H_2_Over": {
+    "sensorId": "CD500_H_2_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_OOOutput_CMD": {
+    "sensorId": "FrontLight_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_BLP_CMD": {
+    "sensorId": "FrontLight_E_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_External_DI": {
+    "sensorId": "BackLight_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Water_Access_State": {
+    "sensorId": "CD500_Water_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_AlarmEnable": {
+    "sensorId": "T_AlarmEnable",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_T_1_Over": {
+    "sensorId": "CD500_T_1_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_Door": {
+    "sensorId": "FrontDoor_PE_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_FDP_CMD": {
+    "sensorId": "BackLight_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Smoke": {
+    "sensorId": "FrontLight_E_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_AlarmLamp_CMD": {
+    "sensorId": "BackDoor_PE_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "H_AlarmEnable": {
+    "sensorId": "H_AlarmEnable",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "FrontLight_E_AlarmLamp_CMD": {
+    "sensorId": "FrontLight_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_OutPut": {
+    "sensorId": "CD500_Order_Open_OutPut",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_Fan_CMD": {
+    "sensorId": "BackLight_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_OOOutput_CMD": {
+    "sensorId": "OPortOutput_E_OOOutput_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_T_9_Less": {
+    "sensorId": "CD500_T_9_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Flick_BDoor": {
+    "sensorId": "CD500_Order_Flick_BDoor",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_Smoke": {
+    "sensorId": "Baffle_E_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_3_Over": {
+    "sensorId": "CD500_H_3_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_BDF_CMD": {
+    "sensorId": "BackLight_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_7_T": {
+    "sensorId": "CD500_7_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "Buzzer_E_H_L": {
+    "sensorId": "Buzzer_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_Buzzer": {
+    "sensorId": "CD500_Order_Open_Buzzer",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_H_O": {
+    "sensorId": "Buzzer_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Angle_Y_Upper": {
+    "sensorId": "Angle_Y_Upper",
+    "value": 5,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_External_DI": {
+    "sensorId": "FrontDoor_PE_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_FLP_CMD": {
+    "sensorId": "FrontDoor_PE_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Lean_Access_State": {
+    "sensorId": "BuzzerTone_E_Lean_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_1_Less": {
+    "sensorId": "CD500_H_1_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_T_L": {
+    "sensorId": "Baffle_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_OOOutput_CMD": {
+    "sensorId": "FrontDoor_PE_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_T_O": {
+    "sensorId": "Baffle_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_6_H": {
+    "sensorId": "CD500_6_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_ALL": {
+    "sensorId": "FrontLight_E_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_SmokeEnable": {
+    "sensorId": "T_SmokeEnable",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Water_State": {
+    "sensorId": "BuzzerTone_E_Water_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Lean_State": {
+    "sensorId": "CD500_Lean_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_Baffle_CMD": {
+    "sensorId": "Buzzer_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_H_O": {
+    "sensorId": "FrontDoor_PE_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_FLP_CMD": {
+    "sensorId": "FlickBDoor_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_Smoke": {
+    "sensorId": "Acousto_E_Smoke",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_Smoke_Access_State": {
+    "sensorId": "CD500_Smoke_Access_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_H_L": {
+    "sensorId": "FrontDoor_PE_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_BDF_CMD": {
+    "sensorId": "FrontLight_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_Lean": {
+    "sensorId": "Buzzer_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_6_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_6_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Baffle_CMD": {
+    "sensorId": "FlickBDoor_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_AOM_CMD": {
+    "sensorId": "BackLight_E_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_CPRS_Send": {
+    "sensorId": "CD500_CPRS_Send",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_FLP_CMD": {
+    "sensorId": "Fan_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_AOM_CMD": {
+    "sensorId": "FlickBDoor_E_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_FLP_CMD": {
+    "sensorId": "BackDoor_PE_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_Buzzer_CMD": {
+    "sensorId": "OPortOutput_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_T_L": {
+    "sensorId": "BackLight_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_DoorEnable": {
+    "sensorId": "T_DoorEnable",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "BackLight_E_Door": {
+    "sensorId": "BackLight_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_H_L": {
+    "sensorId": "Fan_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_AlarmLamp_CMD": {
+    "sensorId": "Acousto_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_OOOutput_CMD": {
+    "sensorId": "AlarmLamp_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Angle_Z_Upper": {
+    "sensorId": "Angle_Z_Upper",
+    "value": 5,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_T_O": {
+    "sensorId": "FlickBDoor_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_10_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_10_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_Smoke": {
+    "sensorId": "Fan_E_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_Less": {
+    "sensorId": "CD500_T_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_External_DI": {
+    "sensorId": "Buzzer_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_T_O": {
+    "sensorId": "BackLight_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_Less": {
+    "sensorId": "CD500_H_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Smoke_State": {
+    "sensorId": "BuzzerTone_E_Smoke_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_T_L": {
+    "sensorId": "FlickBDoor_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_H_L": {
+    "sensorId": "AlarmLamp_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_Fan_CMD": {
+    "sensorId": "Fan_E_Fan_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Fan_E_H_O": {
+    "sensorId": "Fan_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_10_Over": {
+    "sensorId": "CD500_T_10_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Fan_CMD": {
+    "sensorId": "FlickBDoor_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_H_O": {
+    "sensorId": "AlarmLamp_E_H_O",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_Water_State": {
+    "sensorId": "CD500_Water_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_T_O": {
+    "sensorId": "OPortOutput_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_6_T": {
+    "sensorId": "CD500_6_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "BackLight_E_Baffle_CMD": {
+    "sensorId": "BackLight_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_Fan_CMD": {
+    "sensorId": "Acousto_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_T_L": {
+    "sensorId": "OPortOutput_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Water": {
+    "sensorId": "BackDoor_PE_Water",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_5_T": {
+    "sensorId": "CD500_5_T",
+    "value": 23.90,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_BDF_CMD": {
+    "sensorId": "AlarmLamp_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_7_Access_State": {
+    "sensorId": "CD500_TH_7_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Water_Alarm_State": {
+    "sensorId": "CD500_Water_Alarm_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_9_Over": {
+    "sensorId": "CD500_H_9_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_BLP_CMD": {
+    "sensorId": "BackLight_E_BLP_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Acousto_E_Buzzer_CMD": {
+    "sensorId": "Acousto_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_ALL": {
+    "sensorId": "Acousto_E_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_5_H": {
+    "sensorId": "CD500_5_H",
+    "value": 83.3,
+    "time": 1584776057600
+  },
+  "BackLight_E_Lean": {
+    "sensorId": "BackLight_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_BDP_CMD": {
+    "sensorId": "Baffle_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_AlarmLamp_CMD": {
+    "sensorId": "Baffle_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_FDoorHandle_State": {
+    "sensorId": "BuzzerTone_E_FDoorHandle_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_AlarmLamp_CMD": {
+    "sensorId": "FrontDoor_PE_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Alarm_State": {
+    "sensorId": "CD500_Alarm_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Buzzer_CMD": {
+    "sensorId": "BackDoor_PE_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_Buzzer_CMD": {
+    "sensorId": "Fan_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Door_1_Access_State": {
+    "sensorId": "BuzzerTone_E_Door_1_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_4_Less": {
+    "sensorId": "CD500_T_4_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Buzzer_CMD": {
+    "sensorId": "FrontLight_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_H_O": {
+    "sensorId": "BackDoor_PE_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_T_O": {
+    "sensorId": "FrontLight_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_BDF_CMD": {
+    "sensorId": "BackDoor_PE_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_3_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_3_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_T_L": {
+    "sensorId": "FrontLight_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_7_Over": {
+    "sensorId": "CD500_T_7_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_H_L": {
+    "sensorId": "BackDoor_PE_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_BDP_CMD": {
+    "sensorId": "BackLight_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_Over": {
+    "sensorId": "CD500_T_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Connection_Status": {
+    "sensorId": "Connection_Status",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_Buzzer_CMD": {
+    "sensorId": "AlarmLamp_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_6_Less": {
+    "sensorId": "CD500_H_6_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_FDP_CMD": {
+    "sensorId": "BackDoor_PE_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_7_Over": {
+    "sensorId": "CD500_H_7_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_External_DI": {
+    "sensorId": "Baffle_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Water": {
+    "sensorId": "FrontLight_E_Water",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_External_DI": {
+    "sensorId": "FrontLight_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_BDF_CMD": {
+    "sensorId": "Baffle_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_Water": {
+    "sensorId": "Acousto_E_Water",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Baffle_E_Fan_CMD": {
+    "sensorId": "Baffle_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_Door": {
+    "sensorId": "Fan_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_FDP_CMD": {
+    "sensorId": "Baffle_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_4_Access_State": {
+    "sensorId": "CD500_TH_4_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_BLP_CMD": {
+    "sensorId": "OPortOutput_E_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_BLP_CMD": {
+    "sensorId": "Baffle_E_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_AOM_CMD": {
+    "sensorId": "BackDoor_PE_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Magnetometer_1_State": {
+    "sensorId": "CD500_Magnetometer_1_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_4_T": {
+    "sensorId": "CD500_4_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "CD500_TH_3_Access_State": {
+    "sensorId": "CD500_TH_3_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_External_DI": {
+    "sensorId": "FlickBDoor_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_5_Over": {
+    "sensorId": "CD500_T_5_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_10_Less": {
+    "sensorId": "CD500_T_10_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_BLighting": {
+    "sensorId": "CD500_Order_Open_BLighting",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_Baffle_CMD": {
+    "sensorId": "AlarmLamp_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_External_DI": {
+    "sensorId": "Fan_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_BDoor": {
+    "sensorId": "CD500_Order_Open_BDoor",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_4_Less": {
+    "sensorId": "CD500_H_4_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Smoke": {
+    "sensorId": "BackDoor_PE_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_BLP_CMD": {
+    "sensorId": "BackDoor_PE_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Baffle_CMD": {
+    "sensorId": "FrontLight_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_AlarmLamp_CMD": {
+    "sensorId": "OPortOutput_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_4_H": {
+    "sensorId": "CD500_4_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "Fan_E_AlarmLamp_CMD": {
+    "sensorId": "Fan_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Door_1_State": {
+    "sensorId": "BuzzerTone_E_Door_1_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Baffle_E_AOM_CMD": {
+    "sensorId": "Baffle_E_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_SLAlarm": {
+    "sensorId": "CD500_Order_Open_SLAlarm",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Lean": {
+    "sensorId": "BackDoor_PE_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_Door": {
+    "sensorId": "Baffle_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_4_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_4_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_External_DI": {
+    "sensorId": "BuzzerTone_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_FLP_CMD": {
+    "sensorId": "Acousto_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Fan_Powerd": {
+    "sensorId": "CD500_Fan_Powerd",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_Lower": {
+    "sensorId": "T_Lower",
+    "value": 10,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_External_DI": {
+    "sensorId": "BackDoor_PE_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_BDP_CMD": {
+    "sensorId": "Buzzer_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "T_WaterEnable": {
+    "sensorId": "T_WaterEnable",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Acousto_E_H_L": {
+    "sensorId": "Acousto_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_BDF_CMD": {
+    "sensorId": "OPortOutput_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_2_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_2_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_H_O": {
+    "sensorId": "Acousto_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_BLP_CMD": {
+    "sensorId": "FlickBDoor_E_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_Buzzer_CMD": {
+    "sensorId": "Baffle_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_Smoke": {
+    "sensorId": "AlarmLamp_E_Smoke",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_H_2_Less": {
+    "sensorId": "CD500_H_2_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Magnetometer_2_State": {
+    "sensorId": "CD500_Magnetometer_2_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Buzzer_Interval": {
+    "sensorId": "Buzzer_Interval",
+    "value": 500,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Door_2_State": {
+    "sensorId": "BuzzerTone_E_Door_2_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Fan_E_Lean": {
+    "sensorId": "Fan_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_3_T": {
+    "sensorId": "CD500_3_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Door": {
+    "sensorId": "BackDoor_PE_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_FDP_CMD": {
+    "sensorId": "FlickBDoor_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_OOOutput_CMD": {
+    "sensorId": "Acousto_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "H_Lower": {
+    "sensorId": "H_Lower",
+    "value": 40,
+    "time": 1584776057600
+  },
+  "Angle_Z_Start": {
+    "sensorId": "Angle_Z_Start",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_Fan_CMD": {
+    "sensorId": "BackDoor_PE_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_2_Less": {
+    "sensorId": "CD500_T_2_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_3_H": {
+    "sensorId": "CD500_3_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "Fan_E_OOOutput_CMD": {
+    "sensorId": "Fan_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_FDoor": {
+    "sensorId": "CD500_Order_Open_FDoor",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_BDP_CMD": {
+    "sensorId": "AlarmLamp_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_Baffle_CMD": {
+    "sensorId": "Fan_E_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Magnetometer_Alarm_State": {
+    "sensorId": "CD500_Magnetometer_Alarm_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Smoke": {
+    "sensorId": "FlickBDoor_E_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_8_Less": {
+    "sensorId": "CD500_T_8_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_AlarmLamp_CMD": {
+    "sensorId": "BackLight_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_8_Less": {
+    "sensorId": "CD500_H_8_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_ALL": {
+    "sensorId": "OPortOutput_E_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_FLP_CMD": {
+    "sensorId": "OPortOutput_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_10_Over": {
+    "sensorId": "CD500_H_10_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Angle_X": {
+    "sensorId": "CD500_Angle_X",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Angle_Z": {
+    "sensorId": "CD500_Angle_Z",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_OOOutput_CMD": {
+    "sensorId": "Baffle_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Angle_Y": {
+    "sensorId": "CD500_Angle_Y",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Order_Open_Fan": {
+    "sensorId": "CD500_Order_Open_Fan",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Lean_Access_State": {
+    "sensorId": "CD500_Lean_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_AOM_CMD": {
+    "sensorId": "FrontLight_E_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_1_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_1_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_BDP_CMD": {
+    "sensorId": "BackDoor_PE_BDP_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Door_Light": {
+    "sensorId": "Door_Light",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "BackLight_E_Buzzer_CMD": {
+    "sensorId": "BackLight_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_Water": {
+    "sensorId": "OPortOutput_E_Water",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_BDF_CMD": {
+    "sensorId": "FlickBDoor_E_BDF_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_TH_10_Access_State": {
+    "sensorId": "CD500_TH_10_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_ALL": {
+    "sensorId": "BackDoor_PE_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Lean": {
+    "sensorId": "FrontLight_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_Smoke": {
+    "sensorId": "FrontDoor_PE_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_Front_DoorHandle_State": {
+    "sensorId": "CD500_Front_DoorHandle_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_2_T": {
+    "sensorId": "CD500_2_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_FLP_CMD": {
+    "sensorId": "AlarmLamp_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Buzzer_CMD": {
+    "sensorId": "FlickBDoor_E_Buzzer_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_1_Access_State": {
+    "sensorId": "CD500_TH_1_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_ALL": {
+    "sensorId": "AlarmLamp_E_ALL",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_2_Over": {
+    "sensorId": "CD500_T_2_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_BDF_CMD": {
+    "sensorId": "Buzzer_E_BDF_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_2_Access_State": {
+    "sensorId": "CD500_TH_2_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_2_H": {
+    "sensorId": "CD500_2_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "Acousto_E_Lean": {
+    "sensorId": "Acousto_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Fan_CMD": {
+    "sensorId": "FrontLight_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_9_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_9_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_TH_5_Access_State": {
+    "sensorId": "BuzzerTone_E_TH_5_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_Buzzer_CMD": {
+    "sensorId": "Buzzer_E_Buzzer_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_T_L": {
+    "sensorId": "FrontDoor_PE_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_AlarmLamp_CMD": {
+    "sensorId": "FlickBDoor_E_AlarmLamp_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_FLP_CMD": {
+    "sensorId": "Baffle_E_FLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_Baffle_CMD": {
+    "sensorId": "Baffle_E_Baffle_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "Fan_E_BDP_CMD": {
+    "sensorId": "Fan_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_T_L": {
+    "sensorId": "AlarmLamp_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_AOM_CMD": {
+    "sensorId": "Buzzer_E_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_5_Over": {
+    "sensorId": "CD500_H_5_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_OOOutput_CMD": {
+    "sensorId": "FlickBDoor_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_Water": {
+    "sensorId": "Buzzer_E_Water",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_T_O": {
+    "sensorId": "FrontDoor_PE_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_1_Less": {
+    "sensorId": "CD500_T_1_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_T_O": {
+    "sensorId": "AlarmLamp_E_T_O",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_H_L": {
+    "sensorId": "OPortOutput_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_7_Less": {
+    "sensorId": "CD500_T_7_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_H_L": {
+    "sensorId": "Baffle_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_3_Over": {
+    "sensorId": "CD500_T_3_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_3_Less": {
+    "sensorId": "CD500_H_3_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_T_L": {
+    "sensorId": "Fan_E_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_Smoke": {
+    "sensorId": "Buzzer_E_Smoke",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Baffle_E_H_O": {
+    "sensorId": "Baffle_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_FDP_CMD": {
+    "sensorId": "Buzzer_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Fan_E_T_O": {
+    "sensorId": "Fan_E_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_9_Over": {
+    "sensorId": "CD500_T_9_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_Door": {
+    "sensorId": "Acousto_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_9_Less": {
+    "sensorId": "CD500_H_9_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_Door": {
+    "sensorId": "FrontLight_E_Door",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_H_O": {
+    "sensorId": "OPortOutput_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_H_L": {
+    "sensorId": "FlickBDoor_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_Fan_CMD": {
+    "sensorId": "OPortOutput_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackLight_E_H_O": {
+    "sensorId": "BackLight_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_External_DI": {
+    "sensorId": "Acousto_E_External_DI",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "BuzzerTone_E_Water_Access_State": {
+    "sensorId": "BuzzerTone_E_Water_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_T_6_Less": {
+    "sensorId": "CD500_T_6_Less",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_H_O": {
+    "sensorId": "FlickBDoor_E_H_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_FDP_CMD": {
+    "sensorId": "OPortOutput_E_FDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_Lean": {
+    "sensorId": "FlickBDoor_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "AlarmLamp_E_External_DI": {
+    "sensorId": "AlarmLamp_E_External_DI",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_BLP_CMD": {
+    "sensorId": "Buzzer_E_BLP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_5_Access_State": {
+    "sensorId": "CD500_TH_5_Access_State",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "BackLight_E_H_L": {
+    "sensorId": "BackLight_E_H_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_Fan_CMD": {
+    "sensorId": "Buzzer_E_Fan_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "OPortOutput_E_AOM_CMD": {
+    "sensorId": "OPortOutput_E_AOM_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_1_T": {
+    "sensorId": "CD500_1_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_BDP_CMD": {
+    "sensorId": "FrontDoor_PE_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_TH_9_Access_State": {
+    "sensorId": "CD500_TH_9_Access_State",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_H_6_Over": {
+    "sensorId": "CD500_H_6_Over",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FrontLight_E_FLP_CMD": {
+    "sensorId": "FrontLight_E_FLP_CMD",
+    "value": 1,
+    "time": 1584776057600
+  },
+  "CD500_9_H": {
+    "sensorId": "CD500_9_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "Buzzer_E_OOOutput_CMD": {
+    "sensorId": "Buzzer_E_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "FlickBDoor_E_BDP_CMD": {
+    "sensorId": "FlickBDoor_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_1_H": {
+    "sensorId": "CD500_1_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "FrontDoor_PE_Baffle_CMD": {
+    "sensorId": "FrontDoor_PE_Baffle_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_10_T": {
+    "sensorId": "CD500_10_T",
+    "value": 0.00,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_T_O": {
+    "sensorId": "BackDoor_PE_T_O",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_10_H": {
+    "sensorId": "CD500_10_H",
+    "value": 0.0,
+    "time": 1584776057600
+  },
+  "Baffle_E_Lean": {
+    "sensorId": "Baffle_E_Lean",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_Time1": {
+    "sensorId": "Buzzer_Time1",
+    "value": 200,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_T_L": {
+    "sensorId": "BackDoor_PE_T_L",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "BackDoor_PE_OOOutput_CMD": {
+    "sensorId": "BackDoor_PE_OOOutput_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "CD500_CPRS_Test_AT": {
+    "sensorId": "CD500_CPRS_Test_AT",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Acousto_E_BDP_CMD": {
+    "sensorId": "Acousto_E_BDP_CMD",
+    "value": 0,
+    "time": 1584776057600
+  },
+  "Buzzer_Time2": {
+    "sensorId": "Buzzer_Time2",
+    "value": 100,
+    "time": 1584776057600
   }
 }

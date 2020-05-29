@@ -6,8 +6,8 @@
         <destinationHost>${object.ip1}</destinationHost>
         <port>${object.port1}</port>
         <busId>${object.busId1}</busId>
-        <length>111</length>
-        <registerNumber>3000</registerNumber>
+        <length>112</length>
+        <registerNumber>2999</registerNumber>
     </ModbusRequest>
     <ModbusRequest>
         <name>cmd_pm5350bw_2_${object.index}_3_3000_111</name>
@@ -15,8 +15,8 @@
         <destinationHost>${object.ip2}</destinationHost>
         <port>${object.port2}</port>
         <busId>${object.busId2}</busId>
-        <length>111</length>
-        <registerNumber>3000</registerNumber>
+        <length>112</length>
+        <registerNumber>2999</registerNumber>
     </ModbusRequest>
 </#list>
 </linked-list>
