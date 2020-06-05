@@ -383,7 +383,7 @@
             <CommonDefine>
                 <name>UPS.Output.A.ActivePower</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>44</index>
+                <index>52</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -398,7 +398,7 @@
             <CommonDefine>
                 <name>UPS.Output.B.ActivePower</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>52</index>
+                <index>60</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -413,7 +413,7 @@
             <CommonDefine>
                 <name>UPS.Output.C.ActivePower</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>60</index>
+                <index>68</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -428,7 +428,7 @@
             <CommonDefine>
                 <name>UPS.Output.A.ApparentPower</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>68</index>
+                <index>76</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -443,7 +443,7 @@
             <CommonDefine>
                 <name>UPS.Output.B.ApparentPower</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>76</index>
+                <index>84</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -458,7 +458,7 @@
             <CommonDefine>
                 <name>UPS.Output.C.ApparentPower</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>84</index>
+                <index>92</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -473,7 +473,7 @@
             <CommonDefine>
                 <name>UPS.Output.A.LoadRate</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>92</index>
+                <index>100</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -488,7 +488,7 @@
             <CommonDefine>
                 <name>UPS.Output.B.LoadRate</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>100</index>
+                <index>108</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
@@ -503,7 +503,7 @@
             <CommonDefine>
                 <name>UPS.Output.C.LoadRate</name>
                 <commandName>ups_hipulse_d${object.index}_get_sys_analog2</commandName>
-                <index>108</index>
+                <index>116</index>
                 <length>8</length>
                 <divider>1</divider>
                 <precision>2</precision>
